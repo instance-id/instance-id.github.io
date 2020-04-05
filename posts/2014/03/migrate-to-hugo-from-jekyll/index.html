@@ -11,7 +11,7 @@
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="#252627" />
-<link rel="canonical" href="http://instance-id.github.io/posts/2014/03/migrate-to-hugo-from-jekyll/" />
+<link rel="canonical" href="/posts/2014/03/migrate-to-hugo-from-jekyll/" />
 
 
     <title>
@@ -27,17 +27,17 @@
 
 
 
-<link rel="stylesheet" href="http://instance-id.github.io/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
+<link rel="stylesheet" href="/main.min.84ed5579024525d4b50458514d1a43e40dd5272df45c7cd6da85b225af457154.css">
 
 
 
 
-    <link rel="apple-touch-icon" sizes="180x180" href="http://instance-id.github.io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="http://instance-id.github.io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="http://instance-id.github.io/favicon-16x16.png">
-    <link rel="manifest" href="http://instance-id.github.io/site.webmanifest">
-    <link rel="mask-icon" href="http://instance-id.github.io/safari-pinned-tab.svg" color="#252627">
-    <link rel="shortcut icon" href="http://instance-id.github.io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">
+    <link rel="shortcut icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#252627">
     <meta name="theme-color" content="#252627">
 
@@ -48,12 +48,12 @@
 <meta itemprop="datePublished" content="2014-03-10T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-03-10T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="813">
-<meta itemprop="image" content="http://instance-id.github.io"/>
+<meta itemprop="image" content="/"/>
 
 
 
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="http://instance-id.github.io"/>
+<meta name="twitter:image" content="/"/>
 
 <meta name="twitter:title" content="Migrate to Hugo from Jekyll"/>
 <meta name="twitter:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
@@ -79,7 +79,7 @@
         <div class="container">
             <header class="header">
     <span class="header__inner">
-        <a href="http://instance-id.github.io/" style="text-decoration: none;">
+        <a href="/" style="text-decoration: none;">
     <div class="logo">
         
             <span class="logo__mark">></span>
@@ -97,7 +97,7 @@
         <span class="header__right">
             
                 <nav class="menu">
-    <ul class="menu__inner"><li><a href="http://instance-id.github.io/about/">About</a></li><li><a href="http://instance-id.github.io/posts/">Posts</a></li>
+    <ul class="menu__inner"><li><a href="/about/">About</a></li><li><a href="/posts/">Posts</a></li>
     </ul>
 </nav>
 
@@ -130,7 +130,7 @@
             
                 | Also available in
                 
-                    <a href="http://instance-id.github.io/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/"><span class="flag flag-icon flag-icon-fr flag-icon-squared"></span></a>
+                    <a href="/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/"><span class="flag flag-icon flag-icon-fr flag-icon-squared"></span></a>
                 
             
 
@@ -139,7 +139,7 @@
 
         <article>
             <h1 class="post-title">
-                <a href="http://instance-id.github.io/posts/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a>
+                <a href="/posts/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a>
             </h1>
 
             
@@ -160,7 +160,7 @@ With Jekyll, something that looked like</p>
 </code></pre>
 <p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
 <h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
-<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="http://instance-id.github.io/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
 <h2 id="set-your-configuration-publish-folder-to-_site">Set your configuration publish folder to <code>_site</code></h2>
 <p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
 <ol>
@@ -182,10 +182,10 @@ With Jekyll, something that looked like</p>
 </li>
 </ol>
 <h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
-<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="http://instance-id.github.io/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
 <p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
 <h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
-<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="http://instance-id.github.io/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
 <h3 id="implementation">Implementation</h3>
 <p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
 <p>Jekyll&rsquo;s plugin:</p>
@@ -301,7 +301,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
                 <div class="pagination__buttons">
                     
                         <span class="button previous">
-                            <a href="http://instance-id.github.io/posts/2014/09/creating-a-new-theme/">
+                            <a href="/posts/2014/09/creating-a-new-theme/">
                                 <span class="button__icon">←</span>
                                 <span class="button__text">Creating a New Theme</span>
                             </a>
@@ -310,7 +310,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
                     
                         <span class="button next">
-                            <a href="http://instance-id.github.io/posts/2014/04/hugo-template-primer/">
+                            <a href="/posts/2014/04/hugo-template-primer/">
                                 <span class="button__text">(Hu)go Template Primer</span>
                                 <span class="button__icon">→</span>
                             </a>
@@ -329,10 +329,10 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
         <div class="footer__content">
             <span>&copy; 2020</span>
             
-                <span><a href="http://instance-id.github.io">Jane Doe</a></span>
+                <span><a href="/">Jane Doe</a></span>
             
             <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
-            <span> <a href="http://instance-id.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
         </div>
     </div>
     <div class="footer__inner">
@@ -351,7 +351,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
 
 
-<script type="text/javascript" src="http://instance-id.github.io/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
 
 
 

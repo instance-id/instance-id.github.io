@@ -3,167 +3,167 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://instance-id.github.io/posts/2014/09/creating-a-new-theme/</loc>
+    <loc>/posts/2014/09/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/"
+                href="/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/posts/2014/09/creating-a-new-theme/"
+                href="/posts/2014/09/creating-a-new-theme/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/posts/2014/03/migrate-to-hugo-from-jekyll/</loc>
+    <loc>/posts/2014/03/migrate-to-hugo-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/"
+                href="/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/posts/2014/03/migrate-to-hugo-from-jekyll/"
+                href="/posts/2014/03/migrate-to-hugo-from-jekyll/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/posts/"
+                href="/fr/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/posts/"
+                href="/posts/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/"
+                href="/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/"
+                href="/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/posts/2014/04/hugo-template-primer/</loc>
+    <loc>/posts/2014/04/hugo-template-primer/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/"
+                href="/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/posts/2014/04/hugo-template-primer/"
+                href="/posts/2014/04/hugo-template-primer/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/categories/"
+                href="/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/categories/"
+                href="/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/categories/development/</loc>
+    <loc>/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/tags/development/</loc>
+    <loc>/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/posts/2014/04/getting-started-with-hugo/</loc>
+    <loc>/posts/2014/04/getting-started-with-hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/posts/2014/04/d%C3%A9buter-avec-hugo/"
+                href="/fr/posts/2014/04/d%C3%A9buter-avec-hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/posts/2014/04/getting-started-with-hugo/"
+                href="/posts/2014/04/getting-started-with-hugo/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/tags/go/</loc>
+    <loc>/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/tags/golang/</loc>
+    <loc>/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/categories/golang/</loc>
+    <loc>/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/tags/hugo/</loc>
+    <loc>/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://instance-id.github.io/fr/tags/"
+                href="/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://instance-id.github.io/tags/"
+                href="/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/tags/templates/</loc>
+    <loc>/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://instance-id.github.io/tags/themes/</loc>
+    <loc>/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
