@@ -4,7 +4,6 @@
   
   <url>
     <loc>/fr/categories/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,28 +17,7 @@
   </url>
   
   <url>
-    <loc>/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/posts/2014/09/creating-a-new-theme/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/posts/2014/09/cr%C3%A9ation-dun-nouveau-th%C3%A8me/"
-                />
-  </url>
-  
-  <url>
-    <loc>/fr/categories/hugo/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/fr/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,76 +27,6 @@
                 rel="alternate"
                 hreflang="fr"
                 href="/fr/"
-                />
-  </url>
-  
-  <url>
-    <loc>/fr/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/posts/"
-                />
-  </url>
-  
-  <url>
-    <loc>/fr/posts/2014/04/d%C3%A9buter-avec-hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/posts/2014/04/getting-started-with-hugo/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/posts/2014/04/d%C3%A9buter-avec-hugo/"
-                />
-  </url>
-  
-  <url>
-    <loc>/fr/categories/go/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/posts/2014/04/hugo-template-primer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/posts/2014/04/introduction-aux-mod%C3%A8les-hugo/"
-                />
-  </url>
-  
-  <url>
-    <loc>/fr/categories/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/posts/2014/03/migrate-to-hugo-from-jekyll/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="/fr/posts/2014/03/migrer-vers-hugo-depuis-jekyll/"
                 />
   </url>
   
