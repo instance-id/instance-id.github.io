@@ -1,6 +1,8 @@
-baseURL = "http://instance-id.github.io"
-languageCode = "en-us"
-title = "instance.id"
+baseURL = "https://instance-id.github.io"
+title   = "instance.id"
+
+DefaultContentLanguage = "en"
+
 theme = "hello-friend-ng"
 
 PygmentsCodeFences = true
