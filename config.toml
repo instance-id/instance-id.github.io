@@ -20,6 +20,7 @@ URL = "#contact"
 name = "Contact"
 weight = 4
 [[menu.main]]
+identifier= "projects"
 URL = "#portfolio"
 name = "Projects"
 weight = 3
@@ -32,17 +33,15 @@ URL = "#home"
 name = "Home"
 weight = 1
 [[menu.main]]
-identifier= "main/searcher"
 URL = "#projects"
 name = "Searcher"
-parent="Projects"
+parent="projects"
 weight = 1
 [[menu.main]]
-identifier= "main/verifier"
 URL = "#about"
 name = "Verifier"
-parent="Projects"
-weight = 1
+parent="projects"
+weight = 2
 [params]
 author = "instance.id"
 contact_form_action = ""
