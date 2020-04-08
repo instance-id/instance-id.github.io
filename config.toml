@@ -3,7 +3,7 @@ disableLanguages = ["fr"]
 title = "instance.id"
 [Languages.en]
 contentDir = "content/english"
-copyright = "Copyright &copy; 2020 instance.id"
+copyright = "Copyright &copy; 2020 instance.id - theme based on [somrat](https://somrat.netlify.com)"
 home = "Home"
 languageCode = "en-us"
 languageName = "En"
@@ -92,23 +92,23 @@ link = "https://github.com/instance-id"
 # icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
 # link = "https://www.linkedin.com/in/somrat-sorkar-872581158/"
 
-################################### English language #####################################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
-contentDir = "content/english"
-weight = 1
-home = "Home"
-# copyright
-copyright = "Copyright &copy; 2020 instance.id - theme by [somrat](https://somrat.netlify.com)"
+# ################################### English language #####################################
+# [Languages.en]
+# languageName = "En"
+# languageCode = "en-us"
+# contentDir = "content/english"
+# weight = 1
+# home = "Home"
+# # copyright
+# copyright = "Copyright &copy; 2020 instance.id - theme by [somrat](https://somrat.netlify.com)"
 
 
-################################### French language #####################################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
-contentDir = "content/french"
-weight = 2
-home = "Accueil"
-# copyright
-copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)" 
+# ################################### French language #####################################
+# [Languages.fr]
+# languageName = "Fr"
+# languageCode = "fr-fr"
+# contentDir = "content/french"
+# weight = 2
+# home = "Accueil"
+# # copyright
+# copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)" 
