@@ -9,25 +9,6 @@ fields:
   - type: text
     name: title
     label: title
-  - type: list
-    name: occupations
-    label: occupations
-  - type: image_gallery
-    name: slider_image
-    label: slider_image
-  - type: field_group
-    name: button
-    label: button
-    fields:
-    - type: boolean
-      name: enable
-      label: enable
-    - type: text
-      name: label
-      label: label
-    - type: text
-      name: link
-      label: link
 - type: field_group
   name: fullscreen_nav
   label: fullscreen_nav
@@ -38,12 +19,6 @@ fields:
   - type: file
     name: bg_image
     label: bg_image
-  - type: text
-    name: first_name
-    label: first_name
-  - type: text
-    name: last_name
-    label: last_name
 - type: field_group
   name: about
   label: about
