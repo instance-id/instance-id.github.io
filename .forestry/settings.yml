@@ -4,6 +4,29 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: content/portfolio
+  label: Portfolio
+  create: none
+  match: "*"
+- type: directory
+  path: content/blog
+  label: Post
+  create: documents
+  match: "*"
+  templates:
+  - post
+- type: directory
+  path: content/about
+  label: About
+  create: none
+  match: "*"
+  
+- type: directory
+  path: content/contact
+  label: Contact
+  create: none
+  match: "*"
 - type: heading
   label: Data
 - type: directory
