@@ -1,5 +1,4 @@
 +++
-draft = true
 [about]
 content = "Searcher is an addon for Houdini that provides edditional UI capabilities seen in many modern Content Creation Suites and IDE's such as Blender, Maya, Jetbrains IntelliJ/Rider/PyCharm, etc."
 enable = true
