@@ -79,3 +79,36 @@ link = "https://twitter.com/instance_id"
 [[params.social]]
 icon = "fa-github"
 link = "https://github.com/instance-id"
+
+# [[params.social]]
+# icon = "fa-facebook-f" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+# link = "https://www.facebook.com/somrat.mac"
+
+# [[params.social]]
+# icon = "fa-instagram" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+# link = "https://www.instagram.com/somrat_sorkar/"
+
+# [[params.social]]
+# icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+# link = "https://www.linkedin.com/in/somrat-sorkar-872581158/"
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+home = "Home"
+# copyright
+copyright = "Copyright &copy; 2020 instance.id - theme by [somrat](https://somrat.netlify.com)"
+
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+contentDir = "content/french"
+weight = 2
+home = "Accueil"
+# copyright
+copyright = "Copyright &copy; 2020 a hugo theme by [somrat](https://somrat.netlify.com)"
