@@ -1,9 +1,9 @@
 Write-Host "Deploying updates to GitHub..."
 
-$tmp = "E:/GitHub/tmp"
-$dir = "E:/GitHub/instanceid-hugo"
-$sourceDirectory = "E:/GitHub/instanceid-hugo/public/*"
+$sourceDirectory = "E:/GitHub/instance-id.github.io/public/*"
 $destinationDirectory = "E:/GitHub/instance-id.github.io"
+$tmpSource = "E:/GitHub/tmp/*"
+$tmpDestination = "E:/GitHub/tmp"
 
 # Build the project
 & hugo -v
@@ -15,9 +15,9 @@ Write-Host "Committing local repo"
 & git push origin site_files
 
 Write-Host "Copying $sourceDirectory to $destinationDirectory"
-Copy-item -Force -Recurse -Verbose -Path $destinationDirectory -Destination $tmp
+Copy-item -Force -Recurse -Verbose -Path $sourceDirectory -Destination $tmpDestination
 git checkout master
-Copy-item -Force -Recurse -Verbose -Path $tmp -Destination $destinationDirectory
+Copy-item -Force -Recurse -Verbose -Path $tmpSource -Destination $destinationDirectory
 
 & git add -A
 & git commit -m $msg
