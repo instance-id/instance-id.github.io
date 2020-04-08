@@ -23,7 +23,7 @@ Copy-item -Force -Recurse -Verbose -Path $tmpSource -Destination $destinationDir
 & git commit -m $msg
 & git push origin master
 
-git checkout -b "site_files"
-
+git checkout "site_files"
+Remove-Item $tmpSource -Recurse -Force
 New-BurntToastNotification -Silent -Text "Status Update:",
 'Site deployment complete'
