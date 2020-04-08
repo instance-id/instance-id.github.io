@@ -7,29 +7,29 @@ sections:
 - type: heading
   label: Data
 - type: directory
-  path: /data/en
+  path: data/en
   label: Data (en)
   create: all
   match: "**/*"
 - type: directory
-  path: /data/fr
+  path: data/fr
   label: Data (fr)
   create: all
   match: "**/*"
 - type: directory
-  path: /i18n
+  path: i18n
   label: i18n
   create: documents
   match: "**/*"
 - type: heading
   label: Configuration
 - type: directory
-  path: /
+  path: ''
   label: Configuration
   create: all
   match: "*.toml"
   new_doc_ext: toml
-upload_dir: /static/images
+upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
