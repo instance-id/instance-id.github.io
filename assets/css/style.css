@@ -680,7 +680,7 @@ input:checked + label span:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 82%;
+  width: 57%;
   justify-self: flex-end;
   height: 55px;
   -webkit-box-align: center;
@@ -1637,6 +1637,50 @@ textarea.form-control::-webkit-input-placeholder,
   border: 1px solid #fff;
   margin-bottom: 5px;
 }
+/* NOTE Icons */
+.header-icons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 75px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.header-icons div {
+  display: inline-block;
+}
+
+.header-icons a,
+.to-top a {
+  text-decoration: none;
+  color: #ffffff96;
+  font-size: 17px;
+}
+
+.header-icons .fa.fa-facebook-f {
+  padding: 7px 10px;
+}
+
+.header-icons .fa,
+.to-top .fa {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: rgb(46, 46, 46);
+  padding: 7px;
+}
+
+.header-icons .fa:hover {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
 
 .footer-icons {
   display: -webkit-inline-box;
@@ -1644,7 +1688,7 @@ textarea.form-control::-webkit-input-placeholder,
   display: inline-flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 210px;
+  width: 75px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
