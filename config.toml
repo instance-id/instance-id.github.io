@@ -31,6 +31,10 @@ weight = 2
 URL = "#home"
 name = "Home"
 weight = 1
+[[menu.main]]
+URL = "#projects"
+name = "Searcher"
+parent="Projects"
 [params]
 author = "instance.id"
 contact_form_action = ""
