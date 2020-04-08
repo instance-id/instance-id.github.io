@@ -499,7 +499,6 @@ input:checked + label span:last-child {
 }
 
 .fullscreen-nav-holder div {
-  
   margin: 0px 0px;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
@@ -512,7 +511,6 @@ input:checked + label span:last-child {
 }
 
 .fullscreen-nav-holder a {
-
   color: rgb(202, 140, 23);
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
