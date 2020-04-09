@@ -1,27 +1,17 @@
 baseURL = "/"
-disableLanguages = ["fr"]
 title = "instance.id"
-[Languages.en]
-contentDir = "content/english"
 copyright = "Copyright &copy; 2020 instance.id"
 home = "Home"
 languageCode = "en-us"
 languageName = "En"
 weight = 1
-[Languages.fr]
-contentDir = "content/french"
-copyright = "Copyright &copy; 2020 instance.id"
-home = "Accueil"
-languageCode = "fr-fr"
-languageName = "Fr"
-weight = 2
 [[menu.main]]
 URL = "#contact"
 name = "Contact"
 weight = 4
 [[menu.main]]
 identifier= "projects"
-URL = "#portfolio"
+URL = "portfolio"
 name = "Projects"
 weight = 3
 [[menu.main]]
@@ -29,11 +19,15 @@ URL = "#about"
 name = "About"
 weight = 2
 [[menu.main]]
+URL = "#test"
+name = "Test"
+weight = 5
+[[menu.main]]
 URL = "#home"
 name = "Home"
 weight = 1
 [[menu.main]]
-URL = "#projects"
+URL = "portfolio"
 name = "Searcher"
 parent="projects"
 weight = 1
