@@ -5,13 +5,20 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: content/projects
-  label: Projects
+  path: content/portfolio
+  label: Portfolio
   create: none
   match: "*"
 - type: directory
   path: content/blog
   label: Post
+  create: documents
+  match: "*"
+  templates:
+  - post
+- type: directory
+  path: content/projects
+  label: Project
   create: documents
   match: "*"
   templates:
