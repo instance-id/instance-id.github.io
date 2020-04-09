@@ -40,7 +40,8 @@
       <ul class="desktop-menu navbar  list-inline mb-0" id="desktop-menu">
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
-          <li class="nav-item dropdown">
+          <li class="menu-item dropdown">
+          {{/*  <li class="nav-item dropdown">  */}}
             <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">
               {{ .Name }}
@@ -54,7 +55,7 @@
           {{ else }}
           <li class="menu-item hvr-underline-from-left 1">
             {{/*  <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>  */}}
-            <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a class="menu-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
           </li>
           {{ end }}
           {{ end }}
