@@ -54,8 +54,8 @@
           </li>
           {{ else }}
           <li class="menu-item hvr-underline-from-left 1">
-            {{/*  <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>  */}}
-            <a class="menu-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            <a class="menu-item" href="{{ .URL }}">{{ .Name }}</a>
+            {{/*  <a class="menu-item" href="{{ .URL | absURL }}">{{ .Name }}</a>  */}}
           </li>
           {{ end }}
           {{ end }}
