@@ -25,6 +25,7 @@ hero:
 fullscreen_nav:
   enable : true
   bg_image : "images/backgrounds/full-nav-bg.png"
+  nav_image : "images/backgrounds/nav-bg.png"
   first_name : ""
   last_name : ""
   
