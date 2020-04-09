@@ -2,7 +2,7 @@
 	'use strict';
 
 	/*--------------------------------
-	 Start Preloader Animation
+	NOTE Start Preloader Animation
 	----------------------------------*/
 	$(window).on('load', function() {
 		$('.preloader').fadeOut(100);
@@ -13,7 +13,7 @@
 		----------------------------------*/
 
 	// -----------------------------
-	//  Count Up
+	// NOTE  Count Up
 	// -----------------------------
 	function counter() {
 		var oTop;
@@ -45,14 +45,14 @@
 		}
 	}
 	// -----------------------------
-	//  On Scroll
+	// NOTE  On Scroll
 	// -----------------------------
 	$(window).on('scroll', function() {
 		counter();
 	});
 
 	/*--------------------------------
-	 Start Smooth Scrolling
+	NOTE Start Smooth Scrolling
 	----------------------------------*/
 	function smoothScroll() {
 		// Select all links with hashes
@@ -116,7 +116,7 @@
 	----------------------------------*/
 
 	/*--------------------------------
-	 Start Header
+	NOTE Start Header
 		----------------------------------*/
 	// Initiating Background Slider
 	var backgroundSlide = $('#background-slide');
@@ -163,7 +163,7 @@
 	----------------------------------*/
 
 	/*--------------------------------
-	Start Menu
+	NOTE Start Menu
 		----------------------------------*/
 	// Highlighting Menu on Scroll Through Sections
 	$(window).on('scroll', function() {
@@ -207,7 +207,7 @@
 		----------------------------------*/
 
 	/*--------------------------------
-			Start About Me
+	NOTE	Start About Me
 	----------------------------------*/
 	// Initializing Skillbar Animation
 	$('.skill h3').waypoint({
@@ -234,7 +234,7 @@
 	----------------------------------*/
 
 	/*--------------------------------
-			 Start Portfolio
+		NOTE Start Portfolio
 	----------------------------------*/
 	// Initialize filterizr Plugin
 	var filterizd = $('.filtr-container').filterizr();
@@ -246,11 +246,11 @@
 	});
 
 	// Initialize MagnificPopup Plugin
-	$('.filtr-container').magnificPopup({
+	$('.pop-up-img').magnificPopup({
 		type: 'image',
 		delegate: 'a',
 		gallery: {
-			enabled: true
+			enabled: false
 		},
 		zoom: {
 			enabled: true,
@@ -276,7 +276,7 @@
 	----------------------------------*/
 
 	/*--------------------------------
-			 Start Testimonials
+		NOTE Start Testimonials
 	----------------------------------*/
 	// Configure and Initialize Owl Carousel
 	$('.owl-carousel').owlCarousel({
@@ -291,7 +291,7 @@
 	----------------------------------*/
 
 	/*--------------------------------
-			Start Code for Mobile Devices
+		NOTE Code for Mobile Devices
 	----------------------------------*/
 	// Code for Opera Mini
 	var vh = $(window).height();
@@ -349,7 +349,7 @@
 	----------------------------------*/
 
 	/*--------------------------------
-			Others
+		NOTE Others
 	----------------------------------*/
 	// Code for Internet Explorer
 	if (

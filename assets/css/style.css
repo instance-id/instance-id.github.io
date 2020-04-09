@@ -21,7 +21,6 @@ body {
 
 .all-container {
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   height: 100%;
 }
 
@@ -348,21 +347,18 @@ label:hover {
 
 input:checked + label span {
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   top: 50%;
   background: #6f6f6f;
 }
 
 input:checked + label span:first-child {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transform: rotate(405deg);
   transform: rotate(405deg);
 }
 
 input:checked + label span:last-child {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transform: rotate(-405deg);
   transform: rotate(-405deg);
 }
@@ -457,9 +453,6 @@ input:checked + label span:last-child {
   text-align: center;
   top: 0;
   left: 0;
-  -webkit-animation: move 4s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: 1s;
 }
 
 @keyframes move {
@@ -800,13 +793,11 @@ input:checked + label span:last-child {
 
 .menu-link.active span {
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   top: 50%;
 }
 
 .menu-link.active span:first-child {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transform: rotate(405deg);
   transform: rotate(405deg);
   top: 6px;
@@ -814,7 +805,6 @@ input:checked + label span:last-child {
 
 .menu-link.active span:last-child {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transform: rotate(-405deg);
   transform: rotate(-405deg);
   top: -2px;
@@ -1203,7 +1193,7 @@ ul.experience-chart h4 {
 
 .portfolio {
   background: rgb(48, 48, 48);
-  padding: 70px 0px;
+  padding: 60px 0px;
 }
 
 .portfolio h1 {
@@ -1726,8 +1716,8 @@ textarea.form-control::-webkit-input-placeholder,
 
 .to-top {
   display: inline;
-  float: right;
-  margin-top: 15px;
+  /* float: right; */
+  /* margin-top: 15px; */
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;

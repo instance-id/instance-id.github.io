@@ -3,7 +3,7 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 <!-- =============================
-      Start Header
+    NOTE  Start Header
     =============================== -->
     <section class="header" id="home" style="background-image: url('{{ $data.homepage.fullscreen_nav.bg_image | absURL }}');">
       <!-- <section class="container" id="home"> -->
@@ -31,7 +31,7 @@
     =============================== -->
 
 <!-- =============================
-      Start Menu
+   NOTE   Start Menu
     =============================== -->
 <section class="menu" id="menu">
   <nav class="">
@@ -104,7 +104,7 @@
     =============================== -->
 
 <!-- =============================
-       Start About Me
+    NOTE   Start About Me
     =============================== -->
 <section class="about-me" id="about">
   <div class="container">
@@ -178,7 +178,7 @@
     =============================== -->
 
 <!-- =============================
-      Start Services
+    NOTE  Start Services
     =============================== -->
 <section class="services" id="service">
   {{ if $data.homepage.service.enable }}
@@ -228,7 +228,7 @@
     =============================== -->
 
 <!-- =============================
-       Start Portfolio
+      NOTE Start Portfolio
     =============================== -->
 {{ if $data.homepage.portfolio.enable }}
 {{ with $data.homepage.portfolio }}
@@ -255,14 +255,20 @@
           {{ range .portfolio_list }}
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .category | urlize }}">
             <div class="item-holder">
-              <a href="{{ .image | absURL }}" title="{{ .name | safeHTML }}">
-                  <img src="{{ .image | absURL }}" alt="{{ .name | safeHTML }}">
-                <div class="item-caption">
-                  <h2>{{ .name | safeHTML }}</h2>
-                  <p>{{ .category | title }}</p>
-                  <div class="item-created">{{ .date }}</div>
-                </div>
-              </a>
+              <div class="full-nav-content">
+                <a href="{{ .name | absURL }}" title="{{ .name | safeHTML }}">
+                  <div class="item-caption">
+                    <h2>{{ .name | safeHTML }} <br> {{ .platform | safeHTML }} </h2>
+                    <p>{{ .category | title }}</p>
+                    <div class="item-created">{{ .date }}</div>
+                  </div>
+                </a>
+              </div>
+              <div class ="pop-up-img" >
+                <a href="{{ .image | absURL }}" title="{{ .name | safeHTML }}">
+                    <img src="{{ .image | absURL }}" alt="{{ .name | safeHTML }}">
+                </a>
+            </div>
             </div>
           </div>
           {{ end }}
@@ -278,7 +284,7 @@
     =============================== -->
 
 <!-- =============================
-       Start Testimonials
+      NOTE Start Testimonials
     =============================== -->
 <section class="testimonials" id="testimonial">
   <div class="container">
@@ -324,7 +330,7 @@
     =============================== -->
 
 <!-- =============================
-       Start Contact
+      NOTE Start Contact
     =============================== -->
 {{ if $data.homepage.contact.enable }}
 <section class="contact" id="contact">
