@@ -1,9 +1,16 @@
-{{/*  {{ "<!-- navigation -->" | safeHTML }}  */}}
+
 {{ $data := index .Site.Data }}
 <!-- =============================
   NOTE  Start Header
   =============================== -->
+  {{ $currentPage := "" }}
+  {{ $curMenu := "" }}
+  {{ if not (eq .Kind "home") }}
+  {{ $currentPage = "else" }}
+  <img src="{{ $data.homepage.fullscreen_nav.nav_image| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
+  {{ end }}
   {{ if eq .Kind "home" }}
+  {{ $currentPage = "home" }}
     <section class="header" id="home" style="background-image: url('{{ $data.homepage.fullscreen_nav.bg_image | absURL }}');">
       {{ if $data.homepage.fullscreen_nav.enable }}
         <div class="container-fluid">
@@ -23,23 +30,6 @@
         </div>
       {{ end }}
     </section>
-    {{ if not (eq .Kind "home") }}
-    <section class="header" id="home" style="background-image: url('{{ $data.homepage.fullscreen_nav.nav_image | absURL }}');">
-      <div class="container-fluid">
-        <div class="full-nav-container row">
-          <div class="full-nav-holder">
-            <div class="full-nav-content">
-              <div class="fulscreen-nav">
-                <ul class="list-inline fullscreen-nav-holder">
-                  <img src="{{ $data.homepage.fullscreen_nav.nav_image| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    {{ end }}
   {{ end }}
 <!-- =============================
        End Header
@@ -49,29 +39,30 @@
        NOTE Start Menu
      =============================== -->
     <section class="menu" id="menu">
-      <nav>
+      <nav class="navbar-dark">
         <!-- desktop-menu -->
         <div class="menu-container">
           <ul class="desktop-menu navbar list-inline mb-0" id="desktop-menu">
-            {{ range .Site.Menus.main }}
-              {{ if .HasChildren }}
-              <li class="menu-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {{ .Name }}
-                </a>
-                <div class="dropdown-menu">
-                  {{ range .Children }}
-                  {{/*  <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>  */}}
-                  <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
-                  {{ end }}
-                </div>
-              </li>
-              {{ else }}
-              <li class="menu-item hvr-underline-from-left 1">
-                <a class="menu-item" href="{{ .URL }}">{{ .Name }}</a>
-                {{/*  <a class="menu-item" href="{{ .URL | absURL }}">{{ .Name }}</a>  */}}
-              </li>
-              {{ end }}
+
+            {{ if (eq $currentPage "home") }} {{ $curMenu = .Site.Menus.main }} {{ else }} {{ $curMenu = .Site.Menus.site }} {{ end }}
+            {{/*  {{ range .Site.Menus.main }}  */}}
+            {{ range $curMenu }}
+            {{ if .HasChildren }}
+            <li class="menu-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ .Name }}
+              </a>
+              <div class="dropdown-menu" >
+                {{ range .Children }}
+                <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </li>
+            {{ else }}
+            <li class="menu-item hvr-underline-from-left 1 ">
+              <a class="menu-item" href="{{ .URL }}">{{ .Name }}</a> 
+            </li>
+            {{ end }}
             {{ end }}
           </ul>
           <!-- /desktop-menu -->
@@ -111,7 +102,9 @@
         </div>
       </nav>
     </section>
+  </header>
+
+  <section class="nav-stopper"></section>
 <!-- =============================
       End Menu
     =============================== -->
-{{/*  {{ "<!-- /navigation -->" | safeHTML }}  */}}

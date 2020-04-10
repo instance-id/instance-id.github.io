@@ -2,9 +2,13 @@ baseURL = "/"
 title = "instance.id"
 copyright = "Copyright &copy; 2020 instance.id"
 home = "Home"
+backgroundColor = "#303030"
 languageCode = "en-us"
 languageName = "En"
 weight = 1
+
+[menu]
+# SECTION Main Menu
 [[menu.main]]
 URL = "#contact"
 name = "Contact"
@@ -19,13 +23,10 @@ URL = "#about"
 name = "About"
 weight = 2
 [[menu.main]]
-URL = "#test"
-name = "Test"
-weight = 5
-[[menu.main]]
 URL = "#home"
 name = "Home"
 weight = 1
+# NOTE Main Projects Dropdown
 [[menu.main]]
 URL = "portfolio"
 name = "Searcher"
@@ -36,6 +37,39 @@ URL = "#about"
 name = "Verifier"
 parent="projects"
 weight = 2
+# !SECTION
+
+# SECTION Site Menu
+[[menu.site]]
+URL = "/#home"
+name = "Home"
+weight = 1
+[[menu.site]]
+URL = "/#about"
+name = "About"
+weight = 2
+[[menu.site]]
+identifier= "projects"
+URL = "portfolio"
+name = "Projects"
+weight = 3
+[[menu.site]]
+URL = "/#contact"
+name = "Contact"
+weight = 4
+# NOTE Site Projects Dropdown
+[[menu.site]]
+URL = "portfolio"
+name = "Searcher"
+parent="projects"
+weight = 1
+[[menu.masitein]]
+URL = "/#portfolio"
+name = "Verifier"
+parent="projects"
+weight = 2
+# !SECTION
+
 [params]
 author = "instance.id"
 contact_form_action = ""

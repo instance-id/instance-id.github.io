@@ -1,7 +1,5 @@
 {{ define "main" }}
 {{ $data := index .Site.Data }}
-{{ partial "page-title.html" . }}
-
 <!-- portfolio -->
 {{ with $data.homepage.portfolio }}
 <section class="portfolio" id="portfolio">
@@ -51,18 +49,4 @@
 </section>
 {{ end }}
 <!-- /portfolio -->
-
-{{ if .Site.Data.portfolio.clients_logo_slider.enable }}
-<section class="section bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">{{ .Site.Data.portfolio.clients_logo_slider.title | markdownify }}</h2>
-      </div>
-    </div>
-    {{ partial "client-slider.html" . }}
-  </div>
-</section>
-{{ end }}
-
 {{ end }}

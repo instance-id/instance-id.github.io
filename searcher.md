@@ -1,4 +1,4 @@
-+++
+<!-- +++
 [about]
 content = "Searcher is an addon for Houdini that provides edditional UI capabilities seen in many modern Content Creation Suites and IDE's such as Blender, Maya, Jetbrains IntelliJ/Rider/PyCharm, etc."
 enable = true
@@ -8,29 +8,6 @@ title = "Searcher"
 enable = false
 label = ""
 link = ""
-[call_to_action]
-bg_image = ""
-enable = false
-title = ""
-[call_to_action.button]
-enable = false
-label = ""
-link = ""
-[contact]
-enable = false
-title = ""
-[experience]
-enable = false
-experience_list = []
-title = ""
-[fullscreen_nav]
-bg_image = ""
-enable = false
-[funfacts]
-enable = false
-funfacts_list = []
-[hero]
-title = "Searcher"
 [portfolio]
 enable = false
 portfolio_list = []
