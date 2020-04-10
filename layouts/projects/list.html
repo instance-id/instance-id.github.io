@@ -1,8 +1,8 @@
 {{ define "main" }}
 {{ $data := index .Site.Data }}
 <!-- portfolio -->
-{{ with $data.homepage.portfolio }}
-<section class="portfolio" id="portfolio">
+{{ with $data.projects.projects }}
+<section class="portfolio" id="projects">
   <div class="container-fluid text-center">
     <div class="row portfolio-holder text-left">
       <div class="col-12 text-center">
@@ -11,7 +11,7 @@
           <ul class="portfolio-navigation">
             <li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
             {{ $categories := slice }}
-            {{ range .portfolio_list }}
+            {{ range .projects_list }}
             {{ $categories = $categories | append .category }}
             {{ end }}
             {{ range ( $categories | uniq ) }}
@@ -22,11 +22,11 @@
       </div>
       <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
         <div class="row filtr-container wow fadeInUp list" data-wow-duration="1.5s">
-          {{ range .portfolio_list }}
+          {{ range .projects_list }}
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .category | urlize }}">
             <div class="item-holder">
               <div class="full-nav-content">
-                <a href="{{ .name | absURL }}" title="{{ .name | safeHTML }}">
+                <a href="{{ lower .name }}" title="{{ .name | safeHTML }}">
                   <div class="item-caption">
                     <h2>{{ .name | safeHTML }} <br> {{ .platform | safeHTML }} </h2>
                     <p>{{ .category | title }}</p>

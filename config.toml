@@ -7,6 +7,10 @@ languageCode = "en-us"
 languageName = "En"
 weight = 1
 
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
 [menu]
 # SECTION Main Menu
 [[menu.main]]
@@ -15,7 +19,7 @@ name = "Contact"
 weight = 4
 [[menu.main]]
 identifier= "projects"
-URL = "portfolio"
+URL = "#projects"
 name = "Projects"
 weight = 3
 [[menu.main]]
@@ -28,12 +32,12 @@ name = "Home"
 weight = 1
 # NOTE Main Projects Dropdown
 [[menu.main]]
-URL = "portfolio"
+URL = "/projects/searcher"
 name = "Searcher"
 parent="projects"
 weight = 1
 [[menu.main]]
-URL = "#about"
+URL = "about"
 name = "Verifier"
 parent="projects"
 weight = 2
@@ -59,12 +63,12 @@ name = "Contact"
 weight = 4
 # NOTE Site Projects Dropdown
 [[menu.site]]
-URL = "portfolio"
+URL = "projects"
 name = "Searcher"
 parent="projects"
 weight = 1
 [[menu.masitein]]
-URL = "/#portfolio"
+URL = "/#projects"
 name = "Verifier"
 parent="projects"
 weight = 2

@@ -54,14 +54,14 @@
               </a>
               <div class="dropdown-menu" >
                 {{ range .Children }}
-                <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                  <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
                 {{ end }}
               </div>
             </li>
             {{ else }}
-            <li class="menu-item hvr-underline-from-left 1 ">
-              <a class="menu-item" href="{{ .URL }}">{{ .Name }}</a> 
-            </li>
+              <li class="menu-item hvr-underline-from-left 1 ">
+                <a class="menu-item" href="{{ .URL }}">{{ .Name }}</a> 
+              </li>
             {{ end }}
             {{ end }}
           </ul>

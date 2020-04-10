@@ -3,13 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/about/</loc>
-    <lastmod>2019-05-12T06:14:34+00:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-08T22:53:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/amazon-increase-income.1/</loc>
-    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+    <loc>/tags/houdini/</loc>
+    <lastmod>2020-04-08T22:53:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-04-08T22:53:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/project/</loc>
+    <lastmod>2020-04-08T22:53:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/searcher/</loc>
+    <lastmod>2020-04-08T22:53:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-08T22:53:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tools/</loc>
+    <lastmod>2020-04-08T22:53:14-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2019-05-12T06:14:34+00:00</lastmod>
   </url>
   
   <url>
@@ -48,11 +78,6 @@
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2019-05-12T06:14:34+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/portfolio/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
   </url>
@@ -60,14 +85,6 @@
   <url>
     <loc>/projects/</loc>
     <lastmod>2019-05-12T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
   </url>
   
 </urlset>
