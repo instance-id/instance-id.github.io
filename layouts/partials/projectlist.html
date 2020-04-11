@@ -25,7 +25,7 @@
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .fields.category | urlize }}">
             <div class="item-holder">
               <div class="full-nav-content">
-                <a href="/projects/{{ lower .name }}" title="{{ .name | safeHTML }}">
+                <a href="/projects/{{ lower (replace .name " " "-") }}" title="{{ .name | safeHTML }}">
                   <div class="item-caption">
                     <h2>{{ .name | safeHTML }} <br> {{ .fields.platform | safeHTML }} </h2>
                     <p>{{ .fields.category | title }}</p>

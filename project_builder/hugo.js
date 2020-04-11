@@ -51,7 +51,7 @@ const build = async (add, force) => {
 			if (!pages[j].fields.type) pages[j].fields.type = config.type;
 
 			const tmpPath = config.root + config.contentPath + '/' + pages[j].path + '/' + pages[j].name;
-			const pagePath = tmpPath.split(' ').join('_')
+			const pagePath = tmpPath.split(' ').join('-')
 			// const pagePath = tmpPath.toLowerCase();
 			if (add) {
 				fse.ensureDirSync(pagePath);
