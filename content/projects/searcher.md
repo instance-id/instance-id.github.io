@@ -2,7 +2,7 @@
 title: "Searcher"
 date: 2020-04-08T22:53:14-05:00
 draft: false
-image: "images/projects/searcher/searcher.png"
+image: "images/projects/searcher/searcher_small.png"
 # description
 description: "This is meta description"
 tags: ["tools", "Houdini"]

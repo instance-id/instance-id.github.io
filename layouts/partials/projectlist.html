@@ -11,7 +11,7 @@
             <li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
             {{ $categories := slice }}
             {{ range .projects_list }}
-            {{ $categories = $categories | append .category }}
+            {{ $categories = $categories | append .fields.category }}
             {{ end }}
             {{ range ( $categories | uniq ) }}
             <li data-filter="{{ . | urlize }}" class="hvr-sweep-to-right">{{ . | humanize }}</li>
@@ -22,20 +22,20 @@
       <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
         <div class="row filtr-container wow fadeInUp list" data-wow-duration="1.5s">
           {{ range .projects_list }}
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .category | urlize }}">
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .fields.category | urlize }}">
             <div class="item-holder">
               <div class="full-nav-content">
                 <a href="/projects/{{ lower .name }}" title="{{ .name | safeHTML }}">
                   <div class="item-caption">
-                    <h2>{{ .name | safeHTML }} <br> {{ .platform | safeHTML }} </h2>
-                    <p>{{ .category | title }}</p>
+                    <h2>{{ .name | safeHTML }} <br> {{ .fields.platform | safeHTML }} </h2>
+                    <p>{{ .fields.category | title }}</p>
                     <div class="item-created">{{ .date }}</div>
                   </div>
                 </a>
               </div>
               <div class ="pop-up-img" >
-                <a href="{{ .image | absURL }}" title="{{ .name | safeHTML }}">
-                    <img src="{{ .image | absURL }}" alt="{{ .name | safeHTML }}">
+                <a href="{{ .fields.image | absURL }}" title="{{ .name | safeHTML }}">
+                    <img src="{{ .fields.image | absURL }}" alt="{{ .name | safeHTML }}">
                 </a>
             </div>
             </div>
