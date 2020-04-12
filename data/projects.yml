@@ -6,59 +6,76 @@ projects:
       - name : "ARPG"
         path: projects
         fields:
+          name: "ARPG"
           platform: "Unity"
           url: ""
           image : "images/portfolio/rpg1.png"
           date : "Feb 2018"
           category : "Game Dev"
+          content: "123"
         
       # portfolio item loop
       - name : "Busy Richard"
         path: projects
         fields:
+          name: "Busy-Richard"
           platform: "Unity"
           url: ""
           image : "images/portfolio/br_traffic.png"
           date : "Feb 2018"
           category : "Tools"
+          content: "123"
+
         
       # portfolio item loop
       - name : "Searcher"
         path: projects
         fields:
+          name: "Searcher"
           platform: "Houdini"
           url: ""
           # image : "{{name}}"
-          image : "images/portfolio/searcher.png"
+          image : "images/projects/searcher/searcher.png"
+          image_small : "images/projects/searcher/searcher_small.png"
           date : "Feb 2020"
           category : "Tools"
+          content: "123"
+
         
       # portfolio item loop
       - name : "DOTS"
         path: projects
         fields:
+          name: "DOTS"
           platform: "Unity"
           url: ""
           image : "images/portfolio/dots.png"
           date : "Feb 2018"
           category : "Game Dev"
+          content: "123"
+
         
       # portfolio item loop
       - name : "Paladin"
         path: projects
         fields:
+          name: "Paladin"
           platform: "Unity"
           url: ""
           image : "images/portfolio/film1.png"
           date : "Feb 2018"
           category : "Film"
+          content: "123"
+
   
       # portfolio item loop
       - name : "VFX"
         path: projects
         fields:
+          name: "VFX"
           platform: "Unity"
           url: ""
           image : "images/portfolio/vfx1.png"
           date : "Feb 2020"
           category : "VFX"
+          content: "123"

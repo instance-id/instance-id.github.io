@@ -8,7 +8,8 @@ let config = {
 	pages: 'projects', // ------------- Pages elemenet in your data, in case it's "posts" or "articles" etc.
 	name: 'projects.yml', // ---------- Name of project config file
 	contentPath: 'content', // -------- Path to content directory (in case it's not "content")
-	hugoPath: 'hugo' // --------------- Path to hugo binary (if global, e.g. /snap/bin/hugo)
+	hugoPath: 'hugo', // -------------- Path to hugo binary (if global, e.g. /snap/bin/hugo)
+	mergi: 'mergi' // ----------------- Mergi path to resize images
 };
 
 const fs = require('fs');
@@ -25,9 +26,11 @@ const converToObject = (file) => {
 	if (filetype === 'yml' || filetype === 'yaml') return jsyml.safeLoad(fileContent);
 	if (filetype === 'toml') return jstml.parse(fileContent);
 };
-const build = async (add, force) => {
+const build = async (add, force, resize) => {
 	if (typeof add === 'undefined') add = true;
 	if (typeof force === 'undefined') force = false;
+	if (typeof resize === 'undefined') resize = false;
+	// if (resize) return console.log('Resize command issued');
 	if (!config.contentPath || config.contentPath === '/')
 		return console.log("Error: config.contentPath cannot be '' or '/')!");
 	let dataFiles;
@@ -50,9 +53,26 @@ const build = async (add, force) => {
 			if (!pages[j].fields) return console.log('Error: Pages must include fields!');
 			if (!pages[j].fields.type) pages[j].fields.type = config.type;
 
+			if (resize) {
+				const {execSync} = require('child_process');
+				const tmpOldImage =
+					`${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${pages[j].fields.name}.png`;
+				const tmpNewImage =
+					`${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${pages[j].fields.name}_small.png`;
+				const tmpImage = tmpOldImage.toLowerCase();
+				const newImage = tmpNewImage.toLowerCase();
+				const mergiString =`.\\mergi.exe -i  ${tmpImage} -r "300 178" -o ${newImage} `
+
+				try {
+					await execSync(mergiString);
+				} catch (e) {
+					return console.log('e', e);
+				}
+				console.log('Rezied image: ' + newImage);
+			}
 			const tmpPath = config.root + config.contentPath + '/' + pages[j].path + '/' + pages[j].name;
-			const pagePath = tmpPath.split(' ').join('-')
-			// const pagePath = tmpPath.toLowerCase();
+			const pagePathSplit = tmpPath.split(' ').join('-');
+			const pagePath = pagePathSplit.toLowerCase();
 			if (add) {
 				fse.ensureDirSync(pagePath);
 				fs.writeFileSync(pagePath + '/index.md', JSON.stringify(pages[j].fields) + '\n');
@@ -80,6 +100,10 @@ const main = async (argvs) => {
 
 			typeof argvs._[0] === 'undefined' ? 'default' :
 			argvs._[0];
+	const resize =
+
+			typeof argvs['resize'] === 'undefined' ? false :
+			true;
 	const force =
 
 			typeof argvs['force'] === 'undefined' ? false :
@@ -114,6 +138,12 @@ const main = async (argvs) => {
 		//clean - just remove data-generated files
 		console.log('Removing data-generated files...');
 		await build(false, force);
+	} else if (mode === 'resize') {
+		//clean - just remove data-generated files
+		console.log('Resize...');
+		await build(true, false, true);
+		// console.log('Running Hugo (build)...');
+		// await execSync('(cd ' + config.root + ' && ' + config.hugoPath + ' -v ' + ')');
 	} else {
 		//default behavior - create data-generated files, run hugo build, remove data-generated files
 		console.log('Building data-generated files...');
@@ -133,6 +163,10 @@ const argvs = require('yargs')
 	.command('generate', 'Generate folders/files from data (does not run hugo build)')
 	.command('server', 'Generate folders/files from data, run `hugo server`, then cleanup on exit')
 	.command('clean', 'Trigger cleanup manually')
+	.option('resize', {
+		alias: 'r',
+		description: 'Create image thumbnails'
+	})
 	.option('force', {
 		alias: 'f',
 		description: 'Use this flag to skip folder removal prompts (be careful with this one!)'

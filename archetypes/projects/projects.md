@@ -4,7 +4,9 @@ date: {{ .Date }}
 draft: true
 # description
 description: "This is meta description"
-image: "images/projects/{{ lower .Name }}/{ lower .Name }}_small.png"
+image: "images/projects/{{ lower .fields.Name }}/{ lower .fields.Name }}_small.png"
 tags: [""]
 categories: [""]
+content: {{ .content }}
+name: {{ .fields.Name }}
 ---
