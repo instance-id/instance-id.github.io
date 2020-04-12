@@ -7,7 +7,6 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 instance.id</copyright>
-    <lastBuildDate>Sun, 12 May 2019 12:14:34 +0600</lastBuildDate>
     
 	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,24 +26,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/busy-richard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/projects/busy-richard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/busy-richard/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/projects/busy_richard/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/busy_richard/</guid>
       <description></description>
     </item>
     
