@@ -7,42 +7,7 @@
       <div class="projects-text">
         <div class="content">
           <div class="container-fluid">
-            <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
-              <h1>{{.Params.name}}</h1>
-            </div>
             <div class="row">
-              <div class="col-md-4">
-                <div class="filtr-container wow fadeInUp" data-wow-duration="1.5s">
-                  <div class="pop-up-img">
-                    <a href="/images/projects/{{lower .Params.name }}/{{lower .Params.name }}.png"
-                      title="{{ .Params.name | safeHTML }}">
-                      <img src="/images/projects/{{ lower .Params.name }}/{{ lower .Params.name }}_small.png"
-                        alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-                    </a>
-                  </div>
-                  <div class="pop-up-img">
-                    <a href="/images/projects/{{lower .Params.name }}/{{lower .Params.name }}.png"
-                      title="{{ .Params.name | safeHTML }}">
-                      <img src="/images/projects/{{ lower .Params.name }}/{{ lower .Params.name }}_small.png"
-                        alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-                    </a>
-                  </div>
-                  <div class="pop-up-img">
-                    <a href="/images/projects/{{lower .Params.name }}/{{lower .Params.name }}.png"
-                      title="{{ .Params.name | safeHTML }}">
-                      <img src="/images/projects/{{ lower .Params.name }}/{{ lower .Params.name }}_small.png"
-                        alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-                    </a>
-                  </div>
-                  <div class="pop-up-img">
-                    <a href="/images/projects/{{lower .Params.name }}/{{lower .Params.name }}.png"
-                      title="{{ .Params.name | safeHTML }}">
-                      <img src="/images/projects/{{ lower .Params.name }}/{{ lower .Params.name }}_small.png"
-                        alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
-                    </a>
-                  </div>
-                </div>
-              </div>
               <div class="col-md-8">
                 <div class="row">
                   <h3>Platform: {{.Params.platform }} </h3>
@@ -52,11 +17,20 @@
                 </div> <br>
                 <div class="row">
                   {{.Params.Content | safeHTML }}
-                  image: {{.Params.image }} <br>
-                  image_small: {{.Params.image_small }} <br>
-                  name: {{.Params.name }} <br>
-                  title: {{.Title }} <br>
-                  parent: {{.Parent }} <br>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
+                  <h1>{{.Params.name}}</h1>
+                </div>
+                <div class="filtr-container wow fadeInUp" data-wow-duration="1.5s">
+                  <div class="pop-up-img">
+                    <a href="/images/projects/{{lower .Params.name }}/{{lower .Params.name }}.png"
+                      title="{{ .Params.name | safeHTML }}">
+                      <img src="/images/projects/{{ lower .Params.name }}/{{ lower .Params.name }}_small.png"
+                        alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
