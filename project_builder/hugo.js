@@ -53,22 +53,35 @@ const build = async (add, force, resize) => {
 			if (!pages[j].fields) return console.log('Error: Pages must include fields!');
 			if (!pages[j].fields.type) pages[j].fields.type = config.type;
 
+			// Automatic image resize to create thumbnails
 			if (resize) {
-				const {execSync} = require('child_process');
-				const tmpOldImage =
-					`${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${pages[j].fields.name}.png`;
-				const tmpNewImage =
-					`${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${pages[j].fields.name}_small.png`;
-				const tmpImage = tmpOldImage.toLowerCase();
-				const newImage = tmpNewImage.toLowerCase();
-				const mergiString =`.\\mergi.exe -i  ${tmpImage} -r "300 178" -o ${newImage} `
-
+				let imageFiles;
 				try {
-					await execSync(mergiString);
+					imageFiles = fs.readdirSync(
+						`${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/`
+					);
 				} catch (e) {
 					return console.log('e', e);
 				}
-				console.log('Rezied image: ' + newImage);
+				const { execSync } = require('child_process');
+				for (let i in imageFiles) {
+					// console.log('Image name: ' + imageFiles[i]);
+					const imgBase = imageFiles[i].split('.');
+					if (imgBase[0].includes("_small")) continue;
+					console.log('Image base: ' + imgBase[0]);
+					const tmpOldImage = `${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${imgBase[0]}.png`;
+					const tmpNewImage = `${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${imgBase[0]}_small.png`;
+					const tmpImage = tmpOldImage.toLowerCase();
+					const newImage = tmpNewImage.toLowerCase();
+					const mergiString = `.\\mergi.exe -i  ${tmpImage} -r "300 178" -o ${newImage} `;
+
+					try {
+						await execSync(mergiString);
+					} catch (e) {
+						return console.log('e', e);
+					}
+					console.log('Rezied image: ' + newImage);
+				}
 			}
 			const tmpPath = config.root + config.contentPath + '/' + pages[j].path + '/' + pages[j].name;
 			const pagePathSplit = tmpPath.split(' ').join('-');

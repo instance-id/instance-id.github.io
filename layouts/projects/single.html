@@ -23,15 +23,30 @@
                 <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
                   <h1>{{.Params.name}}</h1>
                 </div>
+                {{$name := .Params.name}}
+                {{ $folder :=  printf "static/images/projects/%s/" (.Params.name | lower) }}
+
+                {{ if fileExists $folder }}
+                {{ $files := readDir $folder }}
+                {{ range $files }}
+                {{ $image_split := split .Name "_small"}}
+                {{ $image_base := index $image_split 0 }}
+                {{ $image_base }}
+                {{/*  static/images/projects/{{lower $name }}/{{ $image_base }} */}}
+                {{ $file_check :=  printf "static/images/projects/%s/%s.png" ($image_base | lower) }}
+                {{ if not (eq .Name "%s_small.png" ($image_base | lower)) }}
                 <div class="filtr-container wow fadeInUp" data-wow-duration="1.5s">
                   <div class="pop-up-img">
-                    <a href="/images/projects/{{lower .Params.name }}/{{lower .Params.name }}.png"
-                      title="{{ .Params.name | safeHTML }}">
-                      <img src="/images/projects/{{ lower .Params.name }}/{{ lower .Params.name }}_small.png"
-                        alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+                    <a href="/images/projects/{{lower $name }}/{{ $image_base }}.png"
+                      title="{{ $image_base | safeHTML }}">
+                      <img src="/images/projects/{{lower $name }}/{{ $image_base }}_small.png" alt="project-thumb"
+                        class="img-fluid rounded float-left mr-5 mb-4">
                     </a>
                   </div>
                 </div>
+                {{ end }}
+                {{ end }}
+                {{ end }}
               </div>
             </div>
           </div>
