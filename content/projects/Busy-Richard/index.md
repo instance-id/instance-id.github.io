@@ -1,1 +1,1 @@
-{"name":"Busy-Richard","platform":"Unity","features":false,"url":"","image":"images/projects/busy-richard/busy-richard.png","date":"Feb 2018","category":"Tools","content":"123","type":"projects"}
+{"name":"Busy-Richard","platform":"Unity","date":"Feb 2018","url":"","image":"images/projects/busy-richard/busy-richard.png","moreimages":true,"category":"Tools","features":false,"featurelist":["Lootboxes","Open-World","Lootboxes","Amazing PVP","No Grinding","Lootboxes","Tons of Grinding","Lootboxes"],"content":"123","type":"projects"}

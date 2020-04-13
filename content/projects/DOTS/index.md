@@ -1,1 +1,1 @@
-{"name":"DOTS","platform":"Unity","features":false,"url":"","image":"images/portfolio/dots.png","date":"Feb 2018","category":"Game Dev","content":"123","type":"projects"}
+{"name":"DOTS","platform":"Unity","date":"Feb 2018","url":"","image":"images/portfolio/dots.png","moreimages":true,"category":"Game Dev","features":false,"featurelist":["Lootboxes","Open-World","Lootboxes","Amazing PVP","No Grinding","Lootboxes","Tons of Grinding","Lootboxes"],"content":"123","type":"projects"}

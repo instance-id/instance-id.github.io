@@ -1,1 +1,1 @@
-{"name":"Paladin","platform":"Unity","features":false,"url":"","image":"images/portfolio/film1.png","date":"Feb 2018","category":"Film","content":"123","type":"projects"}
+{"name":"Paladin","platform":"Unity","date":"Feb 2018","url":"","image":"images/portfolio/film1.png","moreimages":true,"category":"Film","features":false,"featurelist":["Lootboxes","Open-World","Lootboxes","Amazing PVP","No Grinding","Lootboxes","Tons of Grinding","Lootboxes"],"content":"123","type":"projects"}

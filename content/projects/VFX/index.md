@@ -1,1 +1,1 @@
-{"name":"VFX","platform":"Unity","features":false,"url":"","image":"images/portfolio/vfx1.png","date":"Feb 2020","category":"VFX","content":"123","type":"projects"}
+{"name":"VFX","platform":"Unity","date":"Feb 2020","url":"","image":"images/portfolio/vfx1.png","moreimages":true,"category":"VFX","features":false,"featurelist":["Lootboxes","Open-World","Lootboxes","Amazing PVP","No Grinding","Lootboxes","Tons of Grinding","Lootboxes"],"content":"123","type":"projects"}
