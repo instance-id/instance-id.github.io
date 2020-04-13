@@ -190,7 +190,9 @@
 		NOTE Start Portfolio
 	----------------------------------*/
 	// Initialize filterizr Plugin
-	var filterizd = $('.filtr-container').filterizr();
+	$('.filtr-container').imagesLoaded( function() {
+		var filterizd = $('.filtr-container').filterizr();
+	});
 
 	// Styling of Filter Controls
 	$('.project-navigation li').on('click', function() {
