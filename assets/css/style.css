@@ -11,6 +11,7 @@ html {
 }
 
 body {
+	scrollbar-width: 10px;
 	font-family: 'Rubik', sans-serif;
 	height: 100%;
 	color: rgb(185, 185, 185);
@@ -21,7 +22,17 @@ body {
 	overflow: visible;
 }
 
+.img-custom {
+	width: 95%;
+}
+
+.detail-content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 .container {
+	/* padding: 1rem; */
 	max-width: 1300px;
 }
 
@@ -515,6 +526,26 @@ input:checked + label span:last-child {
 }
 
 .menu-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 55px;
+	background: #333;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-weight: bold;
+	-webkit-transition: background 1s;
+	transition: background 1s;
+}
+
+.menu-container-details {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

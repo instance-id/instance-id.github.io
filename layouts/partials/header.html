@@ -41,70 +41,75 @@
 <section class="menu" id="menu">
   <nav class="navbar-dark">
     <!-- desktop-menu -->
+    {{ if (eq $currentPage "home") }}
     <div class="menu-container">
-      <ul class="desktop-menu navbar list-inline mb-0" id="desktop-menu">
+      {{ else }}
+      <div class="menu-container-details menu-normal">
+        {{end}}
+        <ul class="desktop-menu navbar list-inline mb-0" id="desktop-menu">
 
-        {{ if (eq $currentPage "home") }} {{ $curMenu = .Site.Menus.main }} {{ else }} {{ $curMenu = .Site.Menus.site }}
-        {{ end }}
-        {{ range $curMenu }}
-        {{ if not .HasChildren }}
-        <li class="menu-item hvr-underline-from-left 1">
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-        {{ else }}
-        <li class="menu-item hvr-underline-from-left 1">
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-        <div class="btn-group">
-          <li class="menu-item">
-            <a class=" dropdown-toggle dropdown-toggle-split" href="#" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-            </a>
-            <div class="dropdown-menu">
-              {{ range .Children }}
-              <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
-              {{ end }}
-            </div>
+          {{ if (eq $currentPage "home") }} {{ $curMenu = .Site.Menus.main }} {{ else }}
+          {{ $curMenu = .Site.Menus.site }}
+          {{ end }}
+          {{ range $curMenu }}
+          {{ if not .HasChildren }}
+          <li class="menu-item hvr-underline-from-left 1">
+            <a href="{{ .URL }}">{{ .Name }}</a>
           </li>
-        </div>
-        {{ end }}
-        {{ end }}
-      </ul>
-      <!-- /desktop-menu -->
-
-      <!-- mobile-menu -->
-      <div class="mobile-menu">
-        <a class="menu-link">
-          <div class="mobile-menu-nav">
-            <span></span>
-            <span></span>
-            <span></span>
+          {{ else }}
+          <li class="menu-item hvr-underline-from-left 1">
+            <a href="{{ .URL }}">{{ .Name }}</a>
+          </li>
+          <div class="btn-group">
+            <li class="menu-item">
+              <a class=" dropdown-toggle dropdown-toggle-split" href="#" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+              </a>
+              <div class="dropdown-menu">
+                {{ range .Children }}
+                <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+                {{ end }}
+              </div>
+            </li>
           </div>
-        </a>
-        <div class="mobile-menu-logo"><a href="{{.Site.BaseURL | relLangURL }}"></a>
+          {{ end }}
+          {{ end }}
+        </ul>
+        <!-- /desktop-menu -->
+
+        <!-- mobile-menu -->
+        <div class="mobile-menu">
+          <a class="menu-link">
+            <div class="mobile-menu-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+          <div class="mobile-menu-logo"><a href="{{.Site.BaseURL | relLangURL }}"></a>
+          </div>
+          <div class="menu-slider">
+            <nav>
+              <ul class="mobile-menu-list">
+                {{ range .Site.Menus.main }}
+                <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+              <!-- Language List -->
+              <ul class="mobile-menu-icons list-inline">
+                {{ range .Site.Params.social }}
+                <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="menu-slider">
-          <nav>
-            <ul class="mobile-menu-list">
-              {{ range .Site.Menus.main }}
-              <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="{{ .URL }}">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
-            <!-- Language List -->
-            <ul class="mobile-menu-icons list-inline">
-              {{ range .Site.Params.social }}
-              <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
-              {{ end }}
-            </ul>
-          </nav>
-        </div>
+        <ul class="header-icons list-inline">
+          {{ range .Site.Params.social }}
+          <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
       </div>
-      <ul class="header-icons list-inline">
-        {{ range .Site.Params.social }}
-        <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
-        {{ end }}
-      </ul>
-    </div>
   </nav>
 </section>
 </header>
