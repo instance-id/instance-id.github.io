@@ -126,12 +126,12 @@
 {{ end }}
 
 <!--  NOTE Start Testimonials ----------------------->
-
+{{ if $data.homepage.testimonial.enable }}
 <section class="testimonials" id="testimonial">
   <div class="container">
     <div class="row">
       <div class="testimonials-container col-lg-8 offset-lg-2">
-        {{ if $data.homepage.testimonial.enable }}
+
         {{ with $data.homepage.testimonial }}
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .title }}</h1>
         <div class="owl-carousel owl-theme wow fadeInUp" data-wow-duration="1.5s">
@@ -161,11 +161,12 @@
           {{ end }}
         </div>
         {{ end }}
-        {{ end }}
+
       </div>
     </div>
   </div>
 </section>
+{{ end }}
 <!-- =============================
        End Testimonials
     =============================== -->

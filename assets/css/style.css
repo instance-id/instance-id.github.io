@@ -13,11 +13,16 @@ html {
 body {
 	font-family: 'Rubik', sans-serif;
 	height: 100%;
+	color: rgb(185, 185, 185);
 	background-color: #303030;
 }
 
 .no-js body {
 	overflow: visible;
+}
+
+.container {
+	max-width: 1300px;
 }
 
 .all-container {
@@ -593,7 +598,7 @@ input:checked + label span:last-child {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 57%;
+	width: 1250px;
 	justify-self: flex-end;
 	height: 55px;
 	-webkit-box-align: center;
@@ -1271,6 +1276,13 @@ ul.experience-chart h4 {
 }
 
 .proj-page-text h3 {
+	position: relative;
+	color: #c2c2c2;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.proj-page-text h4 {
 	position: relative;
 	color: #c2c2c2;
 	font-weight: 700;

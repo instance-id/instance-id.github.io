@@ -193,8 +193,8 @@
 	var filterizd = $('.filtr-container').filterizr();
 
 	// Styling of Filter Controls
-	$('.portfolio-navigation li').on('click', function() {
-		$('.portfolio-navigation li').removeClass('active');
+	$('.project-navigation li').on('click', function() {
+		$('.project-navigation li').removeClass('active');
 		$(this).addClass('active');
 	});
 
