@@ -1,27 +1,5 @@
-########################## hero area ##########################
-hero:
-  title : ""
-
-  # animated text loop
-  occupations:
-    - ""
-    - ""
-    - ""
-
-  # slider background image loop
-  slider_image:
-    - "images/slider/slider-1.jpg"
-    - "images/slider/slider-2.jpg"
-    - "images/slider/slider-3.jpg"
-
-  # button
-  button:
-    enable : false
-    label : "HIRE ME"
-    link : "#contact"
-
-
-####################### Full screen navigation #####################
+# -------------------------------------------------- Header 
+# NOTE Header ---------------------------------------------
 fullscreen_nav:
   enable : true
   bg_image : "images/backgrounds/full-nav-bg.png"
@@ -30,7 +8,8 @@ fullscreen_nav:
   last_name : ""
   
 
-########################### About ##################################
+# --------------------------------------------------- About 
+# NOTE About ----------------------------------------------
 about:
   enable : true
   image : "images/backgrounds/square-1024x585.png"
@@ -42,7 +21,8 @@ about:
     label : "DOWNLOAD MY CV"
     link : "#" # you can put your cv in static folder and give the path here.
 
-###########################3 Experience ##############################
+# ---------------------------------------------- Experience 
+# NOTE Experience -----------------------------------------
 experience:
   enable : true
   title : "Recent Projects"
@@ -51,7 +31,7 @@ experience:
     - name : "Searcher"
       company : "Houdini"
       duration : "2020"
-      content : ""
+      content : "Searcher is an addon for Houdini that provides edditional UI capabilities seen in many modern Content Creation Suites and IDE's such as Blender, Maya, Jetbrains IntelliJ/Rider/PyCharm, etc."
       
     # experience item loop
     - name : "Verifier"
@@ -66,7 +46,8 @@ experience:
       content : "Paladin Cinematic"
 
 
-############################### Skill #################################
+# -------------------------------------------------- Skills 
+# NOTE Skills ---------------------------------------------
 skill:
   enable : true
   title : "Proficiencies"
@@ -88,9 +69,10 @@ skill:
       parcentage : "70%"
 
 
-################################### Service ##############################3
+# ------------------------------------------------ Services 
+# NOTE Services -------------------------------------------
 service:
-  enable : false
+  enable : true
   title : "SERVICES"
   service_list:
     # service item loop
@@ -117,8 +99,8 @@ service:
     - name : "Mobile App Development"
       image : "images/icons/mobile-app.png"
 
-
-############################## call to action #########################
+# ------------------------------------------ Call to Action 
+# NOTE Call to Action -------------------------------------
 call_to_action:
   enable : false
   bg_image : "images/backgrounds/need-service.jpg"
@@ -129,7 +111,8 @@ call_to_action:
     link : "#contact"
 
 
-################################# Testimonial #########################33
+# -------------------------------------------- Testimonials 
+# NOTE Testimonials ---------------------------------------
 testimonial:
   enable : false
   title : "TESTIMONIALS"
@@ -156,7 +139,8 @@ testimonial:
                 omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto."
 
 
-######################### funfacts #############################3
+# --------------------------------------------------- Facts 
+# NOTE Facts ----------------------------------------------
 funfacts:
   enable : false
   funfacts_list:
@@ -181,7 +165,8 @@ funfacts:
       count : "150"
 
 
-############################## contact ###########################
+# ------------------------------------------------- Contact 
+# NOTE Contact --------------------------------------------
 contact:
   enable : true
-  title : "SAY HELLO!"
+  title : "Contact"

@@ -1,10 +1,10 @@
 {{ define "main" }}
 {{/*  {{ $data := index .Site.Data }} */}}
 
-<section class="projects" id="projects">
+<section class="proj-page" id="proj-page">
   <div class="container">
-    <div class="row projects-holder">
-      <div class="projects-text">
+    <div class="row proj-page-holder">
+      <div class="proj-page-text">
         <div class="content">
           <div class="container-fluid">
             <div class="row">
@@ -31,9 +31,6 @@
                 {{ range $files }}
                 {{ $image_split := split .Name "_small"}}
                 {{ $image_base := index $image_split 0 }}
-                {{ $image_base }}
-                {{/*  static/images/projects/{{lower $name }}/{{ $image_base }} */}}
-                {{ $file_check :=  printf "static/images/projects/%s/%s.png" ($image_base | lower) }}
                 {{ if not (eq .Name "%s_small.png" ($image_base | lower)) }}
                 <div class="filtr-container wow fadeInUp" data-wow-duration="1.5s">
                   <div class="pop-up-img">

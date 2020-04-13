@@ -1,13 +1,16 @@
 {{ $data := index .Site.Data }}
+
 <!-- projects -->
+
 {{ with $data.projects.projects }}
-<section class="portfolio" id="projects">
+<section class="shuffle-stopper"></section>
+<section class="project" id="projects">
   <div class="container-fluid text-center">
-    <div class="row portfolio-holder text-left">
+    <div class="row project-holder text-left">
       <div class="col-12 text-center">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .title }}</h1>
         <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
-          <ul class="portfolio-navigation">
+          <ul class="project-navigation">
             <li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
             {{ $categories := slice }}
             {{ range .projects_list }}
@@ -33,11 +36,13 @@
                   </div>
                 </a>
               </div>
-              <div class ="pop-up-img" >
-                <a href="images/projects/{{lower .fields.name }}/{{lower .fields.name }}.png" title="{{ .name | safeHTML }}">
-                    <img src="images/projects/{{lower .fields.name }}/{{lower .fields.name }}.png" alt="{{ .name | safeHTML }}">
+              <div class="pop-up-img">
+                <a href="images/projects/{{lower .fields.name }}/{{lower .fields.name }}.png"
+                  title="{{ .name | safeHTML }}">
+                    <img src="images/projects/{{lower .fields.name }}/{{lower .fields.name }}.png"
+                    alt="{{ .name | safeHTML }}">
                 </a>
-            </div>
+              </div>
             </div>
           </div>
           {{ end }}
@@ -46,6 +51,6 @@
     </div>
   </div>
 </section>
-<section class="shuffle-stopper"></section>
+
 {{ end }}
 <!-- /projects -->

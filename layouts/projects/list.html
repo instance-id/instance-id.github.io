@@ -1,14 +1,14 @@
 {{ define "main" }}
 {{ $data := index .Site.Data }}
-<!-- portfolio -->
+<!-- project -->
 {{ with $data.projects.projects }}
-<section class="portfolio" id="projects">
+<section class="project" id="projects">
   <div class="container-fluid text-center">
-    <div class="row portfolio-holder text-left">
+    <div class="row project-holder text-left">
       <div class="col-12 text-center">
         <h1 class="wow fadeInUp" data-wow-duration="1.5s">{{ .title }}</h1>
         <div class="filtering wow fadeInUp" data-wow-duration="1.5s">
-          <ul class="portfolio-navigation">
+          <ul class="project-navigation">
             <li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
             {{ $categories := slice }}
             {{ range .projects_list }}
@@ -49,5 +49,5 @@
 </section>
 <section class="shuffle-stopper"></section>
 {{ end }}
-<!-- /portfolio -->
+<!-- /project -->
 {{ end }}

@@ -1,9 +1,9 @@
 {{ define "main" }}
 
 {{ $data := index .Site.Data }}
-<!-- =============================
-    NOTE   Start About Me
-    =============================== -->
+
+<!-- NOTE Start About Me ---------------------------->
+
 <section class="about-me" id="about">
   <div class="container">
     {{ if $data.homepage.about.enable }}
@@ -71,13 +71,9 @@
     </div>
   </div>
 </section>
-<!-- =============================
-      End About Me
-    =============================== -->
 
-<!-- =============================
-    NOTE  Start Services
-    =============================== -->
+<!-- NOTE  Start Services --------------------------->
+
 <section class="services" id="service">
   {{ if $data.homepage.service.enable }}
   {{ with $data.homepage.service }}
@@ -121,23 +117,16 @@
   {{ end }}
   {{ end }}
 </section>
-<!-- =============================
-       End Services
-    =============================== -->
 
-<!-- =============================
-      NOTE Start Portfolio
-    =============================== -->
+
+<!-- NOTE Start Portfolio --------------------------->
+
 {{ if $data.projects.projects.enable }}
 {{ partial "projectlist.html" . }}
 {{ end }}
-<!-- =============================
-       End Portfolio
-    =============================== -->
 
-<!-- =============================
-      NOTE Start Testimonials
-    =============================== -->
+<!--  NOTE Start Testimonials ----------------------->
+
 <section class="testimonials" id="testimonial">
   <div class="container">
     <div class="row">
