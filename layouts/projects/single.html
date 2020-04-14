@@ -58,6 +58,9 @@
 									<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
 										<p>
 											{{.Params.Content | markdownify | emojify}}
+											{{ if .Params.htmlenable }} 
+											{{.Params.htmlcontent | safeHTML }}
+											{{end}}
 										</p>
 									</div>
 								</div>

@@ -15,6 +15,7 @@ projects:
           category : "Game Dev"
           features: true
           moreimages: true 
+          htmlenable: true
           featurelist: [
             "Lootboxes", 
             "Open-World", 
@@ -41,7 +42,11 @@ projects:
           
           
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anyways, thanks for taking a look! I have a twitter, but I only really just started using it, so I don't have much on there. I have remade my site since I took my old one down, so eventually, lol.
-         "
+          "
+         
+          htmlcontent: "
+          {{< youtube 3CMdR88SuV0 >}}
+          "
         
       # portfolio item loop
       - name : "Busy Richard"
@@ -74,13 +79,23 @@ projects:
           Coming (TBD) to PC as well as mobile, you will be able to take your mayhem on the road.
 
 
-          ![detailgif](/images/projects/busy-richard/br1.gif)
-          
-          
-          ![detailgif](/video/projects/busy-richard/br_traffic.mp4)
-
-          
+          ![detailgif](/images/projects/busy-richard/br1.gif)  
+                  
           "
+          htmlenable: true
+          htmlcontent: |
+
+            {{< youtube id="3CMdR88SuV0" >}}
+
+            <div class="video-container">
+              <embed src="http://www.youtube.com/watch?feature=player_embedded&v=3CMdR88SuV0"></embed>
+            </div>
+            <div class="video-wrap">
+              <div class="video-container">
+                <iframe width="560" height="315" src="http://www.youtube.com/watch?feature=player_embedded&v=3CMdR88SuV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+            
 
         
       # portfolio item loop
@@ -107,6 +122,10 @@ projects:
             "Lootboxes"
             ]
           content: "123"
+          htmlenable: true
+          htmlcontent: "
+          
+          "
 
         
       # portfolio item loop
@@ -132,6 +151,10 @@ projects:
             "Lootboxes"
             ]
           content: "123"
+          htmlenable: true
+          htmlcontent: "
+          
+          "
 
         
       # portfolio item loop
@@ -157,7 +180,10 @@ projects:
             "Lootboxes"
             ]
           content: "123"
-
+          htmlenable: true
+          htmlcontent: "
+          
+          "
   
       # portfolio item loop
       - name : "VFX"
@@ -182,3 +208,7 @@ projects:
             "Lootboxes"
             ]
           content: "123"
+          htmlenable: true
+          htmlcontent: "
+          
+          "
