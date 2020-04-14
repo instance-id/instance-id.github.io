@@ -12,6 +12,7 @@ projects:
           url: ""
           image : "images/projects/arpg/arpg1.png"
           image_small : "images/projects/arpg/arpg_small.png"
+          videos: ["https://i.imgur.com/Z3BPD4g.mp4"]
           category : "Game Dev"
           features: true
           moreimages: true 
@@ -57,6 +58,7 @@ projects:
           date : "Feb 2018"
           url: ""
           image : "images/projects/busy-richard/br.gif"
+          videos: ["https://www.youtube.com/watch?v=3CMdR88SuV0","https://i.imgur.com/Z3BPD4g.mp4"]
           moreimages: true 
           category : "Tools"
           features: true
@@ -80,19 +82,22 @@ projects:
 
 
           ![detailgif](/images/projects/busy-richard/br1.gif)  
-                  
+
+          {{< youtube 3CMdR88SuV0>}}
+
           "
-          htmlenable: true
+          htmlenable: false
           htmlcontent: |
-
-            {{< youtube id="3CMdR88SuV0" >}}
-
             <div class="video-container">
-              <embed src="http://www.youtube.com/watch?feature=player_embedded&v=3CMdR88SuV0"></embed>
+            <img src="https://i.imgur.com/wYAbqsU.gifv"/>
+            </div>
+            <blockquote class="imgur-embed-pub" lang="en" data-id="a/Ry1YLW3"><a href="//imgur.com/a/Ry1YLW3"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+            <div class="video-container">
+              <embed src="https://www.youtube.com/watch?v=3CMdR88SuV0"></embed>
             </div>
             <div class="video-wrap">
               <div class="video-container">
-                <iframe width="560" height="315" src="http://www.youtube.com/watch?feature=player_embedded&v=3CMdR88SuV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=3CMdR88SuV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               </div>
             </div>
             
@@ -108,6 +113,7 @@ projects:
           url: ""
           image : "images/projects/searcher/searcher.png"
           image_small : "images/projects/searcher/searcher_small.png"
+          videos: ["https://i.imgur.com/Z3BPD4g.mp4"]
           features: false
           category : "Tools"
           moreimages: true 
@@ -137,6 +143,7 @@ projects:
           date : "Feb 2018"
           url: ""
           image : "images/projects/dots/dots0.png"
+          videos: ["https://i.imgur.com/Z3BPD4g.mp4"]
           moreimages: true 
           category : "Game Dev"
           features: false
@@ -166,6 +173,7 @@ projects:
           date : "Feb 2018"
           url: ""
           image : "images/portfolio/film1.png"
+          videos: ["https://i.imgur.com/Z3BPD4g.mp4"]
           moreimages: true 
           category : "Film"
           features: false
@@ -194,6 +202,7 @@ projects:
           date : "Feb 2020"
           url: ""
           image : "images/portfolio/vfx1.png"
+          videos: ["https://i.imgur.com/Z3BPD4g.mp4"]
           moreimages: true 
           category : "VFX"
           features: false

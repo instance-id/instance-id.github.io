@@ -59,8 +59,17 @@
 										<p>
 											{{.Params.Content | markdownify | emojify}}
 											{{ if .Params.htmlenable }} 
-											{{.Params.htmlcontent | safeHTML }}
+											{{.Params.htmlcontent | safeHTML  }}
 											{{end}}
+											{{ if .Params.videos }} 
+											{{ $videos := .Params.videos }}
+											{{ range $videos }}
+											{{ . }}
+											<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+												<iframe src="{{ . }}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+											</div>
+											{{ end }}
+											{{ end }}
 										</p>
 									</div>
 								</div>

@@ -88,10 +88,8 @@ weight = 2
 [params]
 author = "instance.id"
 contact_form_action = ""
-description = "This is meta description"
+description = "Indie Game Developer"
 google_analitycs_id = "UA-128870142-1"
-logo_dark = "images/logo-dark.png"
-logo_light = "images/logo.png"
 
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
