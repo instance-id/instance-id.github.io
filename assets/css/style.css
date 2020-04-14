@@ -1089,18 +1089,7 @@ ul.experience-chart h4 {
    SECTION Start project
 ----------------------------------*/
 
-.video-wrap {
-	width: 100%; // Span full available width until...
-	max-width: 600px; // ...this width is reached.
-	margin: 20px auto; // optional, just centering the div
-}
-
-embed,
-iframe,
-object {
-	max-width: 100%;
-}
-
+/* Set your aspect ratio */
 .video-container {
 	position: relative;
 	overflow: hidden;
@@ -1108,18 +1097,20 @@ object {
 	padding-bottom: 56.25%;
 }
 
-.video-container {
-	position: relative;
-	height: 100%;
-	overflow: hidden;
-}
-
+.video-container iframe,
 .video-container embed {
-	position: relative;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	max-width: 100%;
+}
+
+/* And set the max-width of the parent element */
+.video-wrap {
+	width: 100%;
+	max-width: 600px;
 }
 
 /*--------------------------------
