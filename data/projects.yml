@@ -51,21 +51,36 @@ projects:
           platform: "Unity"
           date : "Feb 2018"
           url: ""
-          image : "images/projects/busy-richard/busy-richard.png"
+          image : "images/projects/busy-richard/br.gif"
           moreimages: true 
           category : "Tools"
-          features: false
+          features: true
           featurelist: [
-            "Lootboxes", 
-            "Open-World", 
-            "Lootboxes",
-            "Amazing PVP",
+            "Openish-world", 
+            "Ragdolls",
+            "Hilarious", 
+            "Quests",
             "No Grinding",
             "Lootboxes",
-            "Tons of Grinding",
-            "Lootboxes"
             ]
-          content: "123"
+          content: "
+
+          # Busy Richard  
+
+
+          Busy Richard is a game in which you get to run around and have a great time pushing people into traffic and throwing things at them.  
+
+
+          Coming (TBD) to PC as well as mobile, you will be able to take your mayhem on the road.
+
+
+          ![detailgif](/images/projects/busy-richard/br1.gif)
+          
+          
+          ![detailgif](/video/projects/busy-richard/br_traffic.mp4)
+
+          
+          "
 
         
       # portfolio item loop
@@ -102,7 +117,7 @@ projects:
           platform: "Unity"
           date : "Feb 2018"
           url: ""
-          image : "images/portfolio/dots.png"
+          image : "images/projects/dots/dots0.png"
           moreimages: true 
           category : "Game Dev"
           features: false

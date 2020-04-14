@@ -1132,6 +1132,15 @@ ul.experience-chart h4 {
 	display: none;
 }
 
+img[alt="detailgif"] {
+	max-width: 99%;
+	display: block;
+}
+
+.project-holder {
+	width: 100%;
+}
+
 .project-navigation {
 	display: -webkit-box;
 	display: -ms-flexbox;

@@ -57,7 +57,7 @@
 									{{end}}
 									<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
 										<p>
-											{{.Params.Content | markdownify }}
+											{{.Params.Content | markdownify | emojify}}
 										</p>
 									</div>
 								</div>
@@ -73,12 +73,13 @@
 										{{ $file := .Name }}
 										{{ $image_split := split $file "."}}
 										{{ $image_base := index $image_split 0 }}
-										{{ if not (or (in $image_base "0") (in $image_base "_small")) }}
+										{{ $image_ext := index $image_split 1 }}
+										{{ if not (or (in $image_base "0") (in $image_base "_small")  (in $image_ext "gif") ) }}
 
 										<div class="filtr-container wow fadeInUp detail-content" data-wow-duration="1.5s">
 											<div class="pop-up-img">
-												<a href="/images/projects/{{lower $name }}/{{ $image_base }}.png" title="{{ $image_base | safeHTML }}">
-													<img src="/images/projects/{{lower $name }}/{{ $image_base }}_small.png" alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
+												<a href="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}" title="{{ $image_base | safeHTML }}">
+													<img src="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}" alt="project-thumb" class="img-fluid rounded float-left mr-5 mb-4">
 												</a>
 											</div>
 										</div>

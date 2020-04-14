@@ -62,10 +62,7 @@
 			.not('[href="#0"]')
 			.on('click', function(event) {
 				// On-page links
-				if (
-					location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-					location.hostname == this.hostname
-				) {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 					// Figure out element to scroll to
 					var target = $(this.hash);
 					target =
@@ -190,9 +187,9 @@
 		NOTE Start Portfolio
 	----------------------------------*/
 	// Initialize filterizr Plugin
-	$('.filtr-container').imagesLoaded( function() {
-		var filterizd = $('.filtr-container').filterizr();
-	});
+	// $('.filtr-container').imagesLoaded(function() {
+	var filterizd = $('.filtr-container').filterizr();
+	// });
 
 	// Styling of Filter Controls
 	$('.project-navigation li').on('click', function() {
@@ -223,6 +220,8 @@
 		},
 		offset: 'bottom-in-view'
 	});
+
+	$('#container').imagesLoaded(function() {});
 
 	// load more button
 
@@ -307,11 +306,7 @@
 		NOTE Others
 	----------------------------------*/
 	// Code for Internet Explorer
-	if (
-		navigator.appName == 'Microsoft Internet Explorer' ||
-		!!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) ||
-		(typeof $.browser !== 'undefined' && $.browser.msie == 1)
-	) {
+	if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)) || (typeof $.browser !== 'undefined' && $.browser.msie == 1)) {
 		$('.header, .fullscreen-nav-container, .like-me, .contact').css('background-attachment', 'scroll');
 		$('.fullscreen-nav-holder').css('width', '100vw');
 	}

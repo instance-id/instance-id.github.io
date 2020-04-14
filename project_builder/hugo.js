@@ -2,20 +2,19 @@
 'use strict';
 
 let config = {
-	root: '../', // ------------------- Root hugo folder, can be empty
-	dataFolder: 'data', // ------------ Data folder path (will fetch ALL files from here)
-	type: 'projects', // -------------- Type name [layout] (save it under "layouts/NAME/single.html" or themes/THEME/layouts/NAME/single.html). Can be overridden on individual pages by defining "type" under "fields"
-	pages: 'projects', // ------------- Pages elemenet in your data, in case it's "posts" or "articles" etc.
-	name: 'projects.yml', // ---------- Name of project config file
-	contentPath: 'content', // -------- Path to content directory (in case it's not "content")
-	hugoPath: 'hugo', // -------------- Path to hugo binary (if global, e.g. /snap/bin/hugo)
-	mergi: 'mergi' // ----------------- Mergi path to resize images
+	root: '../', //  ------------------- Root hugo folder, can be empty
+	dataFolder: 'data', //  ------------ Data folder path (will fetch ALL files from here)
+	type: 'projects', //  -------------- Type name [layout] (save it under "layouts/NAME/single.html" or themes/THEME/layouts/NAME/single.html). Can be overridden on individual pages by defining "type" under "fields"
+	pages: 'projects', //  ------------- Pages elemenet in your data, in case it's "posts" or "articles" etc.
+	name: 'projects.yml', //  ---------- Name of project config file
+	contentPath: 'content', //  -------- Path to content directory (in case it's not "content")
+	hugoPath: 'hugo', //  -------------- Path to hugo binary (if global, e.g. /snap/bin/hugo)
+	mergi: 'mergi' //  ----------------- Mergi path to resize images
 };
 
 const fs = require('fs');
 const fse = require('fs-extra');
 const prompts = require('prompts');
-const jsyml = require('js-yaml');
 
 const converToObject = (file) => {
 	const jsyml = require('js-yaml');
@@ -30,9 +29,7 @@ const build = async (add, force, resize) => {
 	if (typeof add === 'undefined') add = true;
 	if (typeof force === 'undefined') force = false;
 	if (typeof resize === 'undefined') resize = false;
-	// if (resize) return console.log('Resize command issued');
-	if (!config.contentPath || config.contentPath === '/')
-		return console.log("Error: config.contentPath cannot be '' or '/')!");
+	if (!config.contentPath || config.contentPath === '/') return console.log("Error: config.contentPath cannot be '' or '/')!");
 	let dataFiles;
 	try {
 		dataFiles = fs.readdirSync(config.root + config.dataFolder);
@@ -57,17 +54,15 @@ const build = async (add, force, resize) => {
 			if (resize) {
 				let imageFiles;
 				try {
-					imageFiles = fs.readdirSync(
-						`${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/`
-					);
+					imageFiles = fs.readdirSync(`${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/`);
 				} catch (e) {
 					return console.log('e', e);
 				}
 				const { execSync } = require('child_process');
 				for (let i in imageFiles) {
-					// console.log('Image name: ' + imageFiles[i]);
+					// Console.log('Image name: ' + imageFiles[i]);
 					const imgBase = imageFiles[i].split('.');
-					if (imgBase[0].includes("_small")) continue;
+					if (imgBase[0].includes('_small')) continue;
 					console.log('Image base: ' + imgBase[0]);
 					const tmpOldImage = `${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${imgBase[0]}.png`;
 					const tmpNewImage = `${config.root}/static/images/${pages[j].path}/${pages[j].fields.name}/${imgBase[0]}_small.png`;
@@ -125,18 +120,18 @@ const main = async (argvs) => {
 
 			typeof argvs['configFile'] === 'undefined' ? false :
 			require('./' + argvs['configFile']);
-	Object.assign(config, configFile); //overriding default settings
+	Object.assign(config, configFile); // Overriding default settings
 	config.root =
 		(
 			!!config.root ? config.root :
 			'.') + '/';
 	const { execSync } = require('child_process');
 	if (mode === 'server') {
-		//server mode - create data-generated files, run hugo server, remove data-generated files on stop
+		// Server mode - create data-generated files, run hugo server, remove data-generated files on stop
 		console.log('Building data-generated files...');
 		await build();
 		console.log('Running Hugo Server...');
-		process.on('SIGINT', () => {}); //Not exiting on ctrl+c (instead, going to "catch" clause)
+		process.on('SIGINT', () => {}); // Not exiting on ctrl+c (instead, going to "catch" clause)
 		try {
 			await execSync('(cd ' + config.root + ' && ' + config.hugoPath + ' server)');
 		} catch (e) {
@@ -144,33 +139,31 @@ const main = async (argvs) => {
 			await build(false, force);
 		}
 	} else if (mode === 'generate') {
-		//generate - just create data-generated files (no hugo running, and no removal)
+		// Generate - just create data-generated files (no hugo running, and no removal)
 		console.log('Building data-generated files...');
 		await build();
 	} else if (mode === 'clean') {
-		//clean - just remove data-generated files
+		// Clean - just remove data-generated files
 		console.log('Removing data-generated files...');
 		await build(false, force);
 	} else if (mode === 'resize') {
-		//clean - just remove data-generated files
+		//  Resize images to create thumbnails
 		console.log('Resize...');
 		await build(true, false, true);
-		// console.log('Running Hugo (build)...');
-		// await execSync('(cd ' + config.root + ' && ' + config.hugoPath + ' -v ' + ')');
 	} else {
-		//default behavior - create data-generated files, run hugo build, remove data-generated files
+		// Default behavior - create data-generated files, run hugo build, remove data-generated files
 		console.log('Building data-generated files...');
 		await build();
 		console.log('Running Hugo (build)...');
 		await execSync('(cd ' + config.root + ' && ' + config.hugoPath + ')');
-		// console.log('Removing data-generated files...');
-		// await build(false, force);
+		// Console.log('Removing data-generated files...');
+		// Await build(false, force);
 	}
 
 	console.log('Done!');
 };
 
-// Defining commands and flags
+//  Defining commands and flags
 const argvs = require('yargs')
 	.command('$0', 'Generate folders/files from data, then run `hugo build`')
 	.command('generate', 'Generate folders/files from data (does not run hugo build)')
