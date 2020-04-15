@@ -64,14 +64,13 @@
 											{{.Params.htmlcontent | safeHTML  }}
 										</div>
 										{{end}}
+
 										{{ if .Params.gifs }} 
 										{{ $gifs := .Params.gifs }}
 										{{ range $gifs }}
 										
-										<div class="row" style="margin-bottom: 10px">
-											<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%; ">
-												<source src="{{ . }}" type="video/webm"></source>
-											</video>
+										<div class="row" style="margin-bottom: 15px">
+											<img src="{{ . }}" style="width: 100%; ">
 										</div>
 										
 										{{ end }}
@@ -79,14 +78,14 @@
 										{{ if .Params.videos }} 
 										{{ $videos := .Params.videos }}
 										{{ range $videos }}
-										<div class="row">
+										<div class="row" style="margin-bottom: 15px">
 											<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%; ">
 												<source src="{{ . }}" type="video/webm"></source>
 											</video>
 										</div>
 										{{ end }}
+										{{ end }}
 								</div>
-								{{ end }}
 								</div>
 								{{ if .Params.moreimages }}
 								<div class=" col-md-3">
