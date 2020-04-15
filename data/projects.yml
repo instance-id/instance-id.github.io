@@ -7,6 +7,7 @@ projects:
         path: projects
         fields:
           name: "ARPG"
+          category : "Game Dev"
           platform: "Unity"
           date : "Feb 2018"
           url: ""
@@ -20,9 +21,9 @@ projects:
             "https://i.imgur.com/Mv3SOMd.mp4",
             "https://i.imgur.com/npuKav7.mp4",
           ]
-          category : "Game Dev"
           features: true
           moreimages: true 
+          moreimagespos: ["horizontal"]
           featurelist: [
             "Lootboxes", 
             "Open-World", 
@@ -33,11 +34,7 @@ projects:
             "Tons of Grinding",
             "Lootboxes"
             ]
-          content: "
-          # ARPG  
-
-
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup. I wanted to keep things fairly low poly so that I could use some resources on nice looking particle and spell effects and other aspects of gameplay instead of realistic visuals. Still working on finding the right mix of low poly and, well, not so low poly to make them blend together, as you can see from some of the newer pics (the first ones).
+          content: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup. I wanted to keep things fairly low poly so that I could use some resources on nice looking particle and spell effects and other aspects of gameplay instead of realistic visuals. Still working on finding the right mix of low poly and, well, not so low poly to make them blend together, as you can see from some of the newer pics (the first ones).
           
 
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have been throwing the idea back and forth to make the game bloody with dismemberment while keeping the visuals similar to how they are, but also have considered darkening everything up and going for a more gritty feel along with it. I kind of want to go for a mix of a game called Chivalry combined with RPG elements, not so much the typical WoW style RPG where you are usually just target locked and do rotational DPS. It is going to be swinging swords, with the ability to block, etc. Going to have mounts, bosses, streaming large open world. Lots of goodies.
@@ -61,6 +58,7 @@ projects:
         path: projects
         fields:
           name: "Busy-Richard"
+          category : "Game Dev"
           platform: "Unity"
           date : "Feb 2018"
           url: ""
@@ -75,7 +73,6 @@ projects:
             "https://i.imgur.com/Z3BPD4g.mp4",
           ] # https://www.youtube.com/watch?v=3CMdR88SuV0"
           moreimages: true 
-          category : "Tools"
           features: true
           featurelist: [
             "Openish-world", 
@@ -85,12 +82,7 @@ projects:
             "No Grinding",
             "Lootboxes",
             ]
-          content: "
-
-          # Busy Richard  
-
-
-          Busy Richard is a game in which you get to run around and have a great time pushing people into traffic and throwing things at them.  
+          content: "Busy Richard is a game in which you get to run around and have a great time pushing people into traffic and throwing things at them.  
 
 
           Coming (TBD) to PC as well as mobile, you will be able to take your mayhem on the road. 
@@ -103,6 +95,7 @@ projects:
         path: projects
         fields:
           name: "Searcher"
+          category : "Tools"
           platform: "Houdini"
           date : "Feb 2020"
           url: ""
@@ -111,7 +104,6 @@ projects:
           gifs: []
           videos: []
           features: false
-          category : "Tools"
           moreimages: true 
           featurelist: [
             "Lootboxes", 
@@ -135,26 +127,31 @@ projects:
         path: projects
         fields:
           name: "DOTS"
+          category : "Game Dev"
           platform: "Unity"
           date : "Feb 2018"
           url: ""
           image : "images/projects/dots/dots0.png"
           gifs: []
-          videos: []
-          moreimages: true 
-          category : "Game Dev"
-          features: false
+          videos: [
+            "https://i.imgur.com/a91Ky6O.mp4",
+            "https://i.imgur.com/ARWNx3D.mp4",
+            "https://i.imgur.com/fDq5gxh.mp4",
+            "https://i.imgur.com/QQFu8CK.mp4",
+            "https://i.imgur.com/uFXNb43.mp4",
+            "https://i.imgur.com/2TohdS0.mp4",
+          ]
+          moreimages: false 
+          features: true
           featurelist: [
-            "Lootboxes", 
-            "Open-World", 
-            "Lootboxes",
-            "Amazing PVP",
-            "No Grinding",
-            "Lootboxes",
-            "Tons of Grinding",
-            "Lootboxes"
+            "Data-Oriented Tech Stack", 
+            "Entity Component System",
+            "Job System", 
+            "Burst",
+            "DOTS Physics",
+            "PuppetMaster",
             ]
-          content: "123"
+          content: "Here are a few items from exploring the Unity Data-Oriented Tech Stack"
           htmlenable: false
           htmlcontent: "
           
@@ -166,6 +163,7 @@ projects:
         path: projects
         fields:
           name: "Paladin"
+          category : "Film"
           platform: "Unity"
           date : "Feb 2018"
           url: ""
@@ -183,7 +181,7 @@ projects:
             "https://i.imgur.com/5Dwgkcm.mp4",
           ]
           moreimages: false 
-          category : "Film"
+
           features: true
           featurelist: [
             "High Definition RP", 
@@ -193,9 +191,6 @@ projects:
             "Houdini",
             ]
           content: "
-          # Repentence
-
-
           Repentence is a small project in which the original intent goal was to learn Timeline, Cinemachine, Houdini, and proper settings for post-processing and the HD Render Pipeline.
 
 
@@ -215,25 +210,35 @@ projects:
         path: projects
         fields:
           name: "VFX"
+          category : "VFX"
           platform: "Unity"
           date : "Feb 2020"
           url: ""
           image : "images/portfolio/vfx1.png"
+          moreimages: false 
           gifs: []
-          videos: []
-          moreimages: true 
-          category : "VFX"
-          features: false
+          videos: [
+            "https://i.imgur.com/fyxfn5b.mp4",
+            "https://i.imgur.com/7jAvfmB.mp4",
+            "https://i.imgur.com/iAaNMMp.mp4",
+            "https://i.imgur.com/f5of9rS.mp4",
+            "https://i.imgur.com/xVKxjIt.mp4",
+            "https://i.imgur.com/Ya5UM6s.mp4",
+            "https://i.imgur.com/zsD9hy9.mp4",
+
+          ]
+          features: true
           featurelist: [
-            "Lootboxes", 
-            "Open-World", 
-            "Lootboxes",
-            "Amazing PVP",
-            "No Grinding",
-            "Lootboxes",
-            "Tons of Grinding",
-            "Lootboxes"
+            "High-Definition RP", 
+            "Houdini", 
+            "VFX Graph",
+            "Substance Designer",
+            "Amplify Shader",
             ]
-          content: "123"
+          content: "Here are a few different bits and pieces that went into creating a consecraction spell effect.  
+
+The goal was to learn more aspects of Houdini, VFX Graph, Amplify Shader, and Substance Designer
+
+"
           htmlenable: false
           htmlcontent: ""

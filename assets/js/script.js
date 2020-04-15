@@ -188,7 +188,13 @@
 	----------------------------------*/
 	// Initialize filterizr Plugin
 	// $('.filtr-container').imagesLoaded(function() {
+	const options = {
+		layout: 'horizontal',
+		setupControls: true
+	};
 	var filterizd = $('.filtr-container').filterizr();
+	var morefilterizd = $('.filtr-container-detail', options).filterizr();
+
 	// });
 
 	// Styling of Filter Controls
@@ -202,7 +208,7 @@
 		type: 'image',
 		delegate: 'a',
 		gallery: {
-			enabled: false
+			enabled: true
 		},
 		zoom: {
 			enabled: true,

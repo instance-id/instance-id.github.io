@@ -1216,6 +1216,31 @@ img[alt="detailgif"] {
 	background: transparent;
 }
 
+/* NOTE Details Item Gallery -------------------------------------------------------- */
+.filtr-item-detail img {
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	transition: -webkit-transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.filtr-item-detail:hover .item-holder-detail img {
+	-webkit-transform: translateX(50px);
+	transform: translateX(50px);
+	cursor: pointer;
+}
+
+.item-holder-detail {
+	position: relative;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s;
+	overflow: hidden;
+}
+
+/* NOTE Main Projects Gallery -------------------------------------------------------- */
 .filtr-item img {
 	width: 100%;
 	-webkit-transition: -webkit-transform 0.5s ease-in-out;
