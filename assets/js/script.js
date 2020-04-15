@@ -228,7 +228,7 @@
 		offset: 'bottom-in-view'
 	});
 
-	// $('#container').imagesLoaded(function() {});
+	$('#container').imagesLoaded(function() {});
 
 	// load more button
 
@@ -342,4 +342,4 @@
 	/*--------------------------------
 			Others
 	----------------------------------*/
-})(jQuery);
+}(jQuery));
