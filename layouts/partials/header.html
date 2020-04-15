@@ -4,6 +4,7 @@
   =============================== -->
 {{ $currentPage := "" }}
 {{ $curMenu := "" }}
+{{ $curMenuType := "" }}
 {{ if not (eq .Kind "home") }}
 {{ $currentPage = "else" }}
 <img src="{{ $data.homepage.fullscreen_nav.nav_image| relURL}}" alt="illustrations" class="bg-shape-1 w-100">
@@ -47,7 +48,7 @@
       <div class="menu-container menu-normal">
         {{end}}
         <ul class="desktop-menu navbar list-inline mb-0" id="desktop-menu">
-
+          {{ $curMenuType = "0" }}
           {{ if (eq $currentPage "home") }} {{ $curMenu = .Site.Menus.main }} {{ else }}
           {{ $curMenu = .Site.Menus.site }}
           {{ end }}
@@ -75,10 +76,18 @@
           {{ end }}
           {{ end }}
         </ul>
+        {{ if (eq $curMenuType "0") }}
+          <ul class="header-icons list-inline">
+            {{ range .Site.Params.social }}
+            <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        {{ end }}
         <!-- /desktop-menu -->
-
+        
         <!-- mobile-menu -->
         <div class="mobile-menu">
+
           <a class="menu-link">
             <div class="mobile-menu-nav">
               <span></span>
@@ -91,7 +100,11 @@
           <div class="menu-slider">
             <nav>
               <ul class="mobile-menu-list">
-                {{ range .Site.Menus.main }}
+                {{ if (eq $currentPage "home") }} {{ $curMenu = .Site.Menus.main }} {{ else }}
+                {{ $curMenu = .Site.Menus.site }}
+                {{ end }}
+                {{ range $curMenu }}
+                {{ $curMenuType = "1" }}
                 <li class="hvr-shutter-out-vertical mobile-menu-item 1"><a href="{{ .URL }}">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
@@ -104,11 +117,7 @@
             </nav>
           </div>
         </div>
-        <ul class="header-icons list-inline">
-          {{ range .Site.Params.social }}
-          <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
-          {{ end }}
-        </ul>
+
       </div>
   </nav>
 </section>
