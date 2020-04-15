@@ -1000,6 +1000,14 @@ ul.experience-chart h4 {
 	color: #c56001;
 }
 
+ul.experience-chart h4 a {
+	font-size: 19px;
+	margin-top: 0;
+	margin-bottom: 4px;
+	font-weight: 700;
+	color: #c56001;
+}
+
 .experience-chart li span {
 	font-weight: 700;
 	color: #d6d6d6;

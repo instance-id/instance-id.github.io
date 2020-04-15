@@ -30,19 +30,25 @@ experience:
   title : "Recent Projects"
   experience_list:
     # experience item loop
-    - name : "Searcher"
+    - name : "[Searcher](/projects/searcher)"
       company : "Houdini"
       duration : "2020"
-      content : "Searcher is an addon for Houdini that provides edditional UI capabilities seen in many modern Content Creation Suites and IDE's such as Blender, Maya, Jetbrains IntelliJ/Rider/PyCharm, etc."
+      content : "Houdini search addon "
       
     # experience item loop
     - name : "Verifier"
       company : "Discord Bot"
       duration : "2018-2019"
-      content : ""
+      content : "Unity asset verification bot"
       
     # experience item loop
     - name : "Repentence"
+      company : "Unity"
+      duration : "2019"
+      content : "Paladin Cinematic"
+
+    # experience item loop
+    - name : "Busy_Richard"
       company : "Unity"
       duration : "2019"
       content : "Paladin Cinematic"

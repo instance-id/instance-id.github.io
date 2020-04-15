@@ -32,7 +32,7 @@
 										<thead>
 											<tr>
 												<th>
-													Features
+												 	Features
 												</th>
 											</tr>
 										</thead>
@@ -52,43 +52,41 @@
 
 							{{ if .Params.moreimages }}
 							<div class="col-md-6">
-								{{ else }}
-								<div class="col-md-9">
-									{{end}}
-									<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
-										<p>
-											<div class="row">
-												{{.Params.Content | markdownify | emojify}}
-											</div>
-											{{ if .Params.htmlenable }} 
-											<div class="row">
-												{{.Params.htmlcontent | safeHTML  }}
-											</div>
-											{{end}}
-											{{ if .Params.gifs }} 
-											{{ $gifs := .Params.gifs }}
-											{{ range $gifs }}
-											
-											<div class="row" style="margin-bottom: 10px">
-												<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%; ">
-													<source src="{{ . }}" type="video/webm"></source>
-												</video>
-											</div>
-											
-											{{ end }}
-											{{ end }}
-											{{ if .Params.videos }} 
-											{{ $videos := .Params.videos }}
-											{{ range $videos }}
-											<div class="row">
-												<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%; ">
-													<source src="{{ . }}" type="video/webm"></source>
-												</video>
-											</div>
-											{{ end }}
-											{{ end }}
-										</p>
-									</div>
+							{{ else }}
+							<div class="col-md-9">
+								{{end}}
+								<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
+										<div class="row">
+											{{.Params.Content | markdownify | emojify}}
+										</div>
+										{{ if .Params.htmlenable }} 
+										<div class="row">
+											{{.Params.htmlcontent | safeHTML  }}
+										</div>
+										{{end}}
+										{{ if .Params.gifs }} 
+										{{ $gifs := .Params.gifs }}
+										{{ range $gifs }}
+										
+										<div class="row" style="margin-bottom: 10px">
+											<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%; ">
+												<source src="{{ . }}" type="video/webm"></source>
+											</video>
+										</div>
+										
+										{{ end }}
+										{{ end }}
+										{{ if .Params.videos }} 
+										{{ $videos := .Params.videos }}
+										{{ range $videos }}
+										<div class="row">
+											<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%; ">
+												<source src="{{ . }}" type="video/webm"></source>
+											</video>
+										</div>
+										{{ end }}
+								</div>
+								{{ end }}
 								</div>
 								{{ if .Params.moreimages }}
 								<div class=" col-md-3">
