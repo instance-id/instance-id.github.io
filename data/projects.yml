@@ -63,9 +63,7 @@ projects:
           date : "Feb 2018"
           url: ""
           image : "images/projects/busy-richard/br.gif"
-          gifs: [
-
-            ]
+          gifs: []
           videos: [
             "https://i.imgur.com/qcZTJ0o.mp4",
             "https://i.imgur.com/wYAbqsU.mp4", 
@@ -73,6 +71,7 @@ projects:
             "https://i.imgur.com/Z3BPD4g.mp4",
           ] # https://www.youtube.com/watch?v=3CMdR88SuV0"
           moreimages: true 
+          moreimagespos: []
           features: true
           featurelist: [
             "Openish-world", 

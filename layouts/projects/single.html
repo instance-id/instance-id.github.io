@@ -3,7 +3,6 @@
 
 <section class="proj-page" id="proj-page">
 	<div class="container">
-		<div class="row proj-page-holder">
 			<div class="proj-page-text">
 					<div class=" container-fluid">
 						<div class="row wow fadeInUp" data-wow-duration="1.5s">
@@ -56,11 +55,11 @@
 								{{ end }}
 							</div>
 
-							{{ if .Params.moreimages }}
-							<div class="col-md-6">
-							{{ else }}
+							{{ if not .Params.moreimages }}
 							<div class="col-md-9">
-								{{end}}
+							{{ else }}
+							<div class="col-md-6">
+							{{end}}
 									<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
 										<div style="margin-bottom: 15px">
 											<h1> {{.Params.name }} </h1>
@@ -75,38 +74,38 @@
 												<li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
 											</ul>
 										</div>
-									<div class=" filtr-container-detail wow fadeInUp list" data-wow-duration="1.5s">
-										{{$name := .Params.name}}
-										{{ $folder :=  printf "static/images/projects/%s/" (.Params.name | lower) }}
-	
-										{{ if fileExists $folder }}
-										{{ $files := readDir $folder }}
-										{{ range $files }}
-										{{ $file := .Name }}
-										<div class="filtr-item-detail" data-category="{{ $file | urlize }}">
-										{{ $image_split := split $file "."}}
-										{{ $image_base := index $image_split 0 }}
-										{{ $image_ext := index $image_split 1 }}
-										{{ if not (or (in $image_base "0") (in $image_base "_small")  (in $image_ext "gif") ) }}
-										  <div class="item-holder-detail">
-											<div class="pop-up-img">
-												<a href="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
-													title="{{ $image_base | safeHTML }}">
-													<img src="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
-														alt="project-thumb"
-														class="img-fluid rounded float-left mr-5 mb-4">
-												</a>
+										<div class=" filtr-container-detail wow fadeInUp list" data-wow-duration="1.5s">
+											{{$name := .Params.name}}
+											{{ $folder :=  printf "static/images/projects/%s/" (.Params.name | lower) }}
+		
+											{{ if fileExists $folder }}
+											{{ $files := readDir $folder }}
+											{{ range $files }}
+											{{ $file := .Name }}
+											<div class="filtr-item-detail" data-category="{{ $file | urlize }}">
+												{{ $image_split := split $file "."}}
+												{{ $image_base := index $image_split 0 }}
+												{{ $image_ext := index $image_split 1 }}
+												{{ if not (or (in $image_base "0") (in $image_base "_small")  (in $image_ext "gif") ) }}
+												<div class="item-holder-detail">
+													<div class="pop-up-img">
+														<a href="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
+															title="{{ $image_base | safeHTML }}">
+															<img src="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
+																alt="project-thumb"
+																class="img-fluid rounded float-left mr-5 mb-4">
+														</a>
+													</div>
+												</div>
+												{{ end }}
 											</div>
+											
+											{{ end }}
+											{{ end }}
 										</div>
-										{{ end }}
-										</div>
-										
-										{{ end }}
-										{{ end }}
-									{{ end }}
-									</div>
 									</div>
 									</section>
+										{{ end }}
 									
 									<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
 										<div style="margin-bottom: 15px">
@@ -157,42 +156,42 @@
 										{{ end }}
 									</div>
 							</div>
-							{{ if .Params.moreimages }}
-							<div class=" col-md-3">
-								<div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
-									{{$name := .Params.name}}
-									{{ $folder :=  printf "static/images/projects/%s/" (.Params.name | lower) }}
+									{{ if .Params.moreimages }}
+											<div class=" col-md-3">
+												<div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
+													{{$name := .Params.name}}
+													{{ $folder :=  printf "static/images/projects/%s/" (.Params.name | lower) }}
 
-									{{ if fileExists $folder }}
-									{{ $files := readDir $folder }}
-									{{ range $files }}
-									{{ $file := .Name }}
-									{{ $image_split := split $file "."}}
-									{{ $image_base := index $image_split 0 }}
-									{{ $image_ext := index $image_split 1 }}
-									{{ if not (or (in $image_base "0") (in $image_base "_small")  (in $image_ext "gif") ) }}
+													{{ if fileExists $folder }}
+													{{ $files := readDir $folder }}
+													{{ range $files }}
+													{{ $file := .Name }}
+													{{ $image_split := split $file "."}}
+													{{ $image_base := index $image_split 0 }}
+													{{ $image_ext := index $image_split 1 }}
+													{{ if not (or (in $image_base "0") (in $image_base "_small")  (in $image_ext "gif") ) }}
 
-									<!-- NOTE Image Sidebar ----------------------------------- -->
-									<div class="filtr-container-detail wow fadeInUp detail-content"
-										data-wow-duration="1.5s">
-										<div class="item-holder-detail">
-										<div class="pop-up-img">
-											<a href="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
-												title="{{ $image_base | safeHTML }}">
-												<img src="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
-													alt="project-thumb"
-													class="img-fluid rounded float-left mr-5 mb-4">
-											</a>
-										</div>
-										</div>
-									</div>
+													<!-- NOTE Image Sidebar ----------------------------------- -->
+													<div class="filtr-container-detail wow fadeInUp detail-content"
+														data-wow-duration="1.5s">
+														<div class="item-holder-detail">
+														<div class="pop-up-img">
+															<a href="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
+																title="{{ $image_base | safeHTML }}">
+																<img src="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
+																	alt="project-thumb"
+																	class="img-fluid rounded float-left mr-5 mb-4">
+															</a>
+														</div>
+														</div>
+													</div>
 
+													{{ end }}
+													{{ end }}
+													{{ end }}
+												</div>
+											</div>
 									{{ end }}
-									{{ end }}
-									{{ end }}
-								</div>
-							</div>
-							{{ end }}
 							</div>
 						</div>
 					</div>
