@@ -222,6 +222,7 @@
 		handler: function(direction) {
 			if (direction == 'down') {
 				filterizd.filterizr('shuffle');
+				morefilterizd.filterizr('shuffle');
 			}
 		},
 		offset: 'bottom-in-view'
