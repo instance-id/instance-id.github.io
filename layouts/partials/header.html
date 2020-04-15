@@ -76,13 +76,11 @@
           {{ end }}
           {{ end }}
         </ul>
-        {{ if (eq $curMenuType "0") }}
-          <ul class="header-icons list-inline">
-            {{ range .Site.Params.social }}
-            <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
-            {{ end }}
-          </ul>
-        {{ end }}
+        <ul class="desktop-menu header-icons list-inline">
+          {{ range .Site.Params.social }}
+          <li><a href="{{ .link | safeURL }}"><i class="fa {{ .icon }}"></i></a></li>
+          {{ end }}
+        </ul>
         <!-- /desktop-menu -->
         
         <!-- mobile-menu -->
