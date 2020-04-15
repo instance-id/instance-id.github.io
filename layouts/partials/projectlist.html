@@ -2,8 +2,8 @@
 
 <!-- projects -->
 
+<section class="shuffle-stopper"></section>
 {{ with $data.projects.projects }}
-
 <section class="project" id="projects">
   <div class="container-fluid text-center">
     <div class="row project-holder text-left">
@@ -22,9 +22,9 @@
           </ul>
         </div>
       </div>
-      <section class="shuffle-stopper"></section>
+
       <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
-        <div class=" filtr-container wow fadeInUp list" data-wow-duration="1.5s">
+        <div class="filtr-container wow fadeInUp list" data-wow-duration="1.5s">
           {{ range .projects_list }}
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .fields.category | urlize }}">
             <div class="item-holder">

@@ -184,7 +184,7 @@
 	----------------------------------*/
 
 	/*--------------------------------
-		NOTE Start Portfolio
+		NOTE Start Projects
 	----------------------------------*/
 	// Initialize filterizr Plugin
 	// $('.filtr-container').imagesLoaded(function() {
@@ -228,12 +228,12 @@
 		offset: 'bottom-in-view'
 	});
 
-	$('#container').imagesLoaded(function() {});
+	// $('#container').imagesLoaded(function() {});
 
 	// load more button
 
 	/*--------------------------------
-			 End Portfolio
+			 End Projects
 	----------------------------------*/
 
 	/*--------------------------------

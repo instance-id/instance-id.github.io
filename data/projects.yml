@@ -2,7 +2,7 @@ projects:
     enable : true
     title : "PROJECTS"
     projects_list:
-      # portfolio item loop
+      # projects item loop
       - name : "ARPG"
         path: projects
         fields:
@@ -53,7 +53,7 @@ projects:
           htmlenable: false
           htmlcontent: ""
         
-      # portfolio item loop
+      # projects item loop
       - name : "Busy Richard"
         path: projects
         fields:
@@ -89,7 +89,7 @@ projects:
           htmlenable: false
           htmlcontent: |
 
-      # portfolio item loop
+      # projects item loop
       - name : "Searcher"
         path: projects
         fields:
@@ -121,7 +121,7 @@ projects:
           "
 
         
-      # portfolio item loop
+      # projects item loop
       - name : "DOTS"
         path: projects
         fields:
@@ -157,7 +157,7 @@ projects:
           "
 
         
-      # portfolio item loop
+      # projects item loop
       - name : "Paladin"
         path: projects
         fields:
@@ -166,7 +166,7 @@ projects:
           platform: "Unity"
           date : "Feb 2018"
           url: ""
-          image : "images/portfolio/film1.png"
+          image : "images/projects/paladin/paladin0.png"
           gifs: [
 
           ]
@@ -204,7 +204,7 @@ projects:
           
           "
   
-      # portfolio item loop
+      # projects item loop
       - name : "VFX"
         path: projects
         fields:
@@ -213,7 +213,7 @@ projects:
           platform: "Unity"
           date : "Feb 2020"
           url: ""
-          image : "images/portfolio/vfx1.png"
+          image : "images/projects/vfx/vfx0.png"
           moreimages: false 
           gifs: []
           videos: [

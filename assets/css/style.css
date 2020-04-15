@@ -1264,6 +1264,15 @@ img[alt="detailgif"] {
 	overflow: hidden;
 }
 
+.pop-up-img {
+	position: relative;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	transition: transform 0.5s, -webkit-transform 0.5s;
+	overflow: hidden;
+}
+
 .item-caption {
 	position: absolute;
 	top: 24px;
@@ -2299,13 +2308,6 @@ textarea.form-control::-webkit-input-placeholder,
 
 /*--------------------------------
  End Services
-----------------------------------*/
-
-/*--------------------------------
- NOTE Start Portfolio
-----------------------------------*/
-/*--------------------------------
-  End Portfolio
 ----------------------------------*/
 
 /*--------------------------------

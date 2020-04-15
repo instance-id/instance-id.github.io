@@ -2,10 +2,10 @@ baseURL = "/"
 title = "instance.id"
 copyright = "Copyright &copy; 2020 instance.id"
 home = "Home"
-backgroundColor = "#303030"
 languageCode = "en-us"
 languageName = "En"
 weight = 1
+backgroundColor = "#303030"
 
 [taxonomies]
 category = "categories"
