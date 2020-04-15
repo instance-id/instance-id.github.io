@@ -1,0 +1,42 @@
+<!-- NOTE "Horizontal image gallery --------------------------------------------- -->
+							{{ if and ( .Params.moreimages)  (in .Params.moreimagespos "horizontal") }}
+								<section class="shuffle-stopper"></section>
+								<section class="project" id="projects">
+								<div class="container-fluid text-center">
+									<div class="filtering wow fadeInUp" data-wow-duration="1.5s">
+										<ul class="project-navigation">
+											<li data-filter="all" class="hvr-sweep-to-right active">All Items</li>
+										</ul>
+									</div>
+									<div class=" filtr-container-detail wow fadeInUp list" data-wow-duration="1.5s">
+										{{$name := .Params.name}}
+										{{ $folder :=  printf "static/images/projects/%s/" (.Params.name | lower) }}
+	
+										{{ if fileExists $folder }}
+										{{ $files := readDir $folder }}
+										{{ range $files }}
+										{{ $file := .Name }}
+										<div class="filtr-item-detail" data-category="{{ $file | urlize }}">
+											{{ $image_split := split $file "."}}
+											{{ $image_base := index $image_split 0 }}
+											{{ $image_ext := index $image_split 1 }}
+											{{ if not (or (in $image_base "0") (in $image_base "_small")  (in $image_ext "gif") ) }}
+											<div class="item-holder-detail">
+												<div class="pop-up-img">
+													<a href="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
+														title="{{ $image_base | safeHTML }}">
+														<img src="/images/projects/{{lower $name }}/{{ $image_base }}.{{$image_ext}}"
+															alt="project-thumb"
+															class="img-fluid rounded float-left mr-5 mb-4">
+													</a>
+												</div>
+											</div>
+											{{ end }}
+										</div>
+										
+										{{ end }}
+										{{ end }}
+									</div>
+								</div>
+								</section>
+							{{ end }}
