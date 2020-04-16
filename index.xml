@@ -17,7 +17,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/arpg/</guid>
-      <description></description>
+      <description>I am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
     </item>
     
     <item>
@@ -26,7 +26,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/busy-richard/</guid>
-      <description></description>
+      <description>Busy Richard is a game in which you get to run around and have a great time pushing people into traffic and throwing things at them.
+Coming (TBD) to PC as well as mobile, you will be able to take your mayhem on the road.</description>
     </item>
     
     <item>
@@ -35,7 +36,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/dots/</guid>
-      <description></description>
+      <description>Some more data Here is some additional data</description>
     </item>
     
     <item>
@@ -44,7 +45,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/paladin/</guid>
-      <description></description>
+      <description>Repentence is a small project in which the original intent goal was to learn Timeline, Cinemachine, Houdini, and proper settings for post-processing and the HD Render Pipeline.
+It has slowly shifted in the direction of becoming a short film, or possibly even a trailer to nothing.
+It does have potential to continue on to a playable game in the vein of Resident Evil, Silent Hill, or even Devil May Cry.</description>
     </item>
     
     <item>
@@ -53,7 +56,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/searcher/</guid>
-      <description></description>
+      <description>Some data 123</description>
     </item>
     
     <item>
@@ -62,7 +65,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/vfx/</guid>
-      <description></description>
+      <description>Here are a few different bits and pieces that went into creating a consecraction spell effect.
+The goal was to learn more aspects of Houdini, VFX Graph, Amplify Shader, and Substance Designer</description>
     </item>
     
   </channel>
