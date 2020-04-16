@@ -15,11 +15,11 @@ projects:
           image_small : "images/projects/arpg/arpg_small.png"
           gifs: [          ]
           videos: [
-            "https://i.imgur.com/mWRiZwd.mp4",
-            "https://i.imgur.com/3CmkVNH.mp4",
-            "https://i.imgur.com/83U2wKo.mp4",
-            "https://i.imgur.com/Mv3SOMd.mp4",
-            "https://i.imgur.com/npuKav7.mp4",
+            ["https://i.imgur.com/mWRiZwd.mp4":""],
+            ["https://i.imgur.com/3CmkVNH.mp4":""],
+            ["https://i.imgur.com/83U2wKo.mp4":""],
+            ["https://i.imgur.com/Mv3SOMd.mp4":""],
+            ["https://i.imgur.com/npuKav7.mp4":""],
           ]
           features: true
           moreimages: true 
@@ -65,10 +65,10 @@ projects:
           image : "images/projects/busy-richard/br.gif"
           gifs: []
           videos: [
-            "https://i.imgur.com/qcZTJ0o.mp4",
-            "https://i.imgur.com/wYAbqsU.mp4", 
-            "https://i.imgur.com/MiAKlzb.mp4",
-            "https://i.imgur.com/Z3BPD4g.mp4",
+            ["https://i.imgur.com/qcZTJ0o.mp4":""],
+            ["https://i.imgur.com/wYAbqsU.mp4":""], 
+            ["https://i.imgur.com/MiAKlzb.mp4":""],
+            ["https://i.imgur.com/Z3BPD4g.mp4":""],
           ] # https://www.youtube.com/watch?v=3CMdR88SuV0"
           moreimages: true 
           moreimagespos: []
@@ -133,23 +133,23 @@ projects:
           image : "images/projects/dots/dots0.png"
           gifs: []
           videos: [
-            "https://i.imgur.com/a91Ky6O.mp4",
-            "https://i.imgur.com/ARWNx3D.mp4",
-            "https://i.imgur.com/fDq5gxh.mp4",
-            "https://i.imgur.com/QQFu8CK.mp4",
-            "https://i.imgur.com/uFXNb43.mp4",
-            "https://i.imgur.com/2TohdS0.mp4",
+            ["https://i.imgur.com/a91Ky6O.mp4":""],
+            ["https://i.imgur.com/ARWNx3D.mp4":""],
+            ["https://i.imgur.com/fDq5gxh.mp4":""],
+            ["https://i.imgur.com/QQFu8CK.mp4":""],
+            ["https://i.imgur.com/uFXNb43.mp4":""],
+            ["https://i.imgur.com/2TohdS0.mp4":""],
           ]
           moreimages: false 
           features: true
-          featurelist: [
+          featurelist: {
             "Data-Oriented Tech Stack", 
             "Entity Component System",
             "Job System", 
             "Burst",
             "DOTS Physics",
             "PuppetMaster",
-            ]
+          }
           content: "Here are a few items from exploring the Unity Data-Oriented Tech Stack"
           htmlenable: false
           htmlcontent: "
@@ -171,13 +171,13 @@ projects:
 
           ]
           videos: [
-            "https://i.imgur.com/Ra4cVFg.mp4",
-            "https://i.imgur.com/GsrZpKm.mp4",
-            "https://i.imgur.com/h3koDDl.mp4",
-            "https://i.imgur.com/A7BVIjA.mp4",
-            "https://i.imgur.com/XDwKaKU.mp4",
-            "https://i.imgur.com/x58q8rE.mp4",
-            "https://i.imgur.com/5Dwgkcm.mp4",
+            ["https://i.imgur.com/Ra4cVFg.mp4":""],
+            ["https://i.imgur.com/GsrZpKm.mp4":""],
+            ["https://i.imgur.com/h3koDDl.mp4":""],
+            ["https://i.imgur.com/A7BVIjA.mp4":""],
+            ["https://i.imgur.com/XDwKaKU.mp4":""],
+            ["https://i.imgur.com/x58q8rE.mp4":""],
+            ["https://i.imgur.com/5Dwgkcm.mp4":""],
           ]
           moreimages: false 
 
@@ -217,14 +217,13 @@ projects:
           moreimages: false 
           gifs: []
           videos: [
-            "https://i.imgur.com/fyxfn5b.mp4",
-            "https://i.imgur.com/7jAvfmB.mp4",
-            "https://i.imgur.com/iAaNMMp.mp4",
-            "https://i.imgur.com/f5of9rS.mp4",
-            "https://i.imgur.com/xVKxjIt.mp4",
-            "https://i.imgur.com/Ya5UM6s.mp4",
-            "https://i.imgur.com/zsD9hy9.mp4",
-
+            ["https://i.imgur.com/fyxfn5b.mp4":""],
+            ["https://i.imgur.com/7jAvfmB.mp4":""],
+            ["https://i.imgur.com/iAaNMMp.mp4":""],
+            ["https://i.imgur.com/f5of9rS.mp4":""],
+            ["https://i.imgur.com/xVKxjIt.mp4":""],
+            ["https://i.imgur.com/Ya5UM6s.mp4":""],
+            ["https://i.imgur.com/zsD9hy9.mp4":""],
           ]
           features: true
           featurelist: [
