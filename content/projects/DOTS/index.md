@@ -1,1 +1,34 @@
-{"name":"DOTS","category":"Game Dev","platform":"Unity","date":"Feb 2018","url":"","image":"images/projects/dots/dots0.png","gifs":[],"videos":[[{"https://i.imgur.com/a91Ky6O.mp4":""}],[{"https://i.imgur.com/ARWNx3D.mp4":""}],[{"https://i.imgur.com/fDq5gxh.mp4":""}],[{"https://i.imgur.com/QQFu8CK.mp4":""}],[{"https://i.imgur.com/uFXNb43.mp4":""}],[{"https://i.imgur.com/2TohdS0.mp4":""}]],"moreimages":false,"features":true,"featurelist":{"Data-Oriented Tech Stack":null,"Entity Component System":null,"Job System":null,"Burst":null,"DOTS Physics":null,"PuppetMaster":null},"content":"Here are a few items from exploring the Unity Data-Oriented Tech Stack","htmlenable":false,"htmlcontent":"\n","type":"projects"}
+---
+name: DOTS
+category: Game Dev
+platform: Unity
+date: Feb 2018
+url: ''
+image: images/projects/dots/dots0.png
+gifs: []
+videos:
+  - - 'https://i.imgur.com/a91Ky6O.mp4': ''
+  - - 'https://i.imgur.com/ARWNx3D.mp4': ''
+  - - 'https://i.imgur.com/fDq5gxh.mp4': ''
+  - - 'https://i.imgur.com/QQFu8CK.mp4': ''
+  - - 'https://i.imgur.com/uFXNb43.mp4': ''
+  - - 'https://i.imgur.com/2TohdS0.mp4': ''
+moreimages: false
+features: true
+featurelist:
+  Data-Oriented Tech Stack: null
+  Entity Component System: null
+  Job System: null
+  Burst: null
+  DOTS Physics: null
+  PuppetMaster: null
+content: Here are a few items from exploring the Unity Data-Oriented Tech Stack
+htmlenable: false
+htmlcontent: |+
+
+type: projects
+---
+
+  ### Some more data
+
+  Here is some additional data

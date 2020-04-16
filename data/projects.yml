@@ -15,12 +15,12 @@ projects:
           image_small : "images/projects/arpg/arpg_small.png"
           gifs: [          ]
           videos: [
-            ["https://i.imgur.com/mWRiZwd.mp4":""],
-            ["https://i.imgur.com/3CmkVNH.mp4":""],
-            ["https://i.imgur.com/83U2wKo.mp4":""],
-            ["https://i.imgur.com/Mv3SOMd.mp4":""],
-            ["https://i.imgur.com/npuKav7.mp4":""],
-          ]
+            ['https://i.imgur.com/mWRiZwd.mp4','Description1'], 
+            ['https://i.imgur.com/3CmkVNH.mp4', 'Description2'], 
+            ['https://i.imgur.com/83U2wKo.mp4', 'Description3'], 
+            ['https://i.imgur.com/Mv3SOMd.mp4', 'Description4'], 
+            ['https://i.imgur.com/npuKav7.mp4', 'Description5']
+            ]
           features: true
           moreimages: true 
           moreimagespos: ["horizontal"]
@@ -52,7 +52,7 @@ projects:
           "
           htmlenable: false
           htmlcontent: ""
-        
+
       # projects item loop
       - name : "Busy Richard"
         path: projects
@@ -65,10 +65,10 @@ projects:
           image : "images/projects/busy-richard/br.gif"
           gifs: []
           videos: [
-            ["https://i.imgur.com/qcZTJ0o.mp4":""],
-            ["https://i.imgur.com/wYAbqsU.mp4":""], 
-            ["https://i.imgur.com/MiAKlzb.mp4":""],
-            ["https://i.imgur.com/Z3BPD4g.mp4":""],
+            ["https://i.imgur.com/qcZTJ0o.mp4",""],
+            ["https://i.imgur.com/wYAbqsU.mp4",""], 
+            ["https://i.imgur.com/MiAKlzb.mp4",""],
+            ["https://i.imgur.com/Z3BPD4g.mp4",""],
           ] # https://www.youtube.com/watch?v=3CMdR88SuV0"
           moreimages: true 
           moreimagespos: []

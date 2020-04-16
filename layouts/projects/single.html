@@ -69,22 +69,22 @@
 							<!-- NOTE Main Content -------------------------------------------------------------- -->
 							<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
 								<div style="margin-bottom: 15px">
-									{{.Params.Content | markdownify | emojify}}
+									{{.Content}}
 								</div>
 							</div>
 
 							<!-- NOTE HTML Content -------------------------------------------------------------- -->
+							{{ if .Params.htmlenable }}
 							<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
-								{{ if .Params.htmlenable }}
 								<div>
 									{{.Params.htmlcontent | safeHTML  }}
 								</div>
-								{{end}}
 							</div>
+							{{end}}
 
 							<!-- NOTE Gifs ---------------------------------------------------------------------- -->
+							{{ if .Params.gifs }}
 							<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
-								{{ if .Params.gifs }}
 								{{ $gifs := .Params.gifs }}
 								{{ range $gifs }}
 
@@ -93,28 +93,33 @@
 								</div>
 
 								{{ end }}
-								{{ end }}
 							</div>
+							{{ end }}
 
 							<!-- NOTE Videos -------------------------------------------------------------------- -->
+							{{ if .Params.videos }}
 							<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
 
-								{{ if .Params.videos }}
 								{{ $videos := .Params.videos }}
 								{{ range $videos }}
-								{{ $vurl := (index .) 0 }}
-								{{ $vurl }}
+								{{ $key := (index .) 0 }}
+								{{ $vdict := . }} 
+
 								<div style="margin-bottom: 15px">
-									<video preload="auto" autoplay="autoplay" loop="loop"
-										style="width: 100%;">
-										<source src="{{ (index $vurl) 0 }}" type="video/webm">
+								{{ if index ((index $vdict) 0 )  1 }}
+								<h4>
+								{{ index ((index $vdict) 0 )  1 }}
+								</h4>
+								{{ end }}
+									<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%;">
+										<source src="{{ index ((index $vdict) 0 )  0 }}" type="video/webm">
 										</source>
 									</video>
 								</div>
 
 								{{ end }}
-								{{ end }}
 							</div>
+							{{ end }}
 						</div>
 								{{ if .Params.moreimages }}
 									<div class=" col-md-3">
