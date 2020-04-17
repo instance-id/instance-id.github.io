@@ -7,33 +7,25 @@ url: ''
 image: images/projects/arpg/arpg1.png
 image_small: images/projects/arpg/arpg_small.png
 gifs: []
-videos:
-  - - 'https://i.imgur.com/mWRiZwd.mp4'
-    - Description1
-  - - 'https://i.imgur.com/3CmkVNH.mp4'
-    - Description2
-  - - 'https://i.imgur.com/83U2wKo.mp4'
-    - Description3
-  - - 'https://i.imgur.com/Mv3SOMd.mp4'
-    - Description4
-  - - 'https://i.imgur.com/npuKav7.mp4'
-    - Description5
+videos: [
+  ['https://i.imgur.com/mWRiZwd.mp4', 'Mesh spell effects with paralax ground'],
+  ['https://i.imgur.com/3CmkVNH.mp4', 'Volumetric right angle runs with distortion'],
+  ['https://i.imgur.com/83U2wKo.mp4', 'Spell cast with trails'],
+  ['https://i.imgur.com/Mv3SOMd.mp4', 'Trying out different shader effects'],
+  ['https://i.imgur.com/npuKav7.mp4', 'More shader effects'],
+  ]
 features: true
 moreimages: true
-moreimagespos:
-  - horizontal
-featurelist:
-  - Lootboxes
-  - Open-World
-  - Lootboxes
-  - Amazing PVP
-  - No Grinding
-  - Lootboxes
-  - Tons of Grinding
-  - Lootboxes
-content: >+
-
-
+featurelist: [
+  'Lootboxes',
+  'Open-World',
+  'Lootboxes',
+  'Amazing PVP',
+  'No Grinding',
+  'Lootboxes',
+  'Tons of Grinding',
+  'Lootboxes'
+  ]
 htmlenable: false
 htmlcontent: ''
 type: projects

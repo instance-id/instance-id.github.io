@@ -6,14 +6,15 @@ date: Feb 2018
 url: ''
 image: images/projects/paladin/paladin0.png
 gifs: []
-videos:
-  - - 'https://i.imgur.com/Ra4cVFg.mp4': ''
-  - - 'https://i.imgur.com/GsrZpKm.mp4': ''
-  - - 'https://i.imgur.com/h3koDDl.mp4': ''
-  - - 'https://i.imgur.com/A7BVIjA.mp4': ''
-  - - 'https://i.imgur.com/XDwKaKU.mp4': ''
-  - - 'https://i.imgur.com/x58q8rE.mp4': ''
-  - - 'https://i.imgur.com/5Dwgkcm.mp4': ''
+videos: [
+  ['https://i.imgur.com/Ra4cVFg.mp4', ''],
+  ['https://i.imgur.com/GsrZpKm.mp4', ''],
+  ['https://i.imgur.com/h3koDDl.mp4', ''],
+  ['https://i.imgur.com/A7BVIjA.mp4', ''],
+  ['https://i.imgur.com/XDwKaKU.mp4', ''],
+  ['https://i.imgur.com/x58q8rE.mp4', ''],
+  ['https://i.imgur.com/5Dwgkcm.mp4', ''],
+  ]
 moreimages: false
 features: true
 featurelist:

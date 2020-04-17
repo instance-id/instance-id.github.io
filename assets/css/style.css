@@ -1785,6 +1785,12 @@ textarea.form-control::-webkit-input-placeholder,
 	padding: 100px 0px 70px 0px;
 }
 
+/* NOTE General text */
+.proj-page-text {
+	position: relative;
+	color: #afafaf;
+}
+
 .proj-page-text h1 {
 	position: relative;
 	color: #ff8826;
@@ -1835,16 +1841,77 @@ textarea.form-control::-webkit-input-placeholder,
 	font-size: 16px;
 }
 
-.download-cv {
-	text-decoration: none;
-	color: #4d4d4d;
-	font-weight: 700;
-	margin-top: 15px;
-	display: inline-block;
-	border: 2px solid #4d4d4d;
-	padding: 7px 10px;
+/* NOTE Details text */
+.proj-page-text-details hr.top {
+	border-top: 2px solid rgb(82, 75, 75);
+	width: 90%;
+	text-align: left;
+	margin-top: -5px;
+	margin-left: 0px;
 }
 
+.proj-page-text-details hr.bottom {
+	border-top: 2px solid rgb(82, 75, 75);
+	width: 90%;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+}
+
+.proj-page-text-details h5 {
+	position: relative;
+	color: #d2a00c;
+	font-weight: 700;
+	text-shadow: 4px;
+}
+
+/* NOTE Table */
+
+.table-dark,
+.table-dark > table {
+	width: 95%;
+	background-color: rgb(12, 12, 12);
+	color: rgb(155, 155, 155);
+}
+
+.table-dark thead th {
+	border-top: 2px solid rgb(12, 12, 12);
+	border-bottom: 2px solid rgb(65, 65, 65);
+}
+
+.table-dark > th,
+.table-dark tbody td {
+	background-color: rgb(12, 12, 12);
+	border: 1px solid rgb(12, 12, 12);
+}
+
+.table-dark td:hover,
+.table-dark tr:hover {
+	background-color: #141414;
+}
+
+/* .table-dark table {
+	width: 95%;
+	background-color: rgb(12, 12, 12);
+	color: rgb(129, 129, 129);
+} */
+/* 
+.table-dark th,
+.table-dark td {
+	background-color: rgb(12, 12, 12);
+	border: 1px solid rgb(12, 12, 12);
+}
+
+.table-dark thead th {
+	border-bottom: 2px solid rgb(12, 12, 12);
+}
+
+.table-dark tbody tr:hover {
+	background-color: #131313;
+} */
+
+/* NOTE Images */
 .proj-page-images img {
 	width: 100%;
 	-webkit-filter: grayscale(30%);
@@ -2121,7 +2188,7 @@ textarea.form-control::-webkit-input-placeholder,
 		display: none;
 	}
 	.menu-container-transparent {
-		background: #fff;
+		background: rgb(0, 0, 0);
 	}
 }
 
