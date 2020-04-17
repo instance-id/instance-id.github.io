@@ -93,9 +93,14 @@ const main = async (argvs) => {
 };
 
 const argvs = require('yargs')
-.option('replace', {
-    alias: 'r',
-    description: 'Replace original index.md with new and rename original as index_old.md . Otherwise a second copy will be made with the name index.md.md containing new data'
-}).argv;
+    .command('$0', 'Converts the file and creates a second index file named index.md.md that you can rename yourself')
+    .option('configFile', {
+        alias: 'c',
+        description: 'Optionally use an external config file (JSON format only)'
+    })
+    .option('replace', {
+        alias: 'r',
+        description: 'Replace original index.md with new and rename original as index_old.md . Otherwise a second copy will be made with the name index.md.md containing new data'
+    }).argv;
 
 main(argvs);

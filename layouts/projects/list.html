@@ -1,12 +1,5 @@
 {{ define "main" }}
 {{ $data := index .Site.Data }}
-{{ with $data.projects.projects }}
-<script>
-	$('#container').imagesLoaded(function() {
-		filterizd.filterizr('sort', '{{ lower (replace .name " " "-") }}', 'asc');
-	});
-</script>
-{{ end }}
 <!-- project -->
 {{ with $data.projects.projects }}
 {{/* <section class="shuffle-stopper"></section> */}}
