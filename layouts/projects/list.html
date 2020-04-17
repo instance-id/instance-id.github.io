@@ -1,7 +1,15 @@
 {{ define "main" }}
 {{ $data := index .Site.Data }}
+{{ with $data.projects.projects }}
+<script>
+	$('#container').imagesLoaded(function() {
+		filterizd.filterizr('sort', '{{ lower (replace .name " " "-") }}', 'asc');
+	});
+</script>
+{{ end }}
 <!-- project -->
 {{ with $data.projects.projects }}
+{{/* <section class="shuffle-stopper"></section> */}}
 <section class="project" id="projects">
   <div class="container-fluid text-center">
     <div class="row project-holder text-left">
@@ -23,6 +31,7 @@
       <div class="col-lg-10 col-md-10 col-sm-10 col-10 mx-auto">
         <div class="row filtr-container wow fadeInUp list" data-wow-duration="1.5s">
           {{ range .projects_list }}
+
           <div class="col-lg-4 col-md-6 col-sm-6 col-12 filtr-item" data-category="{{ .fields.category | urlize }}">
             <div class="item-holder">
               <div class="full-nav-content">
@@ -47,7 +56,7 @@
     </div>
   </div>
 </section>
-<section class="shuffle-stopper"></section>
+{{/* <section class="shuffle-stopper"></section> */}}
 {{ end }}
 <!-- /project -->
 {{ end }}

@@ -1329,6 +1329,7 @@ ul.experience-chart h4 a {
 
 .item-caption {
 	position: absolute;
+	z-index: -99999;
 	top: 24px;
 	bottom: 0;
 	left: 0;
@@ -1363,6 +1364,7 @@ ul.experience-chart h4 a {
 }
 
 .filtr-item:hover .item-caption {
+	z-index: 99999;
 	-webkit-transform: translateX(0px);
 	transform: translateX(0px);
 }
@@ -1890,26 +1892,6 @@ textarea.form-control::-webkit-input-placeholder,
 .table-dark tr:hover {
 	background-color: #141414;
 }
-
-/* .table-dark table {
-	width: 95%;
-	background-color: rgb(12, 12, 12);
-	color: rgb(129, 129, 129);
-} */
-/* 
-.table-dark th,
-.table-dark td {
-	background-color: rgb(12, 12, 12);
-	border: 1px solid rgb(12, 12, 12);
-}
-
-.table-dark thead th {
-	border-bottom: 2px solid rgb(12, 12, 12);
-}
-
-.table-dark tbody tr:hover {
-	background-color: #131313;
-} */
 
 /* NOTE Images */
 .proj-page-images img {
