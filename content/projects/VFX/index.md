@@ -7,14 +7,15 @@ url: ''
 image: images/projects/vfx/vfx0.png
 moreimages: false
 gifs: []
-videos:
-  - - 'https://i.imgur.com/fyxfn5b.mp4': ''
-  - - 'https://i.imgur.com/7jAvfmB.mp4': ''
-  - - 'https://i.imgur.com/iAaNMMp.mp4': ''
-  - - 'https://i.imgur.com/f5of9rS.mp4': ''
-  - - 'https://i.imgur.com/xVKxjIt.mp4': ''
-  - - 'https://i.imgur.com/Ya5UM6s.mp4': ''
-  - - 'https://i.imgur.com/zsD9hy9.mp4': ''
+videos: [
+  ['https://i.imgur.com/fyxfn5b.mp4', ''],
+  ['https://i.imgur.com/7jAvfmB.mp4', ''],
+  ['https://i.imgur.com/iAaNMMp.mp4', ''],
+  ['https://i.imgur.com/f5of9rS.mp4', ''],
+  ['https://i.imgur.com/xVKxjIt.mp4', ''],
+  ['https://i.imgur.com/Ya5UM6s.mp4', ''],
+  ['https://i.imgur.com/zsD9hy9.mp4', ''],
+  ] 
 features: true
 featurelist:
   - High-Definition RP
