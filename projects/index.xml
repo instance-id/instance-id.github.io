@@ -36,7 +36,7 @@ Coming (TBD) to PC as well as mobile, you will be able to take your mayhem on th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/dots/</guid>
-      <description>Some more data Here is some additional data</description>
+      <description>Some more data Here is some additional data Here are a few items from exploring the Unity Data-Oriented Tech Stack</description>
     </item>
     
     <item>
@@ -56,7 +56,8 @@ It does have potential to continue on to a playable game in the vein of Resident
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/projects/searcher/</guid>
-      <description>Some data 123</description>
+      <description>Searcher brings the &amp;ldquo;Search Everything&amp;rdquo; functionality found in many modern Content Creation suites and IDE&amp;rsquo;s such as JetBrains &amp;lsquo;Shift+Shift&amp;rsquo; search (PyCharm, Rider, Webstorm, etc), Blender, Maya, and many others.
+Allowing you to quickly locate and execute any menu item or hotkeyable action without the need to assign, memorize, or manage hotkeys.</description>
     </item>
     
     <item>
