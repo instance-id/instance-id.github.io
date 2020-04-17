@@ -114,7 +114,53 @@
 	/*--------------------------------
 			End Smooth Scrolling
 	----------------------------------*/
-
+	
+	/*--------------------------------
+	NOTE Start Header
+		----------------------------------*/
+	// Initiating Background Slider
+	var backgroundSlide = $('#background-slide');
+	backgroundSlide.owlCarousel({
+		loop: false,
+		items: 1,
+		dots: false,
+		autoplay: false,
+		autoplayTimeout: 5000,
+		animateOut: 'fadeOut'
+	});
+	$('.slider-prev-button').on('click', function() {
+		backgroundSlide.trigger('prev.owl.carousel');
+	});
+	$('.slider-next-button').on('click', function() {
+		backgroundSlide.trigger('next.owl.carousel');
+	});
+	// Setting Up Background Images
+	function SliderBackground() {
+		if ($('.owl-full-width .slider').length) {
+			$('.owl-full-width .slider').each(function() {
+				var $this = $(this);
+				var img = $this.children(img);
+				var imgSrc = img.attr('src');
+				$this.css({
+					backgroundImage: 'url(' + imgSrc + ')',
+					backgroundSize: 'cover',
+					backgroundPosition: 'center center'
+				});
+			});
+		}
+	}
+	// Initializing Background Setting Function
+	SliderBackground();
+	// Toggle Fullscreen Navigation
+	$('#burger').on('click', function() {
+		$('.fullscreen-nav-container').slideToggle(300);
+	});
+	$('.fullscreen-nav-holder a, .turn-home').on('click', function() {
+		$('#burger').trigger('click');
+	});
+	/*--------------------------------
+		 End Header
+	----------------------------------*/
 	/*--------------------------------
 	NOTE Start Menu
 		----------------------------------*/

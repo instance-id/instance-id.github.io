@@ -29,8 +29,6 @@ htmlcontent: ''
 type: projects
 ---
 
-  Here are a few different bits and pieces that went into creating a
-  consecraction spell effect.  
+  Here are a few different bits and pieces that went into creating a consecraction spell effect.  
 
-  The goal was to learn more aspects of Houdini, VFX Graph, Amplify Shader, and
-  Substance Designer
+  The goal was to learn more aspects of Houdini, VFX Graph, Amplify Shader, and Substance Designer
