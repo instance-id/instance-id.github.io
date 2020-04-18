@@ -84,28 +84,28 @@ service:
   title : "SERVICES"
   service_list:
     # service item loop
-    - name : "Web Development"
-      image : "images/icons/web-development.png"
+    - name : "Performance Oriented Game Development"
+      image : "images/icons/Game-Development.png"
+      
+      # service item loop
+    - name : "Optimized Software and Tool Development"
+      image : "images/icons/monitor-keyboard.png"
+      
+      # service item loop
+    - name : "IAC (Infrastructure as Code) Management"
+      image : "images/icons/infrastructure.png"
       
     # service item loop
-    - name : "Graphic Design"
-      image : "images/icons/graphic-design.png"
+    # - name : "Graphic Design"
+    #   image : "images/icons/graphic-design.png"
       
     # service item loop
-    - name : "Database Management"
-      image : "images/icons/dbms.png"
+    # - name : "Digital Marketing"
+    #   image : "images/icons/marketing.png"
       
     # service item loop
-    - name : "Software Development"
-      image : "images/icons/software-development.png"
-      
-    # service item loop
-    - name : "Digital Marketing"
-      image : "images/icons/marketing.png"
-      
-    # service item loop
-    - name : "Mobile App Development"
-      image : "images/icons/mobile-app.png"
+    # - name : "Mobile App Development"
+    #   image : "images/icons/mobile-app.png"
 
 # ------------------------------------------ Call to Action 
 # NOTE Call to Action -------------------------------------
