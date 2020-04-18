@@ -42,12 +42,6 @@ name = "Searcher"
 parent = "projects"
 weight = 1
 
-[[menu.main]]
-URL = "about"
-name = "Verifier"
-parent = "projects"
-weight = 2
-
 # !SECTION
 # SECTION Site Menu
 [[menu.site]]
@@ -73,16 +67,10 @@ weight = 4
 
 # NOTE Site Projects Dropdown
 [[menu.site]]
-URL = "projects"
+URL = "/projects/searcher"
 name = "Searcher"
 parent = "projects"
 weight = 1
-
-[[menu.masitein]]
-URL = "/#projects"
-name = "Verifier"
-parent = "projects"
-weight = 2
 
 # !SECTION
 [params]
