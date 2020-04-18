@@ -8,11 +8,11 @@ image: images/projects/arpg/arpg1.png
 image_small: images/projects/arpg/arpg_small.png
 gifs: []
 videos: [
-  ['https://i.imgur.com/mWRiZwd.mp4', 'Mesh spell effects with paralax ground'],
-  ['https://i.imgur.com/3CmkVNH.mp4', 'Volumetric right angle runs with distortion'],
-  ['https://i.imgur.com/83U2wKo.mp4', 'Spell cast with trails'],
-  ['https://i.imgur.com/Mv3SOMd.mp4', 'Trying out different shader effects'],
-  ['https://i.imgur.com/npuKav7.mp4', 'More shader effects'],
+  ['https://i.imgur.com/mWRiZwd.mp4', 'Mesh spell effects with paralax ground', ''],
+  ['https://i.imgur.com/3CmkVNH.mp4', 'Volumetric right angle runs with distortion', ''],
+  ['https://i.imgur.com/83U2wKo.mp4', 'Spell cast with trails', ''],
+  ['https://i.imgur.com/Mv3SOMd.mp4', 'Trying out different shader effects', ''],
+  ['https://i.imgur.com/npuKav7.mp4', 'More shader effects', ''],
   ]
 features: true
 moreimages: true

@@ -9,12 +9,16 @@ gifs: []
 videos:
   - - 'https://i.imgur.com/qcZTJ0o.mp4'
     - 'Aimed object toss'
+    - ''
   - - 'https://i.imgur.com/wYAbqsU.mp4'
     - 'Debug view of navigation system'
+    - ''
   - - 'https://i.imgur.com/MiAKlzb.mp4'
     - 'Debug view of pedestrian physics and collision'
+    - ''
   - - 'https://i.imgur.com/Z3BPD4g.mp4'
     - 'General dickishness'
+    - ''
 moreimages: true
 moreimagespos: []
 features: true

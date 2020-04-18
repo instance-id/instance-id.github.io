@@ -118,10 +118,16 @@
 								{{ index ((index $vdict) 0 )  1 }}
 								</h5>
 								{{ end }}
+									{{ if ne (index ((index $vdict) 0 )  2) "" }}
+									<a href="{{ (index ((index $vdict) 0 )  2) }}">
+									{{ end }}
 									<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%;">
 										<source src="{{ index ((index $vdict) 0 )  0 }}" type="video/webm">
 										</source>
 									</video>
+									{{ if ne (index ((index $vdict) 0 )  2) "" }}
+									</a>
+									{{ end }}
 								</div>
 
 								{{ end }}
