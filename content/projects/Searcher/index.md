@@ -37,6 +37,9 @@ htmlcontent: |+
 
 type: projects
 ---
+
+#### Coming soon!
+
 Searcher brings the "Search Everything" functionality found in many modern Content Creation suites and IDE's such as JetBrains 'Shift+Shift' search (PyCharm, Rider, Webstorm, etc), Blender, Maya, and many others.
 
 Allowing you to quickly locate and execute any menu item or hotkeyable action without the need to assign, memorize, or manage hotkeys. 
