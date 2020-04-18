@@ -10,9 +10,11 @@ image: images/projects/searcher/searcher.png
 image_small: images/projects/searcher/searcher_small.png
 gifs: []
 videos: [
+  ['https://i.imgur.com/hKE0vwB.mp4', "Quickly find and open items without hotkeys assigned as if they did", 'https://youtu.be/YBG1atLljZo'],  
   ['https://i.imgur.com/pwiz9KQ.mp4', 'Quickly locate and execute any menu item, command, or action', 'https://youtu.be/q7h3UphrXY8'],  
   ['https://i.imgur.com/egsfuWv.mp4', 'List all available commands for a panel on mouse-over', 'https://youtu.be/ZzwwaVjVKaU'],
 ]
+
 features: true
 moreimages: false
 featurelist: [
