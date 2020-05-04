@@ -2,8 +2,8 @@
 'use strict';
 
 let config = {
-    greymatter: '../jsontofm/gray-matter', // ---------- Path to grey-matter
     root: '../', //  ----------------------------------- Root hugo folder, can be empty
+    greymatter: '../jsontofm/gray-matter', // ---------- Path to grey-matter
     originalFolder: 'content/projects/VFX', //  ------- Data folder path (will fetch ALL files from here)
     contentPath: 'content', //  ------------------------ Path to content directory (in case it's not "content")
 };
@@ -14,7 +14,6 @@ const fs = require('fs');
 
 const converToObject = (file) => {
     const fileContent = fs.readFileSync(config.root + config.originalFolder + '/' + file, 'utf8');
-    // return JSON.parse(fileContent);
     return fileContent;
 };
 

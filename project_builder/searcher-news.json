@@ -1,0 +1,10 @@
+{
+    "root": "../",
+    "dataFolder": "data",
+    "type": "news",
+    "pages": "news",
+    "name": "news.yml",
+    "contentPath": "news",
+    "hugoPath": "hugo",
+    "mergi": "mergi"
+}
