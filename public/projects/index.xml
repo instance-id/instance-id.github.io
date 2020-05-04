@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on instance.id</title>
+    <link>/projects/</link>
+    <description>Recent content in Projects on instance.id</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 instance.id</copyright>
+    
+	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/projects/arpg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/arpg/</guid>
+      <description>I am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/projects/busy-richard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/busy-richard/</guid>
+      <description>Busy Richard is a game in which you get to run around and have a great time pushing people into traffic and throwing things at them.
+Coming (TBD) to PC as well as mobile, you will be able to take your mayhem on the road.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/projects/dots/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/dots/</guid>
+      <description>Some more data Here is some additional data Here are a few items from exploring the Unity Data-Oriented Tech Stack</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/projects/paladin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/paladin/</guid>
+      <description>Repentence is a small project in which the original intent goal was to learn Timeline, Cinemachine, Houdini, and proper settings for post-processing and the HD Render Pipeline.
+It has slowly shifted in the direction of becoming a short film, or possibly even a trailer to nothing.
+It does have potential to continue on to a playable game in the vein of Resident Evil, Silent Hill, or even Devil May Cry.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/projects/searcher/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/searcher/</guid>
+      <description>Coming soon! Searcher brings the &amp;ldquo;Search Everything&amp;rdquo; functionality found in many modern Content Creation suites and IDE&amp;rsquo;s such as JetBrains &amp;lsquo;Shift+Shift&amp;rsquo; search (PyCharm, Rider, Webstorm, etc), Blender, Maya, and many others.
+Allowing you to quickly locate and execute any menu item or hotkeyable action without the need to assign, memorize, or manage hotkeys.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/projects/vfx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/vfx/</guid>
+      <description>Here are a few different bits and pieces that went into creating a consecraction spell effect.
+The goal was to learn more aspects of Houdini, VFX Graph, Amplify Shader, and Substance Designer</description>
+    </item>
+    
+  </channel>
+</rss>
