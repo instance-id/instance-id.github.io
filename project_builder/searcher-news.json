@@ -4,7 +4,7 @@
     "type": "news",
     "pages": "news",
     "name": "news.yml",
-    "contentPath": "news",
+    "contentPath": "content",
     "hugoPath": "hugo",
     "mergi": "mergi"
 }
