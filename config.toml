@@ -11,6 +11,10 @@ backgroundColor = "#303030"
 category = "categories"
 tag = "tags"
 
+[outputs]
+post = ["json", "html"]
+news = ["json", "html"]
+
 [menu]
 
 # SECTION Main Menu

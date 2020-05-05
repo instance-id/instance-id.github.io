@@ -27,6 +27,10 @@
   </url>
   
   <url>
+    <loc>/news/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
   </url>
   
@@ -36,6 +40,14 @@
   
   <url>
     <loc>/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/news/searcher-05-04-2020/</loc>
+  </url>
+  
+  <url>
+    <loc>/news/searcher-05-042-2020/</loc>
   </url>
   
   <url>

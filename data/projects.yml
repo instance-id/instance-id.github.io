@@ -13,7 +13,7 @@ projects:
           url: ""
           image : "images/projects/arpg/arpg1.png"
           image_small : "images/projects/arpg/arpg_small.png"
-          gifs: [          ]
+          gifs: []
           videos: [
             ['https://i.imgur.com/mWRiZwd.mp4','Description1'], 
             ['https://i.imgur.com/3CmkVNH.mp4', 'Description2'], 

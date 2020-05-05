@@ -4,12 +4,12 @@
 let config = {
     root: '../', //  ----------------------------------- Root hugo folder, can be empty
     greymatter: '../jsontofm/gray-matter', // ---------- Path to grey-matter
-    originalFolder: 'content/projects/VFX', //  ------- Data folder path (will fetch ALL files from here)
+    originalFolder: 'content/news/', //  ------- Data folder path (will fetch ALL files from here)
     contentPath: 'content', //  ------------------------ Path to content directory (in case it's not "content")
 };
 
 const path = require('path')
-const matter = require(config.greymatter); 
+const matter = require(config.greymatter);
 const fs = require('fs');
 
 const converToObject = (file) => {
@@ -70,7 +70,7 @@ const main = async (argvs) => {
     const configFile = typeof argvs['configFile'] === 'undefined' ? false : require('./' + argvs['configFile']);
     Object.assign(config, configFile); // Overriding default settings
     config.root = (!!config.root ? config.root : '.') + '/';
-    
+
     console.log('Converting to Front Matter...');
 
     if (mode === 'replace') {
@@ -79,7 +79,7 @@ const main = async (argvs) => {
         } catch (e) {
             return console.log('e', e);
         }
-    }  else {
+    } else {
         try {
             return console.log('Not Replacing!');
 

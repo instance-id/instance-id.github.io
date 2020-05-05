@@ -1,7 +1,10 @@
 news:
-    - path: news
+  enable : true
+  title : "NEWS"
+  news_list:
+    - name : "ARPG"
+      path: projects
       fields:
-        id: 1
         name: "SEARCHER"
         dateposted : "May 3 2020"
         header: "This is the headline for the news!"
@@ -23,9 +26,9 @@ news:
           This is the first news item. Be sure to check it out. More data more data more data more data more. 
           data more data more data more data more data more data more data more data more data more data more data more. 
           data more data more data more data more data  
-    - path: news
+    
+    - name : "ARPG"
       fields:
-        id: 2
         name: "SEARCHER"
         dateposted : "May 4 2020"
         header: "This is the second headline for the news!"
