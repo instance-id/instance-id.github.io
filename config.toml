@@ -7,13 +7,17 @@ languageName = "En"
 weight = 1
 backgroundColor = "#303030"
 
+theme = ["json-api"]
+
+
 [taxonomies]
 category = "categories"
 tag = "tags"
 
 [outputs]
-post = ["json", "html"]
-news = ["json", "html"]
+page = ["html", "json"]
+section = ["html", "json"]
+theme = "json-api"
 
 [menu]
 
