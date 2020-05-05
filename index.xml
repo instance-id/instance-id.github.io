@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>instance.id</title>
+    <title>Home on instance.id</title>
     <link>/</link>
-    <description>Recent content on instance.id</description>
+    <description>Recent content in Home on instance.id</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 instance.id</copyright>
+    <lastBuildDate>Mon, 04 May 2020 09:45:27 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Header2 data info title</title>
+      <link>/news/searcher/504220202/</link>
+      <pubDate>Mon, 04 May 2020 09:45:27 -0500</pubDate>
+      
+      <guid>/news/searcher/504220202/</guid>
+      <description>awdawdawd1111 am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
+    </item>
+    
+    <item>
+      <title>Header data info title</title>
+      <link>/news/searcher/50420201/</link>
+      <pubDate>Mon, 04 May 2020 09:05:27 -0500</pubDate>
+      
+      <guid>/news/searcher/50420201/</guid>
+      <description>JSONI am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
+    </item>
+    
+    <item>
+      <title>V0.0.1 Change log</title>
+      <link>/changelog/searcher/v0_0_1/</link>
+      <pubDate>Mon, 04 May 2020 09:05:27 -0500</pubDate>
+      
+      <guid>/changelog/searcher/v0_0_1/</guid>
+      <description>awdawd am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
+    </item>
+    
+    <item>
+      <title>V0.0.2 Change log</title>
+      <link>/changelog/searcher/v0_0_2/</link>
+      <pubDate>Mon, 04 May 2020 09:05:27 -0500</pubDate>
+      
+      <guid>/changelog/searcher/v0_0_2/</guid>
+      <description>JSONI am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
+    </item>
     
     <item>
       <title></title>
@@ -68,24 +105,6 @@ Allowing you to quickly locate and execute any menu item or hotkeyable action wi
       <guid>/projects/vfx/</guid>
       <description>Here are a few different bits and pieces that went into creating a consecraction spell effect.
 The goal was to learn more aspects of Houdini, VFX Graph, Amplify Shader, and Substance Designer</description>
-    </item>
-    
-    <item>
-      <title>Header data info title</title>
-      <link>/news/searcher50420201/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/news/searcher50420201/</guid>
-      <description>JSONI am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
-    </item>
-    
-    <item>
-      <title>Header2 data info title</title>
-      <link>/news/searcher504220202/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/news/searcher504220202/</guid>
-      <description>JSONI am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
     </item>
     
   </channel>
