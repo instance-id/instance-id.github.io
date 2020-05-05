@@ -15,9 +15,10 @@ category = "categories"
 tag = "tags"
 
 [outputs]
+post = ["html", "json"]
+news = ["html", "json"]
 page = ["html", "json"]
 section = ["html", "json"]
-theme = "json-api"
 
 [menu]
 
