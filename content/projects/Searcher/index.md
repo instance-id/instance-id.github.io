@@ -1,5 +1,6 @@
 ---
 name: Searcher
+uniqueID: searcher
 aliases:
     - /searcher/
 category: Tools

@@ -1,8 +1,11 @@
 {
+    "id": "{{ .Params.id }}",
     "title": "{{ .Title }}",
     "date": "{{ .Params.date }}",
     "dateposted": "{{ .Params.dateposted }}",
     "permalink": "{{ .Permalink }}",
     "description": "{{ .Params.description }}",
-    "content": "{{ .Params.content }}"
+    "content": "{{ .Params.content }}",
+    "project": "{{ .Params.project }}",
+    "FatDicks": "BigOlDicks"
 }

@@ -6,18 +6,39 @@ languageCode = "en-us"
 languageName = "En"
 weight = 1
 backgroundColor = "#303030"
-theme = ["json-api"]
 
+# theme = ["json-api"]
 [taxonomies]
 category = "categories"
 tag = "tags"
+project = "projects"
+api = "api"
 
 [outputs]
-post = ["html", "json"]
-news = ["html", "json"]
-page = ["html", "json"]
-section = ["html", "json"]
+# post = ["html", "news", "changelog"]
+page = ["html", "news", "changelog"]
+section = ["html", "news", "changelog"]
 
+# changelog = ["html", "changelog"]
+# news = ["html", "news"]
+# taxonomy = ["html"]
+[outputFormats]
+
+[outputFormats.news]
+baseName = "news"
+isPlainText = true
+mediaType = "application/json"
+path = "../api/v1.0/news"
+
+[outputFormats.changelog]
+baseName = "changelog"
+isPlainText = true
+mediaType = "application/json"
+path = "../api/v1.0/changelog"
+
+# [outputFormats.articles]
+# baseName = "articles"
+# mediatype = "application/json"
 [menu]
 
 # SECTION Main Menu

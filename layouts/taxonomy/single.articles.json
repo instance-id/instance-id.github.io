@@ -1,0 +1,13 @@
+{{ define "response" }}
+{{- $news := where ( where $.Site.Pages "Type" "news") "Params.project" .Params.uniqueID -}}
+    {
+        "project": "{{ .Title }}",
+        "count": "{{ len $news }}",
+        "TaxonomyBoner": "TaxonomyBoner",
+        "news": [
+                {{ range $index, $e:= $news }}
+{{ if $index}}, {{ end }} {{ .Render "item" }}
+{{ end }}
+    ]
+}
+{{ end }}

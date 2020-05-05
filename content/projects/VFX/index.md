@@ -1,5 +1,6 @@
 ---
 name: VFX
+uniqueID: vfx
 category: VFX
 platform: Unity
 date: Feb 2020

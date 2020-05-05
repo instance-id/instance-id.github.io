@@ -1,0 +1,13 @@
+{{ define "response" }}
+{{- $articles := where (where .Site.RegularPages "Type" "news") "Params.project" .Params.uniqueID -}}
+    {
+        "project" : "{{ .Title }}",
+        "count" : "{{ len $articles }}",
+        "APIDICKS": "APIDICKS"
+        ,"articles" : [
+        {{ range $i, $e := $articles }}
+            {{ if $i }}, {{ end }}{{ .Render "item" }}
+        {{ end }}
+        ]
+    }
+{{ end }}

@@ -1,0 +1,27 @@
+[[id.50420201]]
+id = 50420201
+kind = "news"
+project = "searcher"
+title = "Header data info title"
+description = 'description blurb for info'
+date = "2019-08-05"
+dateposted = "05-04-2020"
+details = '''
+More info More info More info More info More info More info More info More info 
+More info More info More info More info More info More info More info More info 
+More info More info More info More info More info More info More info More info 
+'''
+
+[[id.50420202]]
+id = 50420202
+kind = "news"
+project = "searcher"
+title = "Header2 data info title"
+description = 'description2 blurb for info'
+date = "2019-08-05"
+dateposted = "05-04-2020"
+details = '''
+More info2 More info2 More info2 More info2 More info2 More info2 More info2 
+More info2 More info2 More info2 More info2 More info2 More info2 More info2 
+More info2 More info2 More info2 More info2 More info2 More info2 More info2 
+'''
