@@ -13,12 +13,13 @@
     
     
     <item>
-      <title>V0.0.1 Change log</title>
-      <link>/changelog/searcher/v0_0_1/</link>
+      <title>v0.0.1 Change log</title>
+      <link>/changelog/searcher/clv001/</link>
       <pubDate>Mon, 04 May 2020 09:05:27 -0500</pubDate>
       
-      <guid>/changelog/searcher/v0_0_1/</guid>
-      <description>awdawd am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do. I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.</description>
+      <guid>/changelog/searcher/clv001/</guid>
+      <description>I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.
+I wanted to keep things fairly low poly so that I could use some resources on nice looking particle and spell effects and other aspects of gameplay instead of realistic visuals.</description>
     </item>
     
   </channel>
