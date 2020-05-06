@@ -2,11 +2,13 @@
 id = 50420201
 kind = "news"
 project = "searcher"
-title = "Header data info title"
-description = 'description blurb for info'
-date = "2019-08-05"
+title = "Welcome to the Searcher v0.1 beta release!"
+description = "Thanks for grabbing Searcher! Can't wait for you to try it out!"
+tags = [""]
+date = "2020-05-04T09:05:27-05:00"
 dateposted = "05-04-2020"
-
+image = "https://instance.id/images/projects/searcher/searcher0.png"
+image_small = "https://instance.id/images/projects/searcher/searcher0_small.png"
 details = '''
 More info More info More info More info More info More info More info More info 
 More info More info More info More info More info More info More info More info 
@@ -17,10 +19,12 @@ More info More info More info More info More info More info More info More info
 id = 50420202
 kind = "news"
 project = "searcher"
-title = "Header2 data info title"
-description = 'description2 blurb for info'
-date = "2019-08-05"
+title = "Second news entry! More stuff!"
+description = "Here is even more stuff. Sweet!"
+date = "2020-05-04T09:05:27-05:00"
 dateposted = "05-04-2020"
+image = "https://instance.id/images/projects/searcher/searcher0.png"
+image_small = "https://instance.id/images/projects/searcher/searcher0_small.png"
 details = '''
 More info2 More info2 More info2 More info2 More info2 More info2 More info2 
 More info2 More info2 More info2 More info2 More info2 More info2 More info2 

@@ -38,11 +38,6 @@
   </url>
   
   <url>
-    <loc>/news/searcher/50420201/</loc>
-    <lastmod>2020-05-04T09:05:27-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/</loc>
     <lastmod>2020-05-04T09:05:27-05:00</lastmod>
   </url>
@@ -64,6 +59,11 @@
   
   <url>
     <loc>/changelog/searcher/clv002/</loc>
+    <lastmod>2020-05-04T09:05:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/searcher/50420201/</loc>
     <lastmod>2020-05-04T09:05:27-05:00</lastmod>
   </url>
   
