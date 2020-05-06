@@ -6,8 +6,8 @@ languageCode = "en-us"
 languageName = "En"
 weight = 1
 backgroundColor = "#303030"
+theme = ["json-api"]
 
-# theme = ["json-api"]
 [taxonomies]
 category = "categories"
 tag = "tags"
