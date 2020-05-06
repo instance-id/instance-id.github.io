@@ -3,7 +3,7 @@ id = "clv001"
 project = "searcher"
 date = "2020-05-04T09=05=27-05=00"
 dateposted = "05-04-2020"
-title = 'v0.0.1 Change log'
+title = 'Lots of new features and fixes!'
 description = 'Fixes for various things'
 version = "0.0.1"
 tags = ["v0.0.1", "changelog"]
@@ -19,8 +19,8 @@ id= "clv002"
 project= "searcher"
 date= "2020-05-04T09=05=27-05=00"
 dateposted= "05-04-2020"
-title= 'v0.0.2 Change log'
-description= 'Fixes for various things'
+title= 'Even more new features and fixes'
+description= 'Tons of great new features and fixes for various things'
 version= "0.0.2"
 tags= ["v0.0.2","changelog"]
 image = "https://instance.id/images/projects/searcher/searcher0.png"
