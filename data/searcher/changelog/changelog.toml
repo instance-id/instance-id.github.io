@@ -1,6 +1,5 @@
 [[changelog]]
 id = "001"
-kind = "changelog"
 project = "searcher"
 date = "2020-05-04T09=05=27-05=00"
 dateposted = "05-04-2020"
@@ -16,7 +15,6 @@ More info More info More info More info More info More info More info More info
 
 [[changelog]]
 id= "002"
-kind = "changelog"
 project= "searcher"
 date= "2020-05-04T09=05=27-05=00"
 dateposted= "05-04-2020"
