@@ -22,7 +22,7 @@ Copy-item -Force -Recurse -Verbose -Path $sourceDirectory -Destination $tmpDesti
 git checkout master
 if ($argument -eq "clean") {
     Write-Host "Cleaning destination directory"
-    # & hugo --cleanDestinationDir
+    & hugo --cleanDestinationDir
 }
 Copy-item -Force -Recurse -Verbose -Path $tmpSource -Destination $destinationDirectory
 
