@@ -1,0 +1,5 @@
+{{- $.Scratch.Add "allPages" slice -}}
+{{- range .Data.Pages.ByDate.Reverse -}}
+{{- $.Scratch.Add "allPages" (dict "uri" .Permalink "title" .Title "content" .Plain ) -}}
+{{- end -}}
+{{- dict "pages" ( $.Scratch.Get "allPages") | jsonify -}}

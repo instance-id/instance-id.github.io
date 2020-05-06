@@ -1,39 +1,40 @@
 changelog:
-  - id: 001
-    version: 0.0.1
-    kind : changelog
-    project: searcher
-    date: 2020-05-04T09:05:27-05:00
-    dateposted: "05-04-2020"
-    title: 'V0.0.1 Change log'
-    description: 'Fixes for various things'
-    tags: ["v0.0.1","changelog"]
-    # api: ["v1.0/changelog"]
-    categories: [""]
-    # url: /changelog/0_0_1/
-    image: images/projects/arpg/arpg1.png
-    image_small: images/projects/arpg/arpg_small.png
-    gifs: []
-    videos: []
-    featurelist: ['Lootboxes','Open-World']
-    type: changelog
+  id: "001"
+  version: 0.0.1
+  kind : changelog
+  project: searcher
+  date: 2020-05-04T09:05:27-05:00
+  dateposted: "05-04-2020"
+  title: 'V0.0.1 Change log'
+  description: 'Fixes for various things'
+  tags: ["v0.0.1","changelog"]
+  # api: ["v1.0/changelog"]
+  categories: [""]
+  # url: /changelog/0_0_1/
+  image: images/projects/arpg/arpg1.png
+  image_small: images/projects/arpg/arpg_small.png
+  gifs: []
+  videos: []
+  featurelist: ['Lootboxes','Open-World']
+  type: changelog
 
-  - id: 002
-    version: 0.0.2
-    kind : changelog
-    title: 'V0.0.2 Change log'
-    project: searcher
-    date: 2020-05-04T09:05:27-05:00
-    dateposted: "05-04-2020"
-    title: 'V0.0.2 Change log'
-    description: 'Fixes for various things'
-    tags: ["v0.0.2","changelog"]
-    # api: ["v1.0/changelog"]
-    categories: [""]
-    # url: /changelog/0_0_1/
-    image: images/projects/arpg/arpg1.png
-    image_small: images/projects/arpg/arpg_small.png
-    gifs: []
-    videos: []
-    featurelist: ['Lootboxes','Open-World']
-    type: changelog
+  
+  id: "002"
+  version: 0.0.2
+  kind : changelog
+  title: 'V0.0.2 Change log'
+  project: searcher
+  date: 2020-05-04T09:05:27-05:00
+  dateposted: "05-04-2020"
+  title: 'V0.0.2 Change log'
+  description: 'Fixes for various things'
+  tags: ["v0.0.2","changelog"]
+  # api: ["v1.0/changelog"]
+  categories: [""]
+  # url: /changelog/0_0_1/
+  image: images/projects/arpg/arpg1.png
+  image_small: images/projects/arpg/arpg_small.png
+  gifs: []
+  videos: []
+  featurelist: ['Lootboxes','Open-World']
+  type: changelog

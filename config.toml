@@ -18,8 +18,9 @@ api = "api"
 # post = ["html", "news", "changelog"]
 page = ["html", "news", "changelog"]
 section = ["html", "news", "changelog"]
+home = ["html", "json"]
+changelog = ["html", "changelog"]
 
-# changelog = ["html", "changelog"]
 # news = ["html", "news"]
 # taxonomy = ["html"]
 [outputFormats]

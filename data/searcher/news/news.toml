@@ -1,4 +1,4 @@
-[[id.50420201]]
+[[news]]
 id = 50420201
 kind = "news"
 project = "searcher"
@@ -6,13 +6,14 @@ title = "Header data info title"
 description = 'description blurb for info'
 date = "2019-08-05"
 dateposted = "05-04-2020"
+
 details = '''
 More info More info More info More info More info More info More info More info 
 More info More info More info More info More info More info More info More info 
 More info More info More info More info More info More info More info More info 
 '''
 
-[[id.50420202]]
+[[news]]
 id = 50420202
 kind = "news"
 project = "searcher"

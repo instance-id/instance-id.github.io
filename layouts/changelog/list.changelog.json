@@ -1,1 +1,3 @@
-{{- jsonify ($.Site.Data.searcher.changelog) -}}
+
+{{ $changelog := $.Site.Data.searcher.changelog}}
+{{- jsonify $changelog.changelog.changelog -}}
