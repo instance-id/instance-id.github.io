@@ -1,3 +1,6 @@
+$argument=$args[0]
+
+
 Write-Host "Deploying updates to GitHub..."
 
 $sourceDirectory = "E:/GitHub/instance-id.github.io/public/*"
@@ -17,6 +20,10 @@ Write-Host "Committing local repo"
 Write-Host "Copying $sourceDirectory to $destinationDirectory"
 Copy-item -Force -Recurse -Verbose -Path $sourceDirectory -Destination $tmpDestination
 git checkout master
+if ($argument -eq "clean") {
+    Write-Host "Cleaning destination directory"
+    # & hugo --cleanDestinationDir
+}
 Copy-item -Force -Recurse -Verbose -Path $tmpSource -Destination $destinationDirectory
 
 & git add -A
