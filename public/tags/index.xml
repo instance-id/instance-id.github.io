@@ -7,82 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 instance.id</copyright>
-    <lastBuildDate>Thu, 07 May 2020 14:45:27 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>news</title>
-      <link>/tags/news/</link>
-      <pubDate>Thu, 07 May 2020 14:45:27 +0000</pubDate>
-      
-      <guid>/tags/news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>changelog</title>
-      <link>/tags/changelog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/changelog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>v0.0.1</title>
-      <link>/tags/v0.0.1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/v0.0.1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>v0.0.2</title>
-      <link>/tags/v0.0.2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/v0.0.2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>v0.0.3</title>
-      <link>/tags/v0.0.3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/v0.0.3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>v0.0.4</title>
-      <link>/tags/v0.0.4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/v0.0.4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>v0.0.5</title>
-      <link>/tags/v0.0.5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/v0.0.5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>v0.0.6</title>
-      <link>/tags/v0.0.6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/v0.0.6/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

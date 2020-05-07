@@ -59,10 +59,8 @@ const runit = async (replace) => {
         for (let j in pages) {
             for (let k in pages[j]) {
                 let string1 = pages[j][k];
-                let newFile = JSON.parse(JSON.stringify(jsonObject));;
-                // var escapedJSON = newFile;
-                // var escapedJSON = newFile.escapeSpecialChars();
-                console.log('data! ', escapedJSON);
+                let newFile = JSON.parse(JSON.stringify(string1));
+                console.log('data! ', newFile);
 
                 if (replace) {
                     const newFilePath = path.join(config.root, config.contentPath, config.type, config.project)
