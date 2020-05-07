@@ -7,29 +7,62 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 instance.id</copyright>
-    <lastBuildDate>Mon, 04 May 2020 09:05:27 -0500</lastBuildDate>
     
 	<atom:link href="/tags/changelog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>v0.0.1 Change log</title>
-      <link>/changelog/searcher/clv001/</link>
-      <pubDate>Mon, 04 May 2020 09:05:27 -0500</pubDate>
+      <title>Added new important thing</title>
+      <link>/changelog/searcher/clv006/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/changelog/searcher/clv001/</guid>
-      <description>I do know for sure I am going to implement co-op, maybe like 3-4 people to quest together and also 3v3 or 5v5 PVP, possibly a team deathmatch or objective style setup.
-I wanted to keep things fairly low poly so that I could use some resources on nice looking particle and spell effects and other aspects of gameplay instead of realistic visuals.</description>
+      <guid>/changelog/searcher/clv006/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>V0.0.2 Change log</title>
+      <title>Even more new features and fixes</title>
       <link>/changelog/searcher/clv002/</link>
-      <pubDate>Mon, 04 May 2020 09:05:27 -0500</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/changelog/searcher/clv002/</guid>
-      <description>Still working on finding the right mix of low poly and, well, not so low poly to make them blend together, as you can see from some of the newer pics (the first ones).
-I am currently working on an RPG. I have not come up with a name for my game yet, let alone a story line. A lot of it is still subject to change as well. So if you see anything you feel you want to comment on or recommend, please do.</description>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fixed old important thing</title>
+      <link>/changelog/searcher/clv005/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv005/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Huge list of fixes and such</title>
+      <link>/changelog/searcher/clv003/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv003/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lots of new features and fixes!</title>
+      <link>/changelog/searcher/clv001/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv001/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Popular useful new features and fixes</title>
+      <link>/changelog/searcher/clv004/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv004/</guid>
+      <description></description>
     </item>
     
   </channel>
