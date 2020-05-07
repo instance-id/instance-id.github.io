@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/articles/</loc>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2020-05-04T14:05:27+00:00</lastmod>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>/news/</loc>
-    <lastmod>2020-05-04T14:05:27+00:00</lastmod>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/news/</loc>
-    <lastmod>2020-05-04T14:05:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/news/searcher/n50420202/</loc>
-    <lastmod>2020-05-04T14:05:27+00:00</lastmod>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/searcher/n5062020/</loc>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/news/searcher/n50420202/</loc>
     <lastmod>2020-05-04T14:05:27+00:00</lastmod>
   </url>
   
@@ -62,10 +77,6 @@
   
   <url>
     <loc>/api/</loc>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
   </url>
   
   <url>

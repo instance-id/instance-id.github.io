@@ -59,22 +59,22 @@ const runit = async (replace) => {
         for (let j in pages) {
             for (let k in pages[j]) {
                 let string1 = pages[j][k];
-                let newFile = JSON.stringify(string1);
+                let newFile = JSON.parse(JSON.stringify(jsonObject));;
                 // var escapedJSON = newFile;
-                var escapedJSON = newFile.escapeSpecialChars();
+                // var escapedJSON = newFile.escapeSpecialChars();
                 console.log('data! ', escapedJSON);
 
                 if (replace) {
                     const newFilePath = path.join(config.root, config.contentPath, config.type, config.project)
                     await fs.writeFileSync(
                         path.join(newFilePath, `${pages[j][k].id}.md`),
-                        escapedJSON
+                        newFile
                     )
                 } else {
                     const newFilePath = path.join(config.root, config.contentPath, config.type, config.project)
                     await fs.writeFileSync(
                         path.join(newFilePath, `${pages[j][k].id}.md`),
-                        escapedJSON
+                        newFile
                     )
                 }
             }
