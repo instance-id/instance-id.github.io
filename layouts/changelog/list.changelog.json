@@ -1,2 +1,4 @@
 {{ $changelog := $.Site.Data.searcher.changelog}}
-{{- jsonify $changelog.changelog.changelog -}}
+{{ $chlog := $changelog.changelog.changelog }}
+
+{{- jsonify $chlog -}}

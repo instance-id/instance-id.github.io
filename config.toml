@@ -15,14 +15,11 @@ project = "projects"
 api = "api"
 
 [outputs]
-# post = ["html", "news", "changelog"]
 page = ["html", "news", "changelog", "json"]
 section = ["html", "news", "changelog"]
 home = ["html", "json"]
 changelog = ["html", "changelog", "json"]
 
-# news = ["html", "news"]
-# taxonomy = ["html"]
 [outputFormats]
 
 [outputFormats.news]
