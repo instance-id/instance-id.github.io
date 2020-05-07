@@ -6,7 +6,8 @@ $sourceDirectory = "E:/GitHub/instance-id.github.io/project_builder"
 
 # Build the project
 & Set-Location $sourceDirectory
-& node hugo.js $param1
+& node toml.js replace -c .\searcher-chglog.json
+& node toml.js replace -c .\searcher-news.json
 & Set-Location ..
 & hugo -v
 

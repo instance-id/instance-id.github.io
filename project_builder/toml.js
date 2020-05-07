@@ -4,17 +4,22 @@
 let config = {
     root: '../', //  ----------------------------------- Root hugo folder, can be empty
     greymatter: '../jsontofm/gray-matter', // ---------- Path to grey-matter
-    originalFolder: 'content/news/', //  ------- Data folder path (will fetch ALL files from here)
+    originalFolder: 'data/searcher/news', //  ------- Data folder path (will fetch ALL files from here)
     contentPath: 'content', //  ------------------------ Path to content directory (in case it's not "content")
+    type: 'news',
+    project: 'searcher'
 };
 
 const path = require('path')
 const matter = require(config.greymatter);
+const toml = require('toml');
 const fs = require('fs');
 
 const converToObject = (file) => {
+    const jstml = require('toml');
+
     const fileContent = fs.readFileSync(config.root + config.originalFolder + '/' + file, 'utf8');
-    return fileContent;
+    return jstml.parse(fileContent);
 };
 
 const runit = async (replace) => {
@@ -32,34 +37,30 @@ const runit = async (replace) => {
     for (let i in dataFiles) {
         console.log('Filename: ' + dataFiles[i]);
         let data = converToObject(dataFiles[i]);
-        const file1 = matter([
-            '---json',
-            data,
-            '---',
-        ].join('\n'));
+        let pages =
+            config.pages ? data[config.pages] :
+                data;
+        console.log('data.', data[config.pages]);
+        for (let j in pages) {
+            for (let k in pages[j]) {
+                let string1 = pages[j][k];
+                let newFile = JSON.stringify(string1);
+                console.log('data! ', newFile);
 
-        let newFile = (file1.stringify({}, { language: 'json' }))
-
-        if (replace) {
-            const newFilePath = path.join(config.root + config.originalFolder)
-
-            await fs.writeFileSync(
-                path.join(newFilePath, `index_old.md`),
-                data
-            )
-
-            const converetedIntoSingleQuotes = newFile.toString().replace(/"/g, "'")
-            await fs.writeFileSync(
-                path.join(newFilePath, `${dataFiles[i]}`),
-                converetedIntoSingleQuotes
-            )
-        } else {
-            const converetedIntoSingleQuotes = newFile.toString().replace(/"/g, "'")
-            const newFilePath = path.join(config.root + config.originalFolder)
-            await fs.writeFileSync(
-                path.join(newFilePath, `${dataFiles[i]}.md`),
-                converetedIntoSingleQuotes
-            )
+                if (replace) {
+                    const newFilePath = path.join(config.root, config.contentPath, config.type, config.project)
+                    await fs.writeFileSync(
+                        path.join(newFilePath, `${pages[j][k].id}.md`),
+                        newFile
+                    )
+                } else {
+                    const newFilePath = path.join(config.root, config.contentPath, config.type, config.project)
+                    await fs.writeFileSync(
+                        path.join(newFilePath, `${pages[j][k].id}.md`),
+                        newFile
+                    )
+                }
+            }
         }
     }
 }

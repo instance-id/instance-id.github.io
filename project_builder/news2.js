@@ -3,7 +3,7 @@
 
 let config = {
     root: '../', //  ------------------- Root hugo folder, can be empty
-    dataFolder: 'data', //  ------------ Data folder path (will fetch ALL files from here)
+    dataFolder: 'data/searcher/news', //  ------------ Data folder path (will fetch ALL files from here)
     type: 'news', //  -------------- Type name [layout] (save it under "layouts/NAME/single.html" or themes/THEME/layouts/NAME/single.html). Can be overridden on individual pages by defining "type" under "fields"
     pages: 'news', //  ------------- Pages elemenet in your data, in case it's "posts" or "articles" etc.
     name: 'news.yml', //  ---------- Name of project config file
@@ -41,10 +41,10 @@ const build = async (add, force, resize) => {
         if (dataFiles[i] != config.name) continue;
         console.log(dataFiles[i]);
         let data = converToObject(dataFiles[i]);
-        let page1 =
+        let pages =
             config.pages ? data[config.pages] :
                 data;
-        let pages = page1.news_list;
+        // let pages = page1.news;
         for (let j in pages) {
             if (!pages[j].path) return console.log('Error: Pages must include path!');
             if (!pages[j].fields) return console.log('Error: Pages must include fields!');

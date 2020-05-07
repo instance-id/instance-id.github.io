@@ -1,0 +1,14 @@
+{
+    "id": "{{ .Params.id }}",
+    "version": "{{ .Params.version }}",
+    "title": "{{ .Title }}",
+    "date": "{{ .Params.date }}",
+    "dateposted": "{{ .Params.dateposted }}",
+    "permalink": "{{ .Permalink }}",
+    "description": "{{ .Params.description }}",
+    "details": "{{ .Params.details }}",
+    "project": "{{ .Params.project }}",
+    "image": "{{ .Params.image }}",
+    "image_small": "{{ .Params.image_small }}",
+    "tags": "{{ .Params.tags }}",
+}

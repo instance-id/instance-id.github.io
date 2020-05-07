@@ -1,3 +1,2 @@
-{{ define "response" }}
-	{{ .Render "item" }}
-{{ end }}
+{{- partial "schema_item.tmpl" (dict "currentPage" . "Root" $ "SchemaType" "single") -}}
+{{- .Scratch.Get "item" | jsonify -}}

@@ -1,8 +1,8 @@
 {
     "root": "../",
     "greymatter": "../jsontofm/gray-matter",
-    "originalFolder": "data/searcher/news",
+    "originalFolder": "data/searcher/changelog",
     "contentPath": "content",
-    "type": "news",
+    "type": "changelog",
     "project": "searcher"
 }
