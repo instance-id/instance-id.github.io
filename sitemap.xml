@@ -3,38 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/articles/</loc>
-    <lastmod>2020-05-04T09:45:27-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-05-04T09:45:27-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/news/searcher/50420202/</loc>
-    <lastmod>2020-05-04T09:45:27-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
-    <lastmod>2020-05-04T09:45:27-05:00</lastmod>
+    <lastmod>2020-05-04T14:05:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>/news/</loc>
-    <lastmod>2020-05-04T09:45:27-05:00</lastmod>
+    <lastmod>2020-05-04T14:05:27+00:00</lastmod>
   </url>
   
   <url>
     <loc>/news/searcher/n50420202/</loc>
     <lastmod>2020-05-04T14:05:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/news/searcher/50420201/</loc>
-    <lastmod>2020-05-04T09:05:27-05:00</lastmod>
   </url>
   
   <url>
@@ -72,6 +52,10 @@
   
   <url>
     <loc>/api/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
   </url>
   
   <url>
