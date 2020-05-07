@@ -11,11 +11,11 @@ let config = {
 };
 
 String.prototype.escapeSpecialChars = function () {
-    return this.replace(/\\/g, "\\\\")
-        .replace(/\n/g, "\\n")
-        .replace(/\r/g, "\\r")
-        .replace(/\t/g, "\\t")
-        .replace(/\f/g, "\\f")
+    return this.replace(/\\/g, "")
+        .replace(/\n/g, "")
+        .replace(/\r/g, "")
+        .replace(/\t/g, "")
+        .replace(/\f/g, "")
         .replace(/"/g, "\"")
         .replace(/'/g, "\'")
         .replace(/\&/g, "\\&");
