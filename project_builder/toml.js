@@ -10,15 +10,16 @@ let config = {
     project: 'searcher'
 };
 
-String.prototype.escapeSpecialChars = function () { return this.replace(/\\/g, "\\\\")
-                                                                .replace(/\n/g, "\\n")
-                                                                .replace(/\r/g, "\\r")
-                                                                .replace(/\t/g, "\\t")
-                                                                .replace(/\f/g, "\\f")
-                                                                .replace(/"/g, "\"")
-                                                                .replace(/'/g, "\'")
-                                                                .replace(/\&/g, "\\&"); 
-                                                                }
+String.prototype.escapeSpecialChars = function () {
+    return this.replace(/\\/g, "\\\\")
+        .replace(/\n/g, "\\n")
+        .replace(/\r/g, "\\r")
+        .replace(/\t/g, "\\t")
+        .replace(/\f/g, "\\f")
+        .replace(/"/g, "\"")
+        .replace(/'/g, "\'")
+        .replace(/\&/g, "\\&");
+}
 
 const path = require('path')
 const matter = require(config.greymatter);
@@ -55,8 +56,8 @@ const runit = async (replace) => {
             for (let k in pages[j]) {
                 let string1 = pages[j][k];
                 let newFile = JSON.stringify(string1);
-                var escapedJSON = newFile;
-                // var escapedJSON = newFile.escapeSpecialChars();
+                // var escapedJSON = newFile;
+                var escapedJSON = newFile.escapeSpecialChars();
                 console.log('data! ', escapedJSON);
 
                 if (replace) {
