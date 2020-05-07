@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>changelog on instance.id</title>
+    <link>/tags/changelog/</link>
+    <description>Recent content in changelog on instance.id</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2020 instance.id</copyright>
+    
+	<atom:link href="/tags/changelog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Added new important thing</title>
+      <link>/changelog/searcher/clv006/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv006/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Even more new features and fixes</title>
+      <link>/changelog/searcher/clv002/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv002/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fixed old important thing</title>
+      <link>/changelog/searcher/clv005/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv005/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Huge list of fixes and such</title>
+      <link>/changelog/searcher/clv003/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv003/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lots of new features and fixes!</title>
+      <link>/changelog/searcher/clv001/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv001/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Popular useful new features and fixes</title>
+      <link>/changelog/searcher/clv004/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/changelog/searcher/clv004/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
