@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright &amp;copy; 2020 instance.id</copyright>
-    <lastBuildDate>Mon, 04 May 2020 14:05:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 14:45:27 +0000</lastBuildDate>
     
 	<atom:link href="/tags/news/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Welcome to the Searcher v0.1 beta release!</title>
+      <link>/news/searcher/n5062020/</link>
+      <pubDate>Thu, 07 May 2020 14:45:27 +0000</pubDate>
+      
+      <guid>/news/searcher/n5062020/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Welcome to the Searcher v0.1 beta release!</title>
