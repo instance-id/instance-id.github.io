@@ -60,6 +60,7 @@ const runit = async (replace) => {
             for (let k in pages[j]) {
                 let string1 = pages[j][k];
                 let newFile = JSON.parse(JSON.stringify(string1));
+                newFile = JSON.stringify(newFile);
                 console.log('data! ', newFile);
 
                 if (replace) {
