@@ -1,17 +1,17 @@
 [[news]]
 id = "n5062020"
 project = "searcher"
-date = 2020-05-04T09:45:27-05:00
-dateposted = "05-04-2020"
-title = "Header2 data info title"
-description = "description2 blurb for info"
+date = 2020-05-07T09:45:27-05:00
+dateposted = "05-07-2020"
+title = "Welcome to the Searcher v0.1 beta release!"
+description = "Thanks for grabbing Searcher! Can't wait for you to try it out!"
 details = "Details live here, lots and lots and what not"
 tags = [""]
 categories = ["articles"]
 category = "Game Dev"
 platform = "Unity"
-image = "images/projects/arpg/arpg1.png"
-image_small = "images/projects/arpg/arpg_small.png"
+image = "images/projects/searcher/searcher5.png"
+image_small = "images/projects/searcher/searcher0_small.png"
 gifs = []
 videos = [
     [
