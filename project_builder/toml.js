@@ -11,7 +11,7 @@ let config = {
 };
 
 String.prototype.escapeSpecialChars = function () {
-    return this.replace(/\\/g, "")
+    return this.replace(/\\/g, "\\\\")
         .replace(/\n/g, "")
         .replace(/\r/g, "")
         .replace(/\t/g, "")
