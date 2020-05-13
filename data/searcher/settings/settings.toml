@@ -2,5 +2,6 @@
 id = "0"
 bgImage = "images/installer/bg01.png"
 isDynamic = "false"
+useBG = "false"
 type = "settings"
 tags = ["settings"]

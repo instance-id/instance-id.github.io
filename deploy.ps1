@@ -1,5 +1,15 @@
-$argument=$args[0]
+Param (
+    [Parameter()]
+    [string]$Build
+)
+$argument = $args[0]
 
+if ($Build) {
+    Write-Host "Building $argument..."
+    & .\build $Build
+} else {
+    & hugo -v
+}
 
 Write-Host "Deploying updates to GitHub..."
 
@@ -9,7 +19,7 @@ $tmpSource = "E:/GitHub/tmp/*"
 $tmpDestination = "E:/GitHub/tmp"
 
 # Build the project
-& hugo -v
+
 $msg = "rebuilding site $(Get-Date)"
 
 Write-Host "Committing local repo"
