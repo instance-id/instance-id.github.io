@@ -72,6 +72,10 @@
   </url>
   
   <url>
+    <loc>/settings/searcher/0/</loc>
+  </url>
+  
+  <url>
     <loc>/changelog/searcher/clv006/</loc>
   </url>
   
@@ -113,6 +117,14 @@
   
   <url>
     <loc>/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/settings/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/settings/</loc>
   </url>
   
   <url>

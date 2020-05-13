@@ -3,6 +3,7 @@ id = "n5062020"
 project = "searcher"
 date = 2020-05-07T09:45:27-05:00
 dateposted = "05-07-2020"
+icon = "bug"
 title = "Welcome to the Searcher v0.1 beta release!"
 description = "Thanks for grabbing Searcher! Can't wait for you to try it out!"
 details = "Details live here, lots and lots and what not"
@@ -50,12 +51,13 @@ type = "news"
 [[news]]
 id = "n50420201"
 project = "searcher"
+icon = "whatshot"
+date = 2020-05-04T09:05:27-05:00
+dateposted = "05-04-2020"
 title = "Welcome to the Searcher v0.1 beta release!"
 description = "Thanks for grabbing Searcher! Can't wait for you to try it out!"
 tags = ["news"]
 type = "news"
-date = 2020-05-04T09:05:27-05:00
-dateposted = "05-04-2020"
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
 details = '''
@@ -66,14 +68,15 @@ More info More info More info More info More info More info More info More info
 
 [[news]]
 id = "n50420202"
-type = "news"
 project = "searcher"
-title = "Second news entry! More stuff!"
-description = "Here is even more stuff. Sweet!"
+icon = "hourglass"
 date = 2020-05-04T09:05:27-05:00
 dateposted = "05-04-2020"
+title = "Second news entry! More stuff!"
+description = "Here is even more stuff. Sweet!"
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
+type = "news"
 details = '''
 More info2 More info2 More info2 More info2 More info2 More info2 More info2 
 More info2 More info2 More info2 More info2 More info2 More info2 More info2 

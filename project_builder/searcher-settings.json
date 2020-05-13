@@ -1,0 +1,8 @@
+{
+    "root": "../",
+    "greymatter": "../jsontofm/gray-matter",
+    "originalFolder": "data/searcher/settings",
+    "contentPath": "content",
+    "type": "settings",
+    "project": "searcher"
+}

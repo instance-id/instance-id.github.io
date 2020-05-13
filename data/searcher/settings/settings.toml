@@ -1,0 +1,6 @@
+[[settings]]
+id = "0"
+bgImage = "images/installer/bg01.png"
+isDynamic = "false"
+type = "settings"
+tags = ["settings"]

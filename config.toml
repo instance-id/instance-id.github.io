@@ -7,7 +7,6 @@ languageName = "En"
 weight = 1
 backgroundColor = "#303030"
 
-# theme = ["json-api"]
 [taxonomies]
 category = "categories"
 tag = "tags"
@@ -15,8 +14,8 @@ project = "projects"
 api = "api"
 
 [outputs]
-page = ["html", "news", "changelog", "json"]
-section = ["html", "news", "changelog"]
+page = ["html", "news", "settings", "changelog", "json"]
+section = ["html", "news", "settings", "changelog"]
 home = ["html", "json"]
 changelog = ["html", "changelog", "json"]
 
@@ -27,6 +26,12 @@ baseName = "news"
 isPlainText = true
 mediaType = "application/json"
 path = "../api/v1.0/news"
+
+[outputFormats.settings]
+baseName = "settings"
+isPlainText = true
+mediaType = "application/json"
+path = "../api/v1.0/settings"
 
 [outputFormats.changelog]
 baseName = "changelog"
