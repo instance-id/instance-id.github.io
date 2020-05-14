@@ -13,14 +13,14 @@ image_small = "images/projects/searcher/searcher0_small.png"
 details = '''
  ##### Change Log
 ---
- - Bug Fix: Opening dropdown
- - Bug Fix: Closing dropdown
- - Feature: New thing #1 
- - Feature: New thing #2
+ - ##### Bug Fix: Opening dropdown
+ - ##### Bug Fix: Closing dropdown
+ - ##### Feature: New thing #1 
+ - ##### Feature: New thing #2
 
-Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it.   
+##### Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it.   
 
-Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it. 
+##### Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it. Here is some text about it. 
 '''
 
 [[changelog]]
