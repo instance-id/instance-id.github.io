@@ -1,12 +1,12 @@
 [[news]]
 id = "n5062020"
+type = "news"
 project = "searcher"
 date = 2020-05-07T09:45:27-05:00
 dateposted = "05-07-2020"
 icon = "bug"
 title = "Welcome to the Searcher v0.1 beta release!"
 description = "Thanks for grabbing Searcher! Can't wait for you to try it out!"
-details = "Details live here, lots and lots and what not"
 tags = ["news"]
 categories = ["articles"]
 category = "Game Dev"
@@ -46,20 +46,35 @@ featurelist = [
     "Lootboxes"
 ]
 htmlenable = false
-type = "news"
+use_markdown = "false"
+details = '''
+Details live here, lots and lots and what not
+'''
 
 [[news]]
 id = "n50420201"
+type = "news"
 project = "searcher"
 icon = "whatshot"
 date = 2020-05-04T09:05:27-05:00
 dateposted = "05-04-2020"
 title = "Welcome to the Searcher v0.1 beta release!"
 description = "Thanks for grabbing Searcher! Can't wait for you to try it out!"
+featurelist = [
+    "Lootboxes",
+    "Open-World",
+    "Lootboxes",
+    "Amazing PVP",
+    "No Grinding",
+    "Lootboxes",
+    "Tons of Grinding",
+    "Lootboxes"
+]
 tags = ["news"]
-type = "news"
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
+
+use_markdown = "false"
 details = '''
 More info More info More info More info More info More info More info More info 
 More info More info More info More info More info More info More info More info 
@@ -68,15 +83,26 @@ More info More info More info More info More info More info More info More info
 
 [[news]]
 id = "n50420202"
+type = "news"
 project = "searcher"
 icon = "hourglass"
 date = 2020-05-04T09:05:27-05:00
 dateposted = "05-04-2020"
 title = "Second news entry! More stuff!"
 description = "Here is even more stuff. Sweet!"
+featurelist = [
+    "Lootboxes",
+    "Open-World",
+    "Lootboxes",
+    "Amazing PVP",
+    "No Grinding",
+    "Lootboxes",
+    "Tons of Grinding",
+    "Lootboxes"
+]
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
-type = "news"
+use_markdown = "false"
 details = '''
 More info2 More info2 More info2 More info2 More info2 More info2 More info2 
 More info2 More info2 More info2 More info2 More info2 More info2 More info2 
