@@ -1,12 +1,18 @@
 [[changelog]]
 id = "clv006"
+version = "0.0.6"
 project = "searcher"
 dateposted = 2020-05-06T08:42:00-06:00
 date = "May 6, 2020"
 icon = "bug"
 title = "Added new important thing"
 description = "Tons of great new features and fixes for various things"
-version = "0.0.6"
+item_list = [
+  "Bug Fix: Opening dropdown",
+  "Bug Fix: Closing dropdown",
+  "Feature: New thing #1 ",
+  "Feature: New thing #2",
+]
 tags = ["v0.0.6", "changelog"]
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
@@ -25,13 +31,19 @@ details = '''
 
 [[changelog]]
 id= "clv005"
+version= "0.0.5"
 project= "searcher"
 dateposted= 2020-05-05T08:42:00-06:00
 date= "May 5, 2020"
 icon = "affiliatetheme"
 title= "Fixed old important thing"
 description= "Tons of great new features and fixes for various things"
-version= "0.0.5"
+item_list = [
+  "Bug Fix: Opening dropdown",
+  "Bug Fix: Closing dropdown",
+  "Feature: New thing #1 ",
+  "Feature: New thing #2",
+]
 tags= ["v0.0.5","changelog"]
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
@@ -42,13 +54,19 @@ details = '''
 
 [[changelog]]
 id= "clv004"
+version= "0.0.4"
 project= "searcher"
 dateposted= 2020-05-04T08:42:00-06:00
 date= "May 4, 2020"
 icon = "accusoft"
 title= "Popular useful new features and fixes"
 description= "Tons of great new features and fixes for various things"
-version= "0.0.4"
+item_list = [
+  "Bug Fix: Opening dropdown",
+  "Bug Fix: Closing dropdown",
+  "Feature: New thing #1 ",
+  "Feature: New thing #2",
+]
 tags= ["v0.0.4","changelog"]
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
@@ -59,13 +77,19 @@ details = '''
 
 [[changelog]]
 id= "clv003"
+version= "0.0.3"
 project= "searcher"
 dateposted= 2020-05-04T07:42:00-06:00
 date= "05-04-2020"
 icon = "alicorn"
 title= "Huge list of fixes and such"
 description= "Tons of great new features and fixes for various things"
-version= "0.0.3"
+item_list = [
+  "Bug Fix: Opening dropdown",
+  "Bug Fix: Closing dropdown",
+  "Feature: New thing #1 ",
+  "Feature: New thing #2",
+]
 tags= ["v0.0.3","changelog"]
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
@@ -76,13 +100,19 @@ details = '''
 
 [[changelog]]
 id= "clv002"
+version= "0.0.2"
 project= "searcher"
 dateposted= 2020-05-04T06:42:00-06:00
 date= "05-04-2020"
 icon = "at"
 title= "Even more new features and fixes"
 description= "Tons of great new features and fixes for various things"
-version= "0.0.2"
+item_list = [
+  "Bug Fix: Opening dropdown",
+  "Bug Fix: Closing dropdown",
+  "Feature: New thing #1 ",
+  "Feature: New thing #2",
+]
 tags= ["v0.0.2","changelog"]
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
@@ -93,13 +123,19 @@ details = '''
 
 [[changelog]]
 id = "clv001"
+version = "0.0.1"
 project = "searcher"
 dateposted = 2020-05-03T08:42:00-06:00
 date = "05-03-2020"
 icon = "avianex"
 title = "Lots of new features and fixes!"
 description = "Fixes for various things"
-version = "0.0.1"
+item_list = [
+  "Bug Fix: Opening dropdown",
+  "Bug Fix: Closing dropdown",
+  "Feature: New thing #1 ",
+  "Feature: New thing #2",
+]
 tags = ["v0.0.1", "changelog"]
 image = "images/projects/searcher/searcher5.png"
 image_small = "images/projects/searcher/searcher0_small.png"
