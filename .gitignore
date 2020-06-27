@@ -9,3 +9,5 @@ builds
 package-lock.json
 .history/
 Public
+
+themes/json-api

@@ -113,19 +113,20 @@
 								{{ $vdict := . }} 
 
 								<div style="margin-bottom: 15px">
-								{{ if index ((index $vdict 0) )  1 }}
+								{{ if index (index $vdict 0) 1 }}
 								<h5>
-								{{ index ((index $vdict 0))  1 }}
+								{{ index  $vdict  1 }}
 								</h5>
 								{{ end }}
-									{{ if ne (index ((index $vdict 0) )  2) "" }}
-									<a href="{{ (index ((index $vdict 0))  2) }}"  target="_blank">
+								
+									{{ if (ne (index $vdict 2) "") }}
+									<a href="{{ index $vdict 2 }}"  target="_blank">
 									{{ end }}
 									<video preload="auto" autoplay="autoplay" loop="loop" style="width: 100%;">
-										<source src="{{ index ((index $vdict 0))  0 }}" type="video/webm">
+										<source src="{{ (index $vdict 0) }}" type="video/webm">
 										</source>
 									</video>
-									{{ if ne (index ((index $vdict 0))  2) "" }}
+									{{ if ne (index $vdict 2) "" }}
 									</a>
 									{{ end }}
 								</div>
