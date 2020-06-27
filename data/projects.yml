@@ -78,7 +78,7 @@ projects:
           image : "images/projects/searcher/searcher.png"
           image_small : "images/projects/searcher/searcher_small.png"
           gifs: []
-          videos: []
+          # videos: []
           features: false
           moreimages: true 
           featurelist: [

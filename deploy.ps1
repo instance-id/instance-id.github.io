@@ -18,8 +18,6 @@ $destinationDirectory = "E:/GitHub/instance-id.github.io"
 $tmpSource = "E:/GitHub/tmp/*"
 $tmpDestination = "E:/GitHub/tmp"
 
-# Build the project
-
 $msg = "rebuilding site $(Get-Date)"
 
 Write-Host "Committing local repo"
