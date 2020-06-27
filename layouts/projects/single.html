@@ -67,12 +67,14 @@
 						{{ else }}
 						<div class="col-md-6">
 						{{end}}
-							<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
+							<div class="row detail-content justify-content-between wow fadeInUp" data-wow-duration="1.5s">
 								<div style="margin-bottom: 15px">
 									<h1> {{.Params.name }} </h1>
 								</div>
-							</div>
-															
+								<div style=" ml-auto">
+									{{ .Params.gumroadlink | safeHTML }}
+								</div>
+							</div>							
 							<!-- NOTE Main Content -------------------------------------------------------------- -->
 							<div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
 								<div style="margin-bottom: 15px">
@@ -118,7 +120,7 @@
 								{{ index  $vdict  1 }}
 								</h5>
 								{{ end }}
-								
+
 									{{ if (ne (index $vdict 2) "") }}
 									<a href="{{ index $vdict 2 }}"  target="_blank">
 									{{ end }}

@@ -19,7 +19,7 @@ videos: [
 features: true
 moreimages: false
 featurelist: [
-  'Greatly increase productivity',
+   'Greatly increase productivity',
   'Optimized for responsiveness',
   'Search for any menu item or action',
   'Fuzzy, abbreviated, partial search',
@@ -29,10 +29,6 @@ featurelist: [
 content: ''
 htmlenable: true
 htmlcontent: |+
-
-    <script src="https://gumroad.com/js/gumroad.js"></script>
-    <a class="gumroad-button" href="https://gum.co/searcher">More info here!</a>
-
     <div class="row detail-content wow fadeInUp" data-wow-duration="1.5s">
     <hr style="background-color: #555; height: 2.0px; width: 100%;"/>
     </div>
@@ -40,9 +36,17 @@ htmlcontent: |+
     <br>
 
 type: projects
+gumroadlink: |+
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    <a href="https://gum.co/searcher"> 
+    <button type="button" class="btn btn-dark btn-lg"><i class="fa fa-cart-arrow-down faa-rising animated"></i> Grab Searcher Here!</button>
+    </a> 
+   
 ---
 
+
 #### Now available!
+  
 
 Searcher brings the "Search Everything" functionality found in many modern Content Creation suites and IDE's such as JetBrains 'Shift+Shift' search (PyCharm, Rider, Webstorm, etc), Blender, Maya, and many others.
 
