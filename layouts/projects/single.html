@@ -52,7 +52,36 @@
 										{{ range $features }}
 										<tr>
 											<td>
-												{{ . }}
+												{{ .  | safeHTML }}
+											</td>
+										</tr>
+										{{ end }}
+									</tbody>
+								</table>
+							</div>
+							{{ end }}
+							
+							{{ if .Params.features }}
+							{{ $links := slice }}
+							{{ $links = $links | append .Params.linklist }}
+
+							<!-- NOTE Features ------------------------------------------------------------------ -->
+							<div class="row detail-content">
+								<table class="table table-dark" >
+									<thead>
+										<tr>
+											<th>
+												<h5>
+													Resources
+												</h5>
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										{{ range $links }}
+										<tr>
+											<td>
+												{{ .  | safeHTML }}
 											</td>
 										</tr>
 										{{ end }}
