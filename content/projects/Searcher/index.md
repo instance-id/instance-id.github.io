@@ -47,12 +47,10 @@ htmlcontent: |+
     <h5>Click video clips to view HD clip on youtube. </h5>
     <br>
 
-
-
 type: projects
 gumroadlink: |+
-    <script src="https://gumroad.com/js/gumroad.js"></script>
-    <a href="https://gum.co/searcher"> 
+    <!-- <script src="https://gumroad.com/js/gumroad.js"></script> -->
+    <a href="http://searcher.instance.id"> 
     <button type="button" class="btn btn-dark btn-lg"><i class="fa fa-cart-arrow-down faa-rising animated"></i> Grab Searcher Here!</button>
     </a> 
    
