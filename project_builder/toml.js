@@ -4,7 +4,7 @@
 let config = {
     root: '../', //  ----------------------------------- Root hugo folder, can be empty
     greymatter: '../jsontofm/gray-matter', // ---------- Path to grey-matter
-    originalFolder: 'data/searcher/news', //  ------- Data folder path (will fetch ALL files from here)
+    originalFolder: 'data/searcher/news', //  ---------- Data folder path (will fetch ALL files from here)
     contentPath: 'content', //  ------------------------ Path to content directory (in case it's not "content")
     type: 'news',
     project: 'searcher'
