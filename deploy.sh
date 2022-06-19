@@ -1,7 +1,7 @@
 #!/bin/sh
 
-dir="/mnt/e/GitHub/instanceid-hugo"
-dest ="/mnt/e/GitHub/instance-id.github.io"
+dir="/mnt/x/GitHub/instanceid-hugo"
+dest="/mnt/x/GitHub/instance-id.github.io"
 
 # If a command fails then the deploy stops
 set -e

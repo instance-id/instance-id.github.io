@@ -1,0 +1,18 @@
+{
+    "sourceFile": "deploy.ps1",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1655607806309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1655607806309,
+            "name": "Commit-0",
+            "content": "\n\nParam (\n    [Parameter()]\n    [string]$Build\n)\n$argument = $args[0]\n\nif ($Build) {\n    Write-Host \"Building $argument...\"\n    & .\\build $Build\n} else {\n    & hugo -v\n}\n\nWrite-Host 'Deploying updates to GitHub...'\n\nif (IsWindows) {\n    $basePath = 'E:'\n} else {\n    $basePath = '/mnt/x'\n}\n\n$sourceDirectory = \"${$basePath}/GitHub/instance-id/instance.github.io/public/*\"\n$destinationDirectory = \"${$basePath}/GitHub/instance-id/instance.github.io\"\n$tmpSource = \"${$basePath}/GitHub/tmp/*\"\n$tmpDestination = \"${$basePath}/GitHub/tmp\"\n\n$msg = \"rebuilding site $(Get-Date)\"\n\nWrite-Host 'Committing local repo'\n& git add -A\n& git commit -m $msg\n& git push origin site_files\n\nWrite-Host \"Copying $sourceDirectory to $destinationDirectory\"\nCopy-item -Force -Recurse -Verbose -Path $sourceDirectory -Destination $tmpDestination\ngit checkout master\nif ($argument -eq 'clean') {\n    Write-Host 'Cleaning destination directory'\n    & hugo --cleanDestinationDir\n}\nCopy-item -Force -Recurse -Verbose -Path $tmpSource -Destination $destinationDirectory\n\n& git add -A\n& git commit -m $msg\n& git push origin master\n\ngit checkout 'site_files'\nRemove-Item $tmpSource -Recurse -Force\n# New-BurntToastNotification -Silent -Text \"Status Update:\",\n'Site deployment complete'"
+        }
+    ]
+}
