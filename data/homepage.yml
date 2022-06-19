@@ -30,10 +30,15 @@ experience:
   title : "Recent Projects"
   experience_list:
     # experience item loop
+    - name : "ProStream (WIP)"
+      company : "Unity"
+      duration : "2020-Current"
+      content : "Unity DOTS based streaming"
+
     - name : "[Searcher](/projects/searcher)"
       company : "Houdini"
       duration : "2020"
-      content : "Houdini search addon "
+      content : "Houdini search addon"
       
     # experience item loop
     - name : "Verifier"
@@ -67,7 +72,11 @@ skill:
     # skill item loop
     - name : "Python"
       parcentage : "90%"
-      
+
+    # skill item loop
+    - name : "Rust"
+      parcentage : "90%"
+
     # skill item loop
     - name : "Golang"
       parcentage : "85%"

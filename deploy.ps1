@@ -13,10 +13,16 @@ if ($Build) {
 
 Write-Host "Deploying updates to GitHub..."
 
-$sourceDirectory = "E:/GitHub/instance-id.github.io/public/*"
-$destinationDirectory = "E:/GitHub/instance-id.github.io"
-$tmpSource = "E:/GitHub/tmp/*"
-$tmpDestination = "E:/GitHub/tmp"
+if (IsWindows) {
+    $basePath ='E:'
+} else {
+    $basePath = '/mnt/x'
+}
+
+$sourceDirectory = "${$basePath}/GitHub/instance-id/instance.github.io/public/*"
+$destinationDirectory = "${$basePath}/GitHub/instance-id/instance.github.io"
+$tmpSource = "${$basePath}/GitHub/tmp/*"
+$tmpDestination = "${$basePath}/GitHub/tmp"
 
 $msg = "rebuilding site $(Get-Date)"
 

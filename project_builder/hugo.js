@@ -43,7 +43,7 @@ const build = async (add, force, resize) => {
 		let data = converToObject(dataFiles[i]);
 		let page1 =
 			config.pages ? data[config.pages] :
-			data;
+				data;
 		let pages = page1.projects_list;
 		for (let j in pages) {
 			if (!pages[j].path) return console.log('Error: Pages must include path!');
@@ -106,32 +106,32 @@ const build = async (add, force, resize) => {
 const main = async (argvs) => {
 	const mode =
 
-			typeof argvs._[0] === 'undefined' ? 'default' :
+		typeof argvs._[0] === 'undefined' ? 'default' :
 			argvs._[0];
 	const resize =
 
-			typeof argvs['resize'] === 'undefined' ? false :
+		typeof argvs['resize'] === 'undefined' ? false :
 			true;
 	const force =
 
-			typeof argvs['force'] === 'undefined' ? false :
+		typeof argvs['force'] === 'undefined' ? false :
 			true;
 	const configFile =
 
-			typeof argvs['configFile'] === 'undefined' ? false :
+		typeof argvs['configFile'] === 'undefined' ? false :
 			require('./' + argvs['configFile']);
 	Object.assign(config, configFile); // Overriding default settings
 	config.root =
 		(
 			!!config.root ? config.root :
-			'.') + '/';
+				'.') + '/';
 	const { execSync } = require('child_process');
 	if (mode === 'server') {
 		// Server mode - create data-generated files, run hugo server, remove data-generated files on stop
 		console.log('Building data-generated files...');
 		await build();
 		console.log('Running Hugo Server...');
-		process.on('SIGINT', () => {}); // Not exiting on ctrl+c (instead, going to "catch" clause)
+		process.on('SIGINT', () => { }); // Not exiting on ctrl+c (instead, going to "catch" clause)
 		try {
 			await execSync('(cd ' + config.root + ' && ' + config.hugoPath + ' server)');
 		} catch (e) {
