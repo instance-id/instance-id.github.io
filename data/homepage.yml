@@ -30,7 +30,7 @@ experience:
   title : "Recent Projects"
   experience_list:
     # experience item loop
-    - name : "ProStream (WIP)"
+    - name : "[ProStream (wip)](/projects/prostream)"
       company : "Unity"
       duration : "2020-Current"
       content : "Unity DOTS based streaming"

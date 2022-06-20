@@ -24,20 +24,12 @@ moreimages: true
 moreimagespos: []
 features: true
 featurelist:
-  - Openish-world
-  - Ragdolls
-  - Hilarious
-  - Quests
-  - No Grinding
-  - Lootboxes
+  - DOTS Streaming
+  - Easy Setup
+  - Rule based scene splitting
 htmlenable: false
 htmlcontent: ''
 type: projects
 ---
 
-  Busy Richard is a game in which you get to run around and have a great time
-  pushing people into traffic and throwing things at them.  
-
-
-  Coming (TBD) to PC as well as mobile, you will be able to take your mayhem on
-  the road.  
+  ProStream is a scene streaming system for Unity that utilizes the Data-Oriented Tech Stack (DOTS)

@@ -1,154 +1,86 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/categories/articles/</loc>
     <lastmod>2020-05-07T14:45:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <lastmod>2020-05-07T14:45:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2020-05-07T14:45:27+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/news/</loc>
-    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/news/</loc>
     <lastmod>2020-05-07T14:45:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/news/</loc>
+    <lastmod>2020-05-07T14:45:27+00:00</lastmod>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2020-05-07T14:45:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/news/searcher/n5062020/</loc>
     <lastmod>2020-05-07T14:45:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/news/searcher/n50420202/</loc>
     <lastmod>2020-05-04T14:05:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/news/searcher/n50420201/</loc>
     <lastmod>2020-05-04T14:05:27+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/arpg/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/busy-richard/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/dots/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/paladin/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/projects/prostream/</loc>
+  </url><url>
     <loc>/projects/searcher/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/vfx/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/settings/searcher/0/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/changelog/searcher/clv006/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/api/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/changelog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/changelog/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/changelog/searcher/clv002/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/changelog/searcher/clv005/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/changelog/searcher/clv003/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/changelog/searcher/clv001/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/changelog/searcher/clv004/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/projects/</loc>
-  </url>
-  
-  <url>
-    <loc>/settings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/settings/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/settings/</loc>
+  </url><url>
     <loc>/tags/v0.0.1/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/v0.0.2/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/v0.0.3/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/v0.0.4/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/v0.0.5/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/v0.0.6/</loc>
   </url>
-  
 </urlset>
