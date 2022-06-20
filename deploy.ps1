@@ -21,10 +21,10 @@ if ($IsWindows) {
     $basePath = '/mnt/x'
 }
 
-$sourceDirectory = "${$basePath}/GitHub/instance-id/instance.github.io/public/*"
-$destinationDirectory = "${$basePath}/GitHub/instance-id/instance.github.io"
-$tmpSource = "${$basePath}/GitHub/tmp/*"
-$tmpDestination = "${$basePath}/GitHub/tmp"
+$sourceDirectory = "${basePath}/GitHub/instance-id/instance.github.io/public/*"
+$destinationDirectory = "${basePath}/GitHub/instance-id/instance.github.io"
+$tmpSource = "${basePath}/GitHub/tmp/*"
+$tmpDestination = "${basePath}/GitHub/tmp"
 
 $msg = "rebuilding site $(Get-Date)"
 
