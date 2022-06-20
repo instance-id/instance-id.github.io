@@ -34,6 +34,11 @@ Write-Host 'Committing local repo'
 & git push origin site_files
 
 Write-Host "Copying $sourceDirectory to $destinationDirectory"
+
+if (!(Test-Path $tmpDestination)) {
+    & mkdir $tmpDestination
+}
+
 Copy-item -Force -Recurse -Verbose -Path $sourceDirectory -Destination $tmpDestination
 git checkout master
 if ($argument -eq 'clean') {
