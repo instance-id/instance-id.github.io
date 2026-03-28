@@ -19,9 +19,21 @@ import {
 } from '../data/site';
 import { formatProjectDate, slugifyProjectName } from '../lib/project-utils';
 
-const projectOrder = ['ProStream', 'ARPG', 'Busy Richard', 'Searcher', 'DOTS', 'Paladin', 'VFX'];
+const projectOrder = ['prostream', 'arpg', 'busy-richard', 'searcher', 'dots', 'paladin', 'vfx'];
 const projects = await getCollection('projects');
-const orderedProjects = [...projects].sort((left, right) => projectOrder.indexOf(left.data.name) - projectOrder.indexOf(right.data.name));
+const projectOrderRanks = new Map(projectOrder.map((projectId, index) => [projectId, index]));
+const orderedProjects = [...projects].sort((left, right) => {
+  const leftId = left.data.uniqueID ?? slugifyProjectName(left.data.name);
+  const rightId = right.data.uniqueID ?? slugifyProjectName(right.data.name);
+  const leftRank = projectOrderRanks.get(leftId) ?? Number.MAX_SAFE_INTEGER;
+  const rightRank = projectOrderRanks.get(rightId) ?? Number.MAX_SAFE_INTEGER;
+
+  if (leftRank !== rightRank) {
+    return leftRank - rightRank;
+  }
+
+  return left.data.name.localeCompare(right.data.name);
+});
 const galleryProjects = orderedProjects.map((project) => ({
   name: project.data.name,
   slug: slugifyProjectName(project.data.name),

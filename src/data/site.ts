@@ -14,7 +14,7 @@ export const homeNavItems = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Contact', href: '#contact' },
-  { label: 'Projects', href: '#projects', children: featuredProjectLinks },
+  { label: 'Projects', href: '#projects' /*, children: featuredProjectLinks */ },
 ];
 
 export const siteNavItems = [
@@ -104,5 +104,5 @@ export const contact = {
 };
 
 export const footer = {
-  copyright: 'Copyright © 2020 instance.id',
+  copyright: 'Copyright © 2026 instance.id',
 };
