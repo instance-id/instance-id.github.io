@@ -1,0 +1,157 @@
+---
+import { getCollection } from 'astro:content';
+import HeaderNav from '../components/HeaderNav.svelte';
+import ProjectGallery from '../components/ProjectGallery.svelte';
+import ScrollToTop from '../components/ScrollToTop.svelte';
+import SkillBars from '../components/SkillBars.svelte';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import {
+  about,
+  contact,
+  footer,
+  hero,
+  homeNavItems,
+  recentProjects,
+  services,
+  siteMeta,
+  skills,
+  socialLinks,
+} from '../data/site';
+import { formatProjectDate, slugifyProjectName } from '../lib/project-utils';
+
+const projectOrder = ['ProStream', 'ARPG', 'Busy Richard', 'Searcher', 'DOTS', 'Paladin', 'VFX'];
+const projects = await getCollection('projects');
+const orderedProjects = [...projects].sort((left, right) => projectOrder.indexOf(left.data.name) - projectOrder.indexOf(right.data.name));
+const galleryProjects = orderedProjects.map((project) => ({
+  name: project.data.name,
+  slug: slugifyProjectName(project.data.name),
+  category: project.data.category,
+  platform: project.data.platform,
+  dateDisplay: formatProjectDate(project.data.date),
+  image: project.data.image,
+}));
+---
+
+<BaseLayout title={siteMeta.title} description={siteMeta.description}>
+  <section class="hero" id="home" style={`background-image: linear-gradient(rgba(20, 20, 20, 0.28), rgba(20, 20, 20, 0.28)), url(${hero.backgroundImage});`}>
+    <HeaderNav items={homeNavItems} socialLinks={socialLinks} variant="overlay" observeSections={true} client:load />
+    <div class="hero__spacer"></div>
+  </section>
+
+  <div class="content-shell">
+    <HeaderNav items={homeNavItems} socialLinks={socialLinks} variant="sticky" observeSections={true} client:load />
+
+    <main>
+      <section class="about-me" id="about">
+        <div class="shell">
+          <div class="about-grid">
+            <div class="about-copy section-card">
+              <div class="section-heading section-heading--warm">
+                <h1>{about.title}</h1>
+              </div>
+              <p set:html={about.contentHtml}></p>
+            </div>
+            <div class="about-image-wrap">
+              <img class="about-image" src={about.image} alt="About instance.id" />
+            </div>
+          </div>
+
+          <div class="experience-skill">
+            <section class="experience section-card">
+              <h3>Recent Projects</h3>
+              <ul class="experience-chart">
+                {recentProjects.map((project) => (
+                  <li>
+                    <div class="single-experience">
+                      <h4>
+                        {project.href ? <a href={project.href}>{project.name}</a> : project.name}
+                      </h4>
+                      <span>{project.company}</span>
+                      <span>{project.duration}</span>
+                      <p>{project.content}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+
+            <section class="skill section-card">
+              <h3>Proficiencies</h3>
+              <SkillBars skills={skills} client:visible />
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="service">
+        <div class="shell services-shell">
+          <div class="services-heading">
+            <div class="bar"></div>
+            <h1>SERVICES</h1>
+          </div>
+          <div class="services-grid">
+            {services.map((service) => (
+              <article class="services-icon">
+                <div class="service-img">
+                  <img src={service.image} alt={service.name} loading="lazy" />
+                </div>
+                <div class="service-label">{service.name}</div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="projects">
+        <div class="shell">
+          <div class="section-heading section-heading--cool section-heading--centered">
+            <h1>PROJECTS</h1>
+          </div>
+          <ProjectGallery projects={galleryProjects} client:load />
+        </div>
+      </section>
+
+      <section class="contact" id="contact" style={`background-image: linear-gradient(rgba(20, 20, 20, 0.78), rgba(20, 20, 20, 0.78)), url(${contact.backgroundImage});`}>
+        <div class="shell contact-shell">
+          <div class="contact-holder section-card section-card--translucent">
+            <h1>{contact.title}</h1>
+            <form class="contact-form" action="#" method="post">
+              <div class="contact-form__grid">
+                <label>
+                  <span>Name</span>
+                  <input class="form-control" type="text" name="username" placeholder="Name" />
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input class="form-control" type="email" name="email" placeholder="Email" />
+                </label>
+                <label class="contact-form__full">
+                  <span>Message</span>
+                  <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+                </label>
+                <div class="contact-form__full sub-button">
+                  <button class="submit form-control" type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <footer class="footer">
+            <ul class="footer-icons">
+              {socialLinks.map((social) => (
+                <li>
+                  <a href={social.href} target="_blank" rel="noreferrer" aria-label={social.label}>
+                    <i class={social.iconClass}></i>
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <div class="credit">{footer.copyright}</div>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <ScrollToTop client:load />
+</BaseLayout>

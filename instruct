@@ -1,3 +1,0 @@
-Add data to file in data folder -> run node toml.js -c searcher-$.json -> hugo -v
-
-.\deploy.ps1

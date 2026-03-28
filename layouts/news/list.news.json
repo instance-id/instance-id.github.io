@@ -1,2 +1,0 @@
-{{ $news := $.Site.Data.searcher.news}}
-{{- jsonify $news.news.news -}}

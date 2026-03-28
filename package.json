@@ -1,0 +1,20 @@
+{
+  "name": "instance-id-github-io-astro",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/svelte": "^7.0.0",
+    "@types/node": "^22.10.0",
+    "astro": "^5.0.0",
+    "svelte": "^5.0.0",
+    "typescript": "^5.7.0"
+  }
+}

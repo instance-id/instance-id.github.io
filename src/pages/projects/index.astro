@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeaderNav from '../../components/HeaderNav.svelte';
+import ProjectGallery from '../../components/ProjectGallery.svelte';
+import { siteMeta, siteNavItems, socialLinks } from '../../data/site';
+import { formatProjectDate, slugifyProjectName } from '../../lib/project-utils';
+
+const projects = await getCollection('projects');
+const galleryProjects = projects.map((project) => ({
+  name: project.data.name,
+  slug: slugifyProjectName(project.data.name),
+  category: project.data.category,
+  platform: project.data.platform,
+  dateDisplay: formatProjectDate(project.data.date),
+  image: project.data.image,
+}));
+---
+
+<BaseLayout title="Projects" description={siteMeta.description}>
+  <HeaderNav items={siteNavItems} socialLinks={socialLinks} variant="page" client:load />
+  <main class="subpage-main">
+    <section class="subpage-hero" style="background-image: linear-gradient(rgba(15, 15, 15, 0.72), rgba(15, 15, 15, 0.72)), url('/images/backgrounds/nav-bg.png');">
+      <div class="shell subpage-hero__inner">
+        <h1>Projects</h1>
+        <p>Selected game, tools, film, and VFX work from instance.id.</p>
+      </div>
+    </section>
+
+    <section class="project project--standalone">
+      <div class="shell">
+        <ProjectGallery projects={galleryProjects} client:load />
+      </div>
+    </section>
+  </main>
+</BaseLayout>

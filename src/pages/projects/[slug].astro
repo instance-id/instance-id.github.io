@@ -1,0 +1,146 @@
+---
+import { getCollection, render } from 'astro:content';
+import HeaderNav from '../../components/HeaderNav.svelte';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { siteMeta, siteNavItems, socialLinks } from '../../data/site';
+import {
+  formatProjectDate,
+  getProjectGalleryImages,
+  normalizeGifEntry,
+  normalizeVideoEntry,
+  slugifyProjectName,
+} from '../../lib/project-utils';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+
+  return projects.map((project) => ({
+    params: { slug: slugifyProjectName(project.data.name) },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+const galleryImages = getProjectGalleryImages(project.data.name);
+const mainImage = project.data.image_small ?? project.data.image;
+const videos = (project.data.videos ?? []).map(normalizeVideoEntry).filter(Boolean);
+const gifs = (project.data.gifs ?? []).map(normalizeGifEntry).filter(Boolean);
+const features = (project.data.featurelist ?? []).map((item) => String(item));
+const links = (project.data.linklist ?? []).map((item) => String(item));
+---
+
+<BaseLayout title={project.data.name} description={project.body.slice(0, 160) || siteMeta.description}>
+  <HeaderNav items={siteNavItems} socialLinks={socialLinks} variant="page" client:load />
+
+  <main class="subpage-main">
+    <section class="subpage-hero" style="background-image: linear-gradient(rgba(15, 15, 15, 0.72), rgba(15, 15, 15, 0.72)), url('/images/backgrounds/nav-bg.png');">
+      <div class="shell subpage-hero__inner">
+        <p class="subpage-hero__eyebrow">{project.data.platform} • {project.data.category}</p>
+        <h1>{project.data.name}</h1>
+        <p>{formatProjectDate(project.data.date)}</p>
+      </div>
+    </section>
+
+    <section class="proj-page" id="proj-page">
+      <div class="shell project-detail-grid">
+        <aside class="project-sidebar section-card">
+          <div class="project-sidebar__thumb">
+            <img src={mainImage.startsWith('/') ? mainImage : `/${mainImage}`} alt={project.data.name} />
+          </div>
+
+          <div class="project-meta-list">
+            <div>
+              <h5>Platform</h5>
+              <p>{project.data.platform}</p>
+            </div>
+            <div>
+              <h5>Category</h5>
+              <p>{project.data.category}</p>
+            </div>
+            <div>
+              <h5>Date</h5>
+              <p>{formatProjectDate(project.data.date)}</p>
+            </div>
+          </div>
+
+          {features.length > 0 && (
+            <div class="project-sidebar__table">
+              <h5>Features</h5>
+              <ul>
+                {features.map((feature) => <li>{feature}</li>)}
+              </ul>
+            </div>
+          )}
+
+          {links.length > 0 && (
+            <div class="project-sidebar__table">
+              <h5>Resources</h5>
+              <ul>
+                {links.map((link) => (
+                  <li set:html={link}></li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </aside>
+
+        <article class={`project-article ${project.data.moreimages ? 'project-article--narrow' : ''}`}>
+          <div class="section-card project-article__content">
+            <div class="project-article__header">
+              <h1>{project.data.name}</h1>
+              {project.data.gumroadlink && <div set:html={project.data.gumroadlink}></div>}
+            </div>
+
+            <div class="project-prose">
+              <Content />
+            </div>
+
+            {project.data.htmlenable && project.data.htmlcontent && (
+              <div class="project-html" set:html={project.data.htmlcontent}></div>
+            )}
+
+            {gifs.length > 0 && (
+              <div class="project-media-stack">
+                {gifs.map((gif) => (
+                  <img src={gif} alt={`${project.data.name} animated preview`} loading="lazy" />
+                ))}
+              </div>
+            )}
+
+            {videos.length > 0 && (
+              <div class="project-media-stack">
+                {videos.map((video) => (
+                  <div class="project-video-card">
+                    {video?.description && <h5>{video.description}</h5>}
+                    {video?.link ? (
+                      <a href={video.link} target="_blank" rel="noreferrer">
+                        <video preload="metadata" autoplay muted loop playsinline controls>
+                          <source src={video.src} />
+                        </video>
+                      </a>
+                    ) : (
+                      <video preload="metadata" autoplay muted loop playsinline controls>
+                        <source src={video?.src} />
+                      </video>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </article>
+
+        {project.data.moreimages && galleryImages.length > 0 && (
+          <aside class="project-gallery-sidebar">
+            {galleryImages.map((image) => (
+              <div class="section-card project-gallery-sidebar__card">
+                <img src={image} alt={`${project.data.name} gallery image`} loading="lazy" />
+              </div>
+            ))}
+          </aside>
+        )}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

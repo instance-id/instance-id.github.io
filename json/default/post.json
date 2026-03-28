@@ -1,9 +1,0 @@
-{
-    "name": "{{ .Title }}",
-    "date": "{{ .Params.date }}",
-    "dateposted": "{{ .Params.dateposted }}",
-    "permalink": "{{ .Permalink }}",
-    "header": "{{ .Params.header }}",
-    "description": "{{ .Params.description }}",
-    "content": "{{ .Params.content }}"
-}

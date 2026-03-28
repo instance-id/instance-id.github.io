@@ -1,2 +1,0 @@
-{{ $settings := $.Site.Data.searcher.settings}}
-{{- jsonify $settings.settings.settings -}}
