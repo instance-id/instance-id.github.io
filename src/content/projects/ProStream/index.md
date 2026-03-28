@@ -2,32 +2,43 @@
 name: ProStream
 uniqueID: prostream
 aliases:
-    - /prostream/
+  - /prostream/
 category: Tools
 platform: Unity
 date: 2026-03-01
-url: ''
+url: ""
 image: images/projects/prostream/prostream0.png
 image_small: images/projects/prostream/prostream0_small.png
 gifs: []
-videos: []
+videos:
+  [
+    ["https://youtu.be/FLaC16uHBrY", "", ""],
+    ["https://youtu.be/20OH9Xafas4", "", ""],
+    ["https://youtu.be/Jq0yE24MAZI", "", ""],
+    ["https://youtu.be/wjJ0lblKNIw", "", ""],
+    ["https://youtu.be/NBKfOWwBrH8", "", ""],
+    ["https://youtu.be/m4kn64b_nYU", "", ""],
+    ["https://youtu.be/dSUMfb-aaJ0", "", ""],
+  ]
 features: true
 moreimages: false
-featurelist: [
-  'Automated GameObject-to-Entity SubScene conversion workflows',
-  'Rule-based scene analysis and streaming layer generation',
-  'High-performance DOTS/ECS runtime streaming with Jobs + Burst',
-  'Distance/proximity-driven SubScene load-unload decisions',
-  'Integrated diagnostics and visualization for validation and troubleshooting'
-]
-linklist: [
-  '<a href="https://psdocs.instance.id" target="_blank">Documentation</a>',
-  '<a href="https://github.com/instance-id/ProStream" target="_blank">Repository</a>',
-  '<a href="https://psdocs.instance.id/reference/change-log.html" target="_blank">Changelog</a>'
-]
-content: ''
+featurelist:
+  [
+    "Automated GameObject-to-Entity SubScene conversion workflows",
+    "Rule-based scene analysis and streaming layer generation",
+    "High-performance DOTS/ECS runtime streaming with Jobs + Burst",
+    "Distance/proximity-driven SubScene load-unload decisions",
+    "Integrated diagnostics and visualization for validation and troubleshooting",
+  ]
+linklist:
+  [
+    '<a href="https://psdocs.instance.id" target="_blank">Documentation</a>',
+    '<a href="https://github.com/instance-id/ProStream" target="_blank">Repository</a>',
+    '<a href="https://psdocs.instance.id/reference/change-log.html" target="_blank">Changelog</a>',
+  ]
+content: ""
 htmlenable: false
-htmlcontent: ''
+htmlcontent: ""
 type: projects
 ---
 
