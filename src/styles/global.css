@@ -938,6 +938,19 @@ textarea.form-control {
   margin-top: 1.5rem;
 }
 
+.project-video-card__embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.project-video-card__embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 14px;
+}
+
 .project-video-card video,
 .project-media-stack img,
 .project-gallery-sidebar__card img {

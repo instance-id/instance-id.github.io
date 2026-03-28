@@ -1,5 +1,5 @@
-import fs from 'node:fs';
-import path from 'node:path';
+import * as fs from 'node:fs';
+import * as path from 'node:path';
 
 export function slugifyProjectName(value: string) {
   return value
@@ -34,6 +34,30 @@ export function normalizeVideoEntry(entry: unknown) {
     description: String(description ?? ''),
     link: String(link ?? ''),
   };
+}
+
+export function getYouTubeEmbedUrl(value: string) {
+  try {
+    const url = new URL(value);
+    const host = url.hostname.replace(/^www\./, '');
+    let videoId = '';
+
+    if (host === 'youtu.be') {
+      videoId = url.pathname.replace(/^\//, '');
+    } else if (host === 'youtube.com' || host === 'm.youtube.com') {
+      if (url.pathname === '/watch') {
+        videoId = url.searchParams.get('v') ?? '';
+      } else if (url.pathname.startsWith('/embed/')) {
+        videoId = url.pathname.split('/')[2] ?? '';
+      } else if (url.pathname.startsWith('/shorts/')) {
+        videoId = url.pathname.split('/')[2] ?? '';
+      }
+    }
+
+    return videoId ? `https://www.youtube-nocookie.com/embed/${videoId}` : '';
+  } catch {
+    return '';
+  }
 }
 
 export function normalizeGifEntry(entry: unknown) {

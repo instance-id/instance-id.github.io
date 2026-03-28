@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { siteMeta, siteNavItems, socialLinks } from '../../data/site';
 import {
   formatProjectDate,
+  getYouTubeEmbedUrl,
   getProjectGalleryImages,
   normalizeGifEntry,
   normalizeVideoEntry,
@@ -24,7 +25,13 @@ const { project } = Astro.props;
 const { Content } = await render(project);
 const galleryImages = getProjectGalleryImages(project.data.name);
 const mainImage = project.data.image_small ?? project.data.image;
-const videos = (project.data.videos ?? []).map(normalizeVideoEntry).filter(Boolean);
+const videos = (project.data.videos ?? [])
+  .map(normalizeVideoEntry)
+  .filter(Boolean)
+  .map((video) => ({
+    ...video,
+    embedUrl: getYouTubeEmbedUrl(video.src),
+  }));
 const gifs = (project.data.gifs ?? []).map(normalizeGifEntry).filter(Boolean);
 const features = (project.data.featurelist ?? []).map((item) => String(item));
 const links = (project.data.linklist ?? []).map((item) => String(item));
@@ -113,7 +120,18 @@ const links = (project.data.linklist ?? []).map((item) => String(item));
                 {videos.map((video) => (
                   <div class="project-video-card">
                     {video?.description && <h5>{video.description}</h5>}
-                    {video?.link ? (
+                    {video?.embedUrl ? (
+                      <div class="project-video-card__embed">
+                        <iframe
+                          src={video.embedUrl}
+                          title={`${project.data.name} video`}
+                          loading="lazy"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerpolicy="strict-origin-when-cross-origin"
+                          allowfullscreen
+                        ></iframe>
+                      </div>
+                    ) : video?.link ? (
                       <a href={video.link} target="_blank" rel="noreferrer">
                         <video preload="metadata" autoplay muted loop playsinline controls>
                           <source src={video.src} />
