@@ -31,7 +31,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background: #0f0f0f;
   color: var(--text-main);
 }
@@ -67,7 +67,7 @@ img {
 }
 
 .hero::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   background: rgba(10, 10, 10, 0.08);
@@ -117,7 +117,7 @@ img {
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  /* padding: 0.75rem 0; */
   max-width: var(--shell);
   margin: 0 auto;
 }
@@ -130,6 +130,8 @@ img {
   background: rgba(35, 35, 35, 0.58);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(2px);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .site-nav--sticky .site-nav__inner,
@@ -196,7 +198,7 @@ img {
 }
 
 .site-nav--sticky .site-nav__desktop > ul {
-  gap: 0.9rem;
+  /* gap: 0.9rem; */
 }
 
 .site-nav__desktop li {
@@ -214,7 +216,7 @@ img {
 
 .site-nav__desktop a {
   color: #f4f4f4;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   font-weight: 500;
   padding: 0.3rem 0;
   transition: color 180ms ease;
@@ -248,16 +250,17 @@ img {
   color: #a8a8a8;
   font-size: 1.2rem;
   font-weight: 600;
+  min-height: 52px;
 }
 
 .site-nav--page .site-nav__desktop > ul > li > a {
   min-height: 52px;
-  font-size: 0.82rem;
+  font-size: 1.2rem;
 }
 
 .site-nav--sticky .site-nav__label::after,
 .site-nav--page .site-nav__label::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -0.32rem;
@@ -269,10 +272,25 @@ img {
   transition: transform 180ms ease;
 }
 
-.site-nav--sticky .site-nav__desktop > ul > li > a:hover .site-nav__label::after,
-.site-nav--sticky .site-nav__desktop > ul > li > a:focus-visible .site-nav__label::after,
+.site-nav--sticky
+  .site-nav__desktop
+  > ul
+  > li
+  > a:hover
+  .site-nav__label::after,
+.site-nav--sticky
+  .site-nav__desktop
+  > ul
+  > li
+  > a:focus-visible
+  .site-nav__label::after,
 .site-nav--page .site-nav__desktop > ul > li > a:hover .site-nav__label::after,
-.site-nav--page .site-nav__desktop > ul > li > a:focus-visible .site-nav__label::after {
+.site-nav--page
+  .site-nav__desktop
+  > ul
+  > li
+  > a:focus-visible
+  .site-nav__label::after {
   transform: scaleX(1);
 }
 
@@ -286,9 +304,26 @@ img {
   color: #f0aa3c;
 }
 
+.site-nav__dropdown-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-nav__caret-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
 .site-nav__caret {
   margin-left: 0.45rem;
-  font-size: 0.65em;
+  font-size: 0.85em;
   opacity: 0.8;
 }
 
@@ -308,7 +343,8 @@ img {
   box-shadow: var(--shadow);
 }
 
-.site-nav__desktop li:hover > .site-nav__dropdown {
+.site-nav__dropdown-trigger:hover > .site-nav__dropdown,
+.site-nav__dropdown-trigger:focus-within > .site-nav__dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -334,7 +370,6 @@ img {
 .footer-icons {
   display: flex;
   align-items: center;
-  gap: 0.9rem;
 }
 
 .site-nav--overlay .site-nav__social {
@@ -348,7 +383,9 @@ img {
 .site-nav__social a,
 .footer-icons a {
   color: #f4f4f4;
-  transition: color 180ms ease, transform 180ms ease;
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .site-nav--sticky .site-nav__social a,
@@ -422,7 +459,11 @@ img {
 }
 
 .section-card {
-  background: linear-gradient(180deg, rgba(37, 37, 37, 0.95), rgba(28, 28, 28, 0.95));
+  background: linear-gradient(
+    180deg,
+    rgba(37, 37, 37, 0.95),
+    rgba(28, 28, 28, 0.95)
+  );
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -521,7 +562,7 @@ img {
 }
 
 .experience-chart li::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -0.5rem;
   top: 0.25rem;
@@ -655,7 +696,10 @@ img {
   padding: 0.65rem 1rem;
   border-radius: 999px;
   cursor: pointer;
-  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+  transition:
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
 }
 
 .project-navigation button.active,
@@ -677,7 +721,9 @@ img {
   overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  transition: transform 220ms ease, border-color 220ms ease;
+  transition:
+    transform 220ms ease,
+    border-color 220ms ease;
 }
 
 .project-card:hover {

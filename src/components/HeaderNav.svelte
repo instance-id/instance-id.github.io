@@ -97,9 +97,9 @@
 
 <div class={navClass}>
   <div class={innerClass}>
-    <div class="site-nav__brand">
+    <!-- <div class="site-nav__brand">
       <a href="/#home">instance.id</a>
-    </div>
+    </div> -->
 
     <nav class="site-nav__desktop" aria-label="Primary">
       <ul>
@@ -110,11 +110,21 @@
               class:active={isHashLink(item.href) ? normalizeHash(item.href) === activeHref : false}
             >
               <span class="site-nav__label">{item.label}</span>
-              {#if item.children?.length && variant !== 'overlay'}
-                <span class="site-nav__caret" aria-hidden="true">▾</span>
-              {/if}
             </a>
-            {#if item.children?.length}
+            {#if item.children?.length && variant !== 'overlay'}
+              <div class="site-nav__dropdown-trigger">
+                <button class="site-nav__caret-trigger" type="button" aria-label={`Show ${item.label} links`}>
+                  <span class="site-nav__caret" aria-hidden="true">▾</span>
+                </button>
+                <ul class="site-nav__dropdown">
+                  {#each item.children as child}
+                    <li>
+                      <a href={child.href}>{child.label}</a>
+                    </li>
+                  {/each}
+                </ul>
+              </div>
+            {:else if item.children?.length}
               <ul class="site-nav__dropdown">
                 {#each item.children as child}
                   <li>
